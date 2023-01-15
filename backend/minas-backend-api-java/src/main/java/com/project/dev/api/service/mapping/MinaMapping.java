@@ -1,0 +1,67 @@
+/*
+ * @fileoverview    {MinaMapping} se encarga de realizar tareas específicas.
+ *
+ * @version         2.0
+ *
+ * @author          Dyson Arley Parra Tilano <dysontilano@gmail.com>
+ *
+ * @copyright       Dyson Parra
+ * @see             github.com/DysonParra
+ *
+ * History
+ * @version 1.0     Implementación realizada.
+ * @version 2.0     Documentación agregada.
+ */
+package com.project.dev.api.service.mapping;
+
+import com.project.dev.api.domain.Mina;
+import com.project.dev.api.dto.MinaDTO;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+/**
+ * TODO: Definición de {@code MinaMapping}.
+ *
+ * @author Dyson Parra
+ * @since 1.8
+ */
+@Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface MinaMapping extends GenericMapping<MinaDTO, Mina> {
+
+    /**
+     * Obtiene una entidad en base a su DTO.
+     *
+     * @param dto es el DTO a convertir en entidad.
+     * @return la entidad equivalente al dto.
+     */
+    // Deben ser el campo clave de la base de datos.
+    @Mapping(source = "strIdMina", target = "strIdMina")
+    @Override
+    public Mina getEntity(MinaDTO dto);
+
+    /**
+     * Obtiene un DTO en base a su entidad.
+     *
+     * @param entity es la entidad a convertir en DTO.
+     * @return el dto equivalente a la entidad.
+     */
+    // Deben ser el campo clave de la base de datos.
+    @Mapping(source = "strIdMina", target = "strIdMina")
+    @Override
+    public MinaDTO obtenerDto(Mina entity);
+
+    /**
+     * TODO: Definición de {@code withId}.
+     *
+     * @param strId
+     * @return
+     */
+    public default Mina withId(String strId) {
+        if (strId == null) {
+            return null;
+        }
+        Mina entity = new Mina();
+        entity.setStrIdMina(String.valueOf(strId));
+        return entity;
+    }
+}

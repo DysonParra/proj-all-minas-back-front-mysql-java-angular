@@ -1,0 +1,195 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:2.2.0'
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.4.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'application'
+    id 'java'
+}
+
+apply plugin: 'com.google.cloud.tools.appengine'
+apply plugin: "io.spring.dependency-management"
+
+group = 'com.project.dev'
+def rootPackage = "${group}".replaceAll("\\.", "/")
+
+def mainClass = "${group}.Application"
+def mainFile = "${mainClass}".replaceAll("\\.", "/")
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    classifier = 'min'
+    manifest {
+        attributes(
+            'Main-Class': "${mainClass}"
+        )
+    }
+}
+
+application {
+    mainClassName = "${mainClass}"
+}
+
+task fatJar(type: Jar) {
+    //classifier = ''
+    manifest.from jar.manifest
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+task jarLib(type: Jar) {
+    classifier = 'min-lib'
+    exclude "${mainFile}.class"
+    exclude "${rootPackage}/tester"
+    manifest.from jar.manifest
+    with jar
+}
+
+task fatJarLib(type: Jar) {
+    classifier = 'lib'
+    exclude "${mainFile}.class"
+    exclude "${rootPackage}/tester"
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest.from jar.manifest
+    with fatJar
+}
+
+artifacts {
+    archives jar
+    //archives fatJar
+    //archives jarLib
+    //archives fatJarLib
+}
+
+processResources {
+    includeEmptyDirs = false
+    exclude '**/.gitkeep'
+    from ('src/main/java') {
+        include '**/*.dll'
+    }
+}
+
+pluginManager.withPlugin('org.springframework.boot') {
+
+    springBoot {
+        mainClass = "${mainClass}"
+    }
+
+    bootRun {
+        standardInput = System.in
+    }
+
+    bootJar {
+        mainClassName = "${mainClass}"
+        archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+    }
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    mavenCentral()
+    jcenter()
+}
+
+ext {
+    //set('springCloudVersion', "2020.0.2")
+    mapstructVersion = "1.3.0.Final"
+}
+
+compileJava {
+    options.compilerArgs = [
+        //'-Amapstruct.defaultComponentModel=spring',
+        //'-Amapstruct.suppressGeneratorTimestamp=true',
+        //'-Amapstruct.suppressGeneratorVersionInfoComment=true'
+    ]
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.4.0'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web-services', version:'2.2.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+    ///*
+    //runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    //implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    implementation ("io.springfox:springfox-swagger2:2.9.2") {
+        exclude module: "mapstruct"
+    }
+    implementation "io.springfox:springfox-bean-validators:2.9.2"
+    implementation "io.springfox:springfox-swagger-ui:2.9.2"
+
+    //https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-dependencies
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-dependencies', version: '1.2.7.RELEASE', ext: 'pom'
+    //https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-starter-sql-mysql
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-starter-sql-mysql', version: '1.2.7.RELEASE'
+
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    // If you are using mapstruct in test code
+    testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compile 'com.google.appengine:appengine-api-1.0-sdk:+'  // Latest App Engine Api's
+
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
+
+    testCompile 'com.google.truth:truth:0.33'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+
+    testCompile 'com.google.appengine:appengine-testing:+'
+    testCompile 'com.google.appengine:appengine-api-stubs:+'
+    testCompile 'com.google.appengine:appengine-tools-sdk:+'
+    //*/
+}
