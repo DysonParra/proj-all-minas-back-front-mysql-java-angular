@@ -60,7 +60,7 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
     @Override
     public List<FicherosProveedorDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo FicherosProveedor");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
     @Override
     public Page<FicherosProveedorDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo FicherosProveedor con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
         FicherosProveedor entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        FicherosProveedorDTO actualEntity = entityMapping.obtenerDto(entity);
+        FicherosProveedorDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
         log.debug("Solicitud para buscar la Entidad tipo FicherosProveedor: {}", id);
         FicherosProveedor searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
     @Override
     public List<FicherosProveedorDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo FicherosProveedor: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class FicherosProveedorServiceImpl implements FicherosProveedorService {
     @Override
     public Page<FicherosProveedorDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo FicherosProveedor para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

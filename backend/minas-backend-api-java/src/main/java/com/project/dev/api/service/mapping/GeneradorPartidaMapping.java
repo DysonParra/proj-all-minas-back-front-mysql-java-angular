@@ -48,7 +48,7 @@ public interface GeneradorPartidaMapping extends GenericMapping<GeneradorPartida
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intConsecutivo", target = "intConsecutivo")
     @Override
-    public GeneradorPartidaDTO obtenerDto(GeneradorPartida entity);
+    public GeneradorPartidaDTO getDto(GeneradorPartida entity);
 
     /**
      * TODO: Definición de {@code withId}.

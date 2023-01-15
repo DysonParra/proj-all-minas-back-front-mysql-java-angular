@@ -48,7 +48,7 @@ public interface IndicadorMapping extends GenericMapping<IndicadorDTO, Indicador
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strCodigo", target = "strCodigo")
     @Override
-    public IndicadorDTO obtenerDto(Indicador entity);
+    public IndicadorDTO getDto(Indicador entity);
 
     /**
      * TODO: Definición de {@code withId}.

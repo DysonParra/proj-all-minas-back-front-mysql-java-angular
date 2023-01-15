@@ -60,7 +60,7 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
     @Override
     public List<CierrePartidaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo CierrePartida");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
     @Override
     public Page<CierrePartidaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo CierrePartida con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
         CierrePartida entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CierrePartidaDTO actualEntity = entityMapping.obtenerDto(entity);
+        CierrePartidaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
         log.debug("Solicitud para buscar la Entidad tipo CierrePartida: {}", id);
         CierrePartida searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
     @Override
     public List<CierrePartidaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo CierrePartida: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class CierrePartidaServiceImpl implements CierrePartidaService {
     @Override
     public Page<CierrePartidaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo CierrePartida para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

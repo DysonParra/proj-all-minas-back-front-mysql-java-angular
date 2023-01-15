@@ -60,7 +60,7 @@ public class MinaServiceImpl implements MinaService {
     @Override
     public List<MinaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Mina");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class MinaServiceImpl implements MinaService {
     @Override
     public Page<MinaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Mina con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class MinaServiceImpl implements MinaService {
         Mina entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MinaDTO actualEntity = entityMapping.obtenerDto(entity);
+        MinaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class MinaServiceImpl implements MinaService {
         log.debug("Solicitud para buscar la Entidad tipo Mina: {}", id);
         Mina searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class MinaServiceImpl implements MinaService {
     @Override
     public List<MinaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Mina: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class MinaServiceImpl implements MinaService {
     @Override
     public Page<MinaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Mina para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

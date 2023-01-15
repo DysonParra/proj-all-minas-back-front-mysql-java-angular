@@ -48,7 +48,7 @@ public interface ParqueMapping extends GenericMapping<ParqueDTO, Parque> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdParque", target = "intIdParque")
     @Override
-    public ParqueDTO obtenerDto(Parque entity);
+    public ParqueDTO getDto(Parque entity);
 
     /**
      * TODO: Definición de {@code withId}.

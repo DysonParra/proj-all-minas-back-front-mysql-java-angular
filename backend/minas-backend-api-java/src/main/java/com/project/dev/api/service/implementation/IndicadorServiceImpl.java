@@ -60,7 +60,7 @@ public class IndicadorServiceImpl implements IndicadorService {
     @Override
     public List<IndicadorDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Indicador");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class IndicadorServiceImpl implements IndicadorService {
     @Override
     public Page<IndicadorDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Indicador con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class IndicadorServiceImpl implements IndicadorService {
         Indicador entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        IndicadorDTO actualEntity = entityMapping.obtenerDto(entity);
+        IndicadorDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class IndicadorServiceImpl implements IndicadorService {
         log.debug("Solicitud para buscar la Entidad tipo Indicador: {}", id);
         Indicador searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class IndicadorServiceImpl implements IndicadorService {
     @Override
     public List<IndicadorDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Indicador: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class IndicadorServiceImpl implements IndicadorService {
     @Override
     public Page<IndicadorDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Indicador para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

@@ -48,7 +48,7 @@ public interface ConductorMapping extends GenericMapping<ConductorDTO, Conductor
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strIdentificacion", target = "strIdentificacion")
     @Override
-    public ConductorDTO obtenerDto(Conductor entity);
+    public ConductorDTO getDto(Conductor entity);
 
     /**
      * TODO: Definición de {@code withId}.

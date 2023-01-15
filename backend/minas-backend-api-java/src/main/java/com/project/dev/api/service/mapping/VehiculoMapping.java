@@ -48,7 +48,7 @@ public interface VehiculoMapping extends GenericMapping<VehiculoDTO, Vehiculo> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strRfid", target = "strRfid")
     @Override
-    public VehiculoDTO obtenerDto(Vehiculo entity);
+    public VehiculoDTO getDto(Vehiculo entity);
 
     /**
      * TODO: Definición de {@code withId}.

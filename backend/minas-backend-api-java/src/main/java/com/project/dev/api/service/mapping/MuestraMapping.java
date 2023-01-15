@@ -48,7 +48,7 @@ public interface MuestraMapping extends GenericMapping<MuestraDTO, Muestra> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdMuestra", target = "intIdMuestra")
     @Override
-    public MuestraDTO obtenerDto(Muestra entity);
+    public MuestraDTO getDto(Muestra entity);
 
     /**
      * TODO: Definición de {@code withId}.

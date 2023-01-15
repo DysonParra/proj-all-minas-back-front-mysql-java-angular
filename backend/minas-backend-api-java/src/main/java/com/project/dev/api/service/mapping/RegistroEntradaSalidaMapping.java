@@ -48,7 +48,7 @@ public interface RegistroEntradaSalidaMapping extends GenericMapping<RegistroEnt
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdEntrada", target = "intIdEntrada")
     @Override
-    public RegistroEntradaSalidaDTO obtenerDto(RegistroEntradaSalida entity);
+    public RegistroEntradaSalidaDTO getDto(RegistroEntradaSalida entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -48,7 +48,7 @@ public interface OrigenMapping extends GenericMapping<OrigenDTO, Origen> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strIdOrigen", target = "strIdOrigen")
     @Override
-    public OrigenDTO obtenerDto(Origen entity);
+    public OrigenDTO getDto(Origen entity);
 
     /**
      * TODO: Definición de {@code withId}.

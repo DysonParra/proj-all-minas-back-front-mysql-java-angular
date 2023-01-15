@@ -60,7 +60,7 @@ public class TituloMineroServiceImpl implements TituloMineroService {
     @Override
     public List<TituloMineroDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo TituloMinero");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class TituloMineroServiceImpl implements TituloMineroService {
     @Override
     public Page<TituloMineroDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo TituloMinero con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class TituloMineroServiceImpl implements TituloMineroService {
         TituloMinero entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        TituloMineroDTO actualEntity = entityMapping.obtenerDto(entity);
+        TituloMineroDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class TituloMineroServiceImpl implements TituloMineroService {
         log.debug("Solicitud para buscar la Entidad tipo TituloMinero: {}", id);
         TituloMinero searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class TituloMineroServiceImpl implements TituloMineroService {
     @Override
     public List<TituloMineroDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo TituloMinero: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class TituloMineroServiceImpl implements TituloMineroService {
     @Override
     public Page<TituloMineroDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo TituloMinero para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

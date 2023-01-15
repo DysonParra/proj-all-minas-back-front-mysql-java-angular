@@ -60,7 +60,7 @@ public class ParqueServiceImpl implements ParqueService {
     @Override
     public List<ParqueDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Parque");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class ParqueServiceImpl implements ParqueService {
     @Override
     public Page<ParqueDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Parque con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class ParqueServiceImpl implements ParqueService {
         Parque entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ParqueDTO actualEntity = entityMapping.obtenerDto(entity);
+        ParqueDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class ParqueServiceImpl implements ParqueService {
         log.debug("Solicitud para buscar la Entidad tipo Parque: {}", id);
         Parque searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class ParqueServiceImpl implements ParqueService {
     @Override
     public List<ParqueDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Parque: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class ParqueServiceImpl implements ParqueService {
     @Override
     public Page<ParqueDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Parque para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

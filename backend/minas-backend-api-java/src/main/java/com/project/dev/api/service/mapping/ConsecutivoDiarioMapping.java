@@ -48,7 +48,7 @@ public interface ConsecutivoDiarioMapping extends GenericMapping<ConsecutivoDiar
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strRfid", target = "strRfid")
     @Override
-    public ConsecutivoDiarioDTO obtenerDto(ConsecutivoDiario entity);
+    public ConsecutivoDiarioDTO getDto(ConsecutivoDiario entity);
 
     /**
      * TODO: Definición de {@code withId}.

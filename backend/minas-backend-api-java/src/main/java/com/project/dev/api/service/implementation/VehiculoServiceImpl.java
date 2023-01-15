@@ -60,7 +60,7 @@ public class VehiculoServiceImpl implements VehiculoService {
     @Override
     public List<VehiculoDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Vehiculo");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class VehiculoServiceImpl implements VehiculoService {
     @Override
     public Page<VehiculoDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Vehiculo con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class VehiculoServiceImpl implements VehiculoService {
         Vehiculo entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        VehiculoDTO actualEntity = entityMapping.obtenerDto(entity);
+        VehiculoDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class VehiculoServiceImpl implements VehiculoService {
         log.debug("Solicitud para buscar la Entidad tipo Vehiculo: {}", id);
         Vehiculo searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class VehiculoServiceImpl implements VehiculoService {
     @Override
     public List<VehiculoDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Vehiculo: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class VehiculoServiceImpl implements VehiculoService {
     @Override
     public Page<VehiculoDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Vehiculo para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

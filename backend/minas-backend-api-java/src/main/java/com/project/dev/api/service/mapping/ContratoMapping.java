@@ -48,7 +48,7 @@ public interface ContratoMapping extends GenericMapping<ContratoDTO, Contrato> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdContrato", target = "intIdContrato")
     @Override
-    public ContratoDTO obtenerDto(Contrato entity);
+    public ContratoDTO getDto(Contrato entity);
 
     /**
      * TODO: Definición de {@code withId}.

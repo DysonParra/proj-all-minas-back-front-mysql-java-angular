@@ -48,7 +48,7 @@ public interface CierrePartidaMapping extends GenericMapping<CierrePartidaDTO, C
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intConsecutivo", target = "intConsecutivo")
     @Override
-    public CierrePartidaDTO obtenerDto(CierrePartida entity);
+    public CierrePartidaDTO getDto(CierrePartida entity);
 
     /**
      * TODO: Definición de {@code withId}.

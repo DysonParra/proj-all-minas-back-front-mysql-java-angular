@@ -48,7 +48,7 @@ public interface ControlAccesoMapping extends GenericMapping<ControlAccesoDTO, C
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdControl", target = "intIdControl")
     @Override
-    public ControlAccesoDTO obtenerDto(ControlAcceso entity);
+    public ControlAccesoDTO getDto(ControlAcceso entity);
 
     /**
      * TODO: Definición de {@code withId}.

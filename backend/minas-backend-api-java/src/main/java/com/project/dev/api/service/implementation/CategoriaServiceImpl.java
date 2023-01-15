@@ -60,7 +60,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public List<CategoriaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Categoria");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public Page<CategoriaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Categoria con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class CategoriaServiceImpl implements CategoriaService {
         Categoria entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CategoriaDTO actualEntity = entityMapping.obtenerDto(entity);
+        CategoriaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class CategoriaServiceImpl implements CategoriaService {
         log.debug("Solicitud para buscar la Entidad tipo Categoria: {}", id);
         Categoria searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public List<CategoriaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Categoria: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public Page<CategoriaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Categoria para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

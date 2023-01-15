@@ -60,7 +60,7 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
     @Override
     public List<ControlAccesoDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo ControlAcceso");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
     @Override
     public Page<ControlAccesoDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo ControlAcceso con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
         ControlAcceso entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ControlAccesoDTO actualEntity = entityMapping.obtenerDto(entity);
+        ControlAccesoDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
         log.debug("Solicitud para buscar la Entidad tipo ControlAcceso: {}", id);
         ControlAcceso searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
     @Override
     public List<ControlAccesoDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo ControlAcceso: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class ControlAccesoServiceImpl implements ControlAccesoService {
     @Override
     public Page<ControlAccesoDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo ControlAcceso para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

@@ -48,7 +48,7 @@ public interface SancionMapping extends GenericMapping<SancionDTO, Sancion> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intNumero", target = "intNumero")
     @Override
-    public SancionDTO obtenerDto(Sancion entity);
+    public SancionDTO getDto(Sancion entity);
 
     /**
      * TODO: Definición de {@code withId}.

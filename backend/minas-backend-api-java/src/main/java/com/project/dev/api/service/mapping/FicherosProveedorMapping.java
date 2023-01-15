@@ -48,7 +48,7 @@ public interface FicherosProveedorMapping extends GenericMapping<FicherosProveed
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strCif", target = "strCif")
     @Override
-    public FicherosProveedorDTO obtenerDto(FicherosProveedor entity);
+    public FicherosProveedorDTO getDto(FicherosProveedor entity);
 
     /**
      * TODO: Definición de {@code withId}.

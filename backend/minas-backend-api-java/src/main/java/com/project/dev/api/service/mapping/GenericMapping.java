@@ -41,7 +41,7 @@ public interface GenericMapping<D, E> {
      * @param entity es la entidad a convertir en DTO.
      * @return el dto equivalente a la entidad.
      */
-    public D obtenerDto(E entity);
+    public D getDto(E entity);
 
     /**
      * Obtiene una lista de entidades en base a un lista de DTO.
@@ -57,5 +57,5 @@ public interface GenericMapping<D, E> {
      * @param entityList es la lista de entidades a convertir en una lista de DTO.
      * @return la lista de dto equivalente a la lista de entidades.
      */
-    public List<D> obtenerDto(List<E> entityList);
+    public List<D> getDto(List<E> entityList);
 }

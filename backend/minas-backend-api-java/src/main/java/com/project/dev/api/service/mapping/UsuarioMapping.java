@@ -48,7 +48,7 @@ public interface UsuarioMapping extends GenericMapping<UsuarioDTO, Usuario> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intCedula", target = "intCedula")
     @Override
-    public UsuarioDTO obtenerDto(Usuario entity);
+    public UsuarioDTO getDto(Usuario entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -60,7 +60,7 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
     @Override
     public List<VehiculoEnTransitoDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo VehiculoEnTransito");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
     @Override
     public Page<VehiculoEnTransitoDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo VehiculoEnTransito con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
         VehiculoEnTransito entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        VehiculoEnTransitoDTO actualEntity = entityMapping.obtenerDto(entity);
+        VehiculoEnTransitoDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
         log.debug("Solicitud para buscar la Entidad tipo VehiculoEnTransito: {}", id);
         VehiculoEnTransito searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
     @Override
     public List<VehiculoEnTransitoDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo VehiculoEnTransito: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService 
     @Override
     public Page<VehiculoEnTransitoDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo VehiculoEnTransito para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

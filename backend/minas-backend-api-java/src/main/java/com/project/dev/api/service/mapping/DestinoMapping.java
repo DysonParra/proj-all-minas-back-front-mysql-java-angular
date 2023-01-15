@@ -48,7 +48,7 @@ public interface DestinoMapping extends GenericMapping<DestinoDTO, Destino> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strIdDestino", target = "strIdDestino")
     @Override
-    public DestinoDTO obtenerDto(Destino entity);
+    public DestinoDTO getDto(Destino entity);
 
     /**
      * TODO: Definición de {@code withId}.

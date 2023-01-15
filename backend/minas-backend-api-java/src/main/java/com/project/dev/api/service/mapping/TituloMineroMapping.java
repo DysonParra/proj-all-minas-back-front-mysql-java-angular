@@ -48,7 +48,7 @@ public interface TituloMineroMapping extends GenericMapping<TituloMineroDTO, Tit
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strIdTitulo", target = "strIdTitulo")
     @Override
-    public TituloMineroDTO obtenerDto(TituloMinero entity);
+    public TituloMineroDTO getDto(TituloMinero entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -48,7 +48,7 @@ public interface MinaMapping extends GenericMapping<MinaDTO, Mina> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strIdMina", target = "strIdMina")
     @Override
-    public MinaDTO obtenerDto(Mina entity);
+    public MinaDTO getDto(Mina entity);
 
     /**
      * TODO: Definición de {@code withId}.

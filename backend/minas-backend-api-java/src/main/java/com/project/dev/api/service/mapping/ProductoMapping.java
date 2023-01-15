@@ -48,7 +48,7 @@ public interface ProductoMapping extends GenericMapping<ProductoDTO, Producto> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdProducto", target = "intIdProducto")
     @Override
-    public ProductoDTO obtenerDto(Producto entity);
+    public ProductoDTO getDto(Producto entity);
 
     /**
      * TODO: Definición de {@code withId}.

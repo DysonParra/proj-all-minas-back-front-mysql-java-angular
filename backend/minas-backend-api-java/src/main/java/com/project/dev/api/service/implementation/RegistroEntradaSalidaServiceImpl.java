@@ -60,7 +60,7 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
     @Override
     public List<RegistroEntradaSalidaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo RegistroEntradaSalida");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
     @Override
     public Page<RegistroEntradaSalidaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo RegistroEntradaSalida con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
         RegistroEntradaSalida entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        RegistroEntradaSalidaDTO actualEntity = entityMapping.obtenerDto(entity);
+        RegistroEntradaSalidaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
         log.debug("Solicitud para buscar la Entidad tipo RegistroEntradaSalida: {}", id);
         RegistroEntradaSalida searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
     @Override
     public List<RegistroEntradaSalidaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo RegistroEntradaSalida: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaSe
     @Override
     public Page<RegistroEntradaSalidaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo RegistroEntradaSalida para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

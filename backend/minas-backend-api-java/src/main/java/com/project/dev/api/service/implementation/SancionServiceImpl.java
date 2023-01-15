@@ -60,7 +60,7 @@ public class SancionServiceImpl implements SancionService {
     @Override
     public List<SancionDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Sancion");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class SancionServiceImpl implements SancionService {
     @Override
     public Page<SancionDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Sancion con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class SancionServiceImpl implements SancionService {
         Sancion entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        SancionDTO actualEntity = entityMapping.obtenerDto(entity);
+        SancionDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class SancionServiceImpl implements SancionService {
         log.debug("Solicitud para buscar la Entidad tipo Sancion: {}", id);
         Sancion searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class SancionServiceImpl implements SancionService {
     @Override
     public List<SancionDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Sancion: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class SancionServiceImpl implements SancionService {
     @Override
     public Page<SancionDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Sancion para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

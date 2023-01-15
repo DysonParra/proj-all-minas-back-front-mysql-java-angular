@@ -48,7 +48,7 @@ public interface BasculaMapping extends GenericMapping<BasculaDTO, Bascula> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdProveedor", target = "intIdProveedor")
     @Override
-    public BasculaDTO obtenerDto(Bascula entity);
+    public BasculaDTO getDto(Bascula entity);
 
     /**
      * TODO: Definición de {@code withId}.

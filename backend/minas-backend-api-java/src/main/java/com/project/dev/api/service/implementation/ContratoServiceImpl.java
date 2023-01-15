@@ -60,7 +60,7 @@ public class ContratoServiceImpl implements ContratoService {
     @Override
     public List<ContratoDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Contrato");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class ContratoServiceImpl implements ContratoService {
     @Override
     public Page<ContratoDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Contrato con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class ContratoServiceImpl implements ContratoService {
         Contrato entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ContratoDTO actualEntity = entityMapping.obtenerDto(entity);
+        ContratoDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class ContratoServiceImpl implements ContratoService {
         log.debug("Solicitud para buscar la Entidad tipo Contrato: {}", id);
         Contrato searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class ContratoServiceImpl implements ContratoService {
     @Override
     public List<ContratoDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Contrato: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class ContratoServiceImpl implements ContratoService {
     @Override
     public Page<ContratoDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Contrato para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

@@ -48,7 +48,7 @@ public interface CategoriaMapping extends GenericMapping<CategoriaDTO, Categoria
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdCategoria", target = "intIdCategoria")
     @Override
-    public CategoriaDTO obtenerDto(Categoria entity);
+    public CategoriaDTO getDto(Categoria entity);
 
     /**
      * TODO: Definición de {@code withId}.

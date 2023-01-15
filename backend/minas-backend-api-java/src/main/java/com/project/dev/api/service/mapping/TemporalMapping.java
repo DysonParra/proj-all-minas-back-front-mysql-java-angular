@@ -48,7 +48,7 @@ public interface TemporalMapping extends GenericMapping<TemporalDTO, Temporal> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIdTemporal", target = "intIdTemporal")
     @Override
-    public TemporalDTO obtenerDto(Temporal entity);
+    public TemporalDTO getDto(Temporal entity);
 
     /**
      * TODO: Definición de {@code withId}.
