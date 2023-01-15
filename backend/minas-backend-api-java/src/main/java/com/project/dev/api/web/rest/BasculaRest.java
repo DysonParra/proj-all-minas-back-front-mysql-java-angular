@@ -272,7 +272,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula/{query}/pages")
+    @GetMapping("/Bascula/search/{query}/pages")
     public ResponseEntity<List<BasculaDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type Bascula with the search : {}", query);
         Page<BasculaDTO> page = null;
@@ -281,7 +281,7 @@ public class BasculaRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Bascula/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Bascula/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 

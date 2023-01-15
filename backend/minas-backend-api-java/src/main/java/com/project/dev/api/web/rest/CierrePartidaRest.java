@@ -272,7 +272,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida/{query}/pages")
+    @GetMapping("/CierrePartida/search/{query}/pages")
     public ResponseEntity<List<CierrePartidaDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type CierrePartida with the search : {}", query);
         Page<CierrePartidaDTO> page = null;
@@ -281,7 +281,7 @@ public class CierrePartidaRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CierrePartida/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CierrePartida/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 

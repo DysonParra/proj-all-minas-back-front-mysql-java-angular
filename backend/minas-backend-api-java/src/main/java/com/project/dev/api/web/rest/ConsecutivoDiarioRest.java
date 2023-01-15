@@ -272,7 +272,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario/{query}/pages")
+    @GetMapping("/ConsecutivoDiario/search/{query}/pages")
     public ResponseEntity<List<ConsecutivoDiarioDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type ConsecutivoDiario with the search : {}", query);
         Page<ConsecutivoDiarioDTO> page = null;
@@ -281,7 +281,7 @@ public class ConsecutivoDiarioRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ConsecutivoDiario/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ConsecutivoDiario/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 
