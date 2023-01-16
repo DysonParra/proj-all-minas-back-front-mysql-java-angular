@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ConsecutivoDiarioDTO;
-import com.project.dev.api.service.ConsecutivoDiarioService;
+import com.project.dev.api.service.implementation.ConsecutivoDiarioServiceImpl;
 import com.project.dev.api.web.rest.assembler.ConsecutivoDiarioRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ConsecutivoDiarioRest {
 
     private final Logger log = LoggerFactory.getLogger(ConsecutivoDiarioRest.class);
-    private final ConsecutivoDiarioService entityService;
+    private final ConsecutivoDiarioServiceImpl entityService;
     private final ConsecutivoDiarioRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ConsecutivoDiarioRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ConsecutivoDiarioRest(ConsecutivoDiarioService entityService,
+    public ConsecutivoDiarioRest(ConsecutivoDiarioServiceImpl entityService,
             ConsecutivoDiarioRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

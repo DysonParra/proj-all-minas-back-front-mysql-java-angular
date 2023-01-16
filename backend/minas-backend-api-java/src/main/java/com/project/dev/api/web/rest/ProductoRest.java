@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ProductoDTO;
-import com.project.dev.api.service.ProductoService;
+import com.project.dev.api.service.implementation.ProductoServiceImpl;
 import com.project.dev.api.web.rest.assembler.ProductoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ProductoRest {
 
     private final Logger log = LoggerFactory.getLogger(ProductoRest.class);
-    private final ProductoService entityService;
+    private final ProductoServiceImpl entityService;
     private final ProductoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ProductoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ProductoRest(ProductoService entityService,
+    public ProductoRest(ProductoServiceImpl entityService,
             ProductoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

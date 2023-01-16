@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Destino;
 import com.project.dev.api.dto.DestinoDTO;
 import com.project.dev.api.repository.DestinoRepository;
-import com.project.dev.api.service.DestinoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.DestinoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class DestinoServiceImpl implements DestinoService {
+public class DestinoServiceImpl implements GenericService<DestinoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(DestinoServiceImpl.class);
     private final DestinoRepository entityRepository;

@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Parque;
 import com.project.dev.api.dto.ParqueDTO;
 import com.project.dev.api.repository.ParqueRepository;
-import com.project.dev.api.service.ParqueService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.ParqueMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class ParqueServiceImpl implements ParqueService {
+public class ParqueServiceImpl implements GenericService<ParqueDTO> {
 
     private final Logger log = LoggerFactory.getLogger(ParqueServiceImpl.class);
     private final ParqueRepository entityRepository;

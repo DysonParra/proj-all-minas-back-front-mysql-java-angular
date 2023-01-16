@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.OrigenDTO;
-import com.project.dev.api.service.OrigenService;
+import com.project.dev.api.service.implementation.OrigenServiceImpl;
 import com.project.dev.api.web.rest.assembler.OrigenRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class OrigenRest {
 
     private final Logger log = LoggerFactory.getLogger(OrigenRest.class);
-    private final OrigenService entityService;
+    private final OrigenServiceImpl entityService;
     private final OrigenRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class OrigenRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public OrigenRest(OrigenService entityService,
+    public OrigenRest(OrigenServiceImpl entityService,
             OrigenRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

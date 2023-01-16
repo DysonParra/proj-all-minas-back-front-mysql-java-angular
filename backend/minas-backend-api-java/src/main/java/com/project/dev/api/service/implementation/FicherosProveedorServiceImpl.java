@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.FicherosProveedor;
 import com.project.dev.api.dto.FicherosProveedorDTO;
 import com.project.dev.api.repository.FicherosProveedorRepository;
-import com.project.dev.api.service.FicherosProveedorService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.FicherosProveedorMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class FicherosProveedorServiceImpl implements FicherosProveedorService {
+public class FicherosProveedorServiceImpl implements GenericService<FicherosProveedorDTO> {
 
     private final Logger log = LoggerFactory.getLogger(FicherosProveedorServiceImpl.class);
     private final FicherosProveedorRepository entityRepository;

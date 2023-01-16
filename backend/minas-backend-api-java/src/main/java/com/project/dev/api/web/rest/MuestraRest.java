@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.MuestraDTO;
-import com.project.dev.api.service.MuestraService;
+import com.project.dev.api.service.implementation.MuestraServiceImpl;
 import com.project.dev.api.web.rest.assembler.MuestraRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class MuestraRest {
 
     private final Logger log = LoggerFactory.getLogger(MuestraRest.class);
-    private final MuestraService entityService;
+    private final MuestraServiceImpl entityService;
     private final MuestraRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class MuestraRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public MuestraRest(MuestraService entityService,
+    public MuestraRest(MuestraServiceImpl entityService,
             MuestraRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.MinaDTO;
-import com.project.dev.api.service.MinaService;
+import com.project.dev.api.service.implementation.MinaServiceImpl;
 import com.project.dev.api.web.rest.assembler.MinaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class MinaRest {
 
     private final Logger log = LoggerFactory.getLogger(MinaRest.class);
-    private final MinaService entityService;
+    private final MinaServiceImpl entityService;
     private final MinaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class MinaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public MinaRest(MinaService entityService,
+    public MinaRest(MinaServiceImpl entityService,
             MinaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

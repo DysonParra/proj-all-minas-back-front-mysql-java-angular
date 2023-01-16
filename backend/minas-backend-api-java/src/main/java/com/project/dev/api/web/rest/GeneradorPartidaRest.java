@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.GeneradorPartidaDTO;
-import com.project.dev.api.service.GeneradorPartidaService;
+import com.project.dev.api.service.implementation.GeneradorPartidaServiceImpl;
 import com.project.dev.api.web.rest.assembler.GeneradorPartidaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class GeneradorPartidaRest {
 
     private final Logger log = LoggerFactory.getLogger(GeneradorPartidaRest.class);
-    private final GeneradorPartidaService entityService;
+    private final GeneradorPartidaServiceImpl entityService;
     private final GeneradorPartidaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class GeneradorPartidaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public GeneradorPartidaRest(GeneradorPartidaService entityService,
+    public GeneradorPartidaRest(GeneradorPartidaServiceImpl entityService,
             GeneradorPartidaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

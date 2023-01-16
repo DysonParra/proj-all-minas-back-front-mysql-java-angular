@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.TemporalDTO;
-import com.project.dev.api.service.TemporalService;
+import com.project.dev.api.service.implementation.TemporalServiceImpl;
 import com.project.dev.api.web.rest.assembler.TemporalRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class TemporalRest {
 
     private final Logger log = LoggerFactory.getLogger(TemporalRest.class);
-    private final TemporalService entityService;
+    private final TemporalServiceImpl entityService;
     private final TemporalRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class TemporalRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public TemporalRest(TemporalService entityService,
+    public TemporalRest(TemporalServiceImpl entityService,
             TemporalRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

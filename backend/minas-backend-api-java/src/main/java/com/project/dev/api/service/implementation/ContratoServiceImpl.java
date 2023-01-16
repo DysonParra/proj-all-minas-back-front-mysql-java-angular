@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Contrato;
 import com.project.dev.api.dto.ContratoDTO;
 import com.project.dev.api.repository.ContratoRepository;
-import com.project.dev.api.service.ContratoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.ContratoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class ContratoServiceImpl implements ContratoService {
+public class ContratoServiceImpl implements GenericService<ContratoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(ContratoServiceImpl.class);
     private final ContratoRepository entityRepository;

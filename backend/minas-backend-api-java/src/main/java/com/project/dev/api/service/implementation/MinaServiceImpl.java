@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Mina;
 import com.project.dev.api.dto.MinaDTO;
 import com.project.dev.api.repository.MinaRepository;
-import com.project.dev.api.service.MinaService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.MinaMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class MinaServiceImpl implements MinaService {
+public class MinaServiceImpl implements GenericService<MinaDTO> {
 
     private final Logger log = LoggerFactory.getLogger(MinaServiceImpl.class);
     private final MinaRepository entityRepository;

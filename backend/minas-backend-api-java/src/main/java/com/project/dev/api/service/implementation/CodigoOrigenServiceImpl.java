@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.CodigoOrigen;
 import com.project.dev.api.dto.CodigoOrigenDTO;
 import com.project.dev.api.repository.CodigoOrigenRepository;
-import com.project.dev.api.service.CodigoOrigenService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.CodigoOrigenMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class CodigoOrigenServiceImpl implements CodigoOrigenService {
+public class CodigoOrigenServiceImpl implements GenericService<CodigoOrigenDTO> {
 
     private final Logger log = LoggerFactory.getLogger(CodigoOrigenServiceImpl.class);
     private final CodigoOrigenRepository entityRepository;

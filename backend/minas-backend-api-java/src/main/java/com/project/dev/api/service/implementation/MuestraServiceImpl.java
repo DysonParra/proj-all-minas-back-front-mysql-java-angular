@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Muestra;
 import com.project.dev.api.dto.MuestraDTO;
 import com.project.dev.api.repository.MuestraRepository;
-import com.project.dev.api.service.MuestraService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.MuestraMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class MuestraServiceImpl implements MuestraService {
+public class MuestraServiceImpl implements GenericService<MuestraDTO> {
 
     private final Logger log = LoggerFactory.getLogger(MuestraServiceImpl.class);
     private final MuestraRepository entityRepository;

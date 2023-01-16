@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Temporal;
 import com.project.dev.api.dto.TemporalDTO;
 import com.project.dev.api.repository.TemporalRepository;
-import com.project.dev.api.service.TemporalService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.TemporalMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class TemporalServiceImpl implements TemporalService {
+public class TemporalServiceImpl implements GenericService<TemporalDTO> {
 
     private final Logger log = LoggerFactory.getLogger(TemporalServiceImpl.class);
     private final TemporalRepository entityRepository;

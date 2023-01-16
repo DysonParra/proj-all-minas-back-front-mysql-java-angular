@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.ControlAcceso;
 import com.project.dev.api.dto.ControlAccesoDTO;
 import com.project.dev.api.repository.ControlAccesoRepository;
-import com.project.dev.api.service.ControlAccesoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.ControlAccesoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class ControlAccesoServiceImpl implements ControlAccesoService {
+public class ControlAccesoServiceImpl implements GenericService<ControlAccesoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(ControlAccesoServiceImpl.class);
     private final ControlAccesoRepository entityRepository;

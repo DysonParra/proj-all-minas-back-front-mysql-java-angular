@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Indicador;
 import com.project.dev.api.dto.IndicadorDTO;
 import com.project.dev.api.repository.IndicadorRepository;
-import com.project.dev.api.service.IndicadorService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.IndicadorMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class IndicadorServiceImpl implements IndicadorService {
+public class IndicadorServiceImpl implements GenericService<IndicadorDTO> {
 
     private final Logger log = LoggerFactory.getLogger(IndicadorServiceImpl.class);
     private final IndicadorRepository entityRepository;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.IndicadorDTO;
-import com.project.dev.api.service.IndicadorService;
+import com.project.dev.api.service.implementation.IndicadorServiceImpl;
 import com.project.dev.api.web.rest.assembler.IndicadorRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class IndicadorRest {
 
     private final Logger log = LoggerFactory.getLogger(IndicadorRest.class);
-    private final IndicadorService entityService;
+    private final IndicadorServiceImpl entityService;
     private final IndicadorRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class IndicadorRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public IndicadorRest(IndicadorService entityService,
+    public IndicadorRest(IndicadorServiceImpl entityService,
             IndicadorRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

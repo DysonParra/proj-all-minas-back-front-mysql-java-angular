@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Usuario;
 import com.project.dev.api.dto.UsuarioDTO;
 import com.project.dev.api.repository.UsuarioRepository;
-import com.project.dev.api.service.UsuarioService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.UsuarioMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class UsuarioServiceImpl implements UsuarioService {
+public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
 
     private final Logger log = LoggerFactory.getLogger(UsuarioServiceImpl.class);
     private final UsuarioRepository entityRepository;

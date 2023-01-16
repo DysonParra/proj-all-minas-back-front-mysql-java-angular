@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ControlAccesoDTO;
-import com.project.dev.api.service.ControlAccesoService;
+import com.project.dev.api.service.implementation.ControlAccesoServiceImpl;
 import com.project.dev.api.web.rest.assembler.ControlAccesoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ControlAccesoRest {
 
     private final Logger log = LoggerFactory.getLogger(ControlAccesoRest.class);
-    private final ControlAccesoService entityService;
+    private final ControlAccesoServiceImpl entityService;
     private final ControlAccesoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ControlAccesoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ControlAccesoRest(ControlAccesoService entityService,
+    public ControlAccesoRest(ControlAccesoServiceImpl entityService,
             ControlAccesoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

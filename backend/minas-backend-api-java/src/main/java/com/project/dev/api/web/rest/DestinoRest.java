@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.DestinoDTO;
-import com.project.dev.api.service.DestinoService;
+import com.project.dev.api.service.implementation.DestinoServiceImpl;
 import com.project.dev.api.web.rest.assembler.DestinoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class DestinoRest {
 
     private final Logger log = LoggerFactory.getLogger(DestinoRest.class);
-    private final DestinoService entityService;
+    private final DestinoServiceImpl entityService;
     private final DestinoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class DestinoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public DestinoRest(DestinoService entityService,
+    public DestinoRest(DestinoServiceImpl entityService,
             DestinoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

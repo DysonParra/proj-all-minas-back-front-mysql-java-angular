@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.RegistroEntradaSalidaDTO;
-import com.project.dev.api.service.RegistroEntradaSalidaService;
+import com.project.dev.api.service.implementation.RegistroEntradaSalidaServiceImpl;
 import com.project.dev.api.web.rest.assembler.RegistroEntradaSalidaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class RegistroEntradaSalidaRest {
 
     private final Logger log = LoggerFactory.getLogger(RegistroEntradaSalidaRest.class);
-    private final RegistroEntradaSalidaService entityService;
+    private final RegistroEntradaSalidaServiceImpl entityService;
     private final RegistroEntradaSalidaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class RegistroEntradaSalidaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public RegistroEntradaSalidaRest(RegistroEntradaSalidaService entityService,
+    public RegistroEntradaSalidaRest(RegistroEntradaSalidaServiceImpl entityService,
             RegistroEntradaSalidaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

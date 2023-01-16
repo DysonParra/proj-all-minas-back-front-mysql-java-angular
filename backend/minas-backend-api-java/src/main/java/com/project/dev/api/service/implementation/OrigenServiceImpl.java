@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Origen;
 import com.project.dev.api.dto.OrigenDTO;
 import com.project.dev.api.repository.OrigenRepository;
-import com.project.dev.api.service.OrigenService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.OrigenMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class OrigenServiceImpl implements OrigenService {
+public class OrigenServiceImpl implements GenericService<OrigenDTO> {
 
     private final Logger log = LoggerFactory.getLogger(OrigenServiceImpl.class);
     private final OrigenRepository entityRepository;

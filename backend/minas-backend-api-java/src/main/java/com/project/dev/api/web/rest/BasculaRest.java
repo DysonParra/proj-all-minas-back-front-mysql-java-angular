@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.BasculaDTO;
-import com.project.dev.api.service.BasculaService;
+import com.project.dev.api.service.implementation.BasculaServiceImpl;
 import com.project.dev.api.web.rest.assembler.BasculaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class BasculaRest {
 
     private final Logger log = LoggerFactory.getLogger(BasculaRest.class);
-    private final BasculaService entityService;
+    private final BasculaServiceImpl entityService;
     private final BasculaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class BasculaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public BasculaRest(BasculaService entityService,
+    public BasculaRest(BasculaServiceImpl entityService,
             BasculaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

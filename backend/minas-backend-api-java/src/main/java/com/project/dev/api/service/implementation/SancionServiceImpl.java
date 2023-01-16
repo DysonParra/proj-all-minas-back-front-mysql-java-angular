@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Sancion;
 import com.project.dev.api.dto.SancionDTO;
 import com.project.dev.api.repository.SancionRepository;
-import com.project.dev.api.service.SancionService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.SancionMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class SancionServiceImpl implements SancionService {
+public class SancionServiceImpl implements GenericService<SancionDTO> {
 
     private final Logger log = LoggerFactory.getLogger(SancionServiceImpl.class);
     private final SancionRepository entityRepository;

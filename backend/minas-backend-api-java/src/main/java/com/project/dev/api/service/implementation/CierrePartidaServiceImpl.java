@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.CierrePartida;
 import com.project.dev.api.dto.CierrePartidaDTO;
 import com.project.dev.api.repository.CierrePartidaRepository;
-import com.project.dev.api.service.CierrePartidaService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.CierrePartidaMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class CierrePartidaServiceImpl implements CierrePartidaService {
+public class CierrePartidaServiceImpl implements GenericService<CierrePartidaDTO> {
 
     private final Logger log = LoggerFactory.getLogger(CierrePartidaServiceImpl.class);
     private final CierrePartidaRepository entityRepository;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ParqueDTO;
-import com.project.dev.api.service.ParqueService;
+import com.project.dev.api.service.implementation.ParqueServiceImpl;
 import com.project.dev.api.web.rest.assembler.ParqueRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ParqueRest {
 
     private final Logger log = LoggerFactory.getLogger(ParqueRest.class);
-    private final ParqueService entityService;
+    private final ParqueServiceImpl entityService;
     private final ParqueRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ParqueRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ParqueRest(ParqueService entityService,
+    public ParqueRest(ParqueServiceImpl entityService,
             ParqueRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.ConsecutivoDiario;
 import com.project.dev.api.dto.ConsecutivoDiarioDTO;
 import com.project.dev.api.repository.ConsecutivoDiarioRepository;
-import com.project.dev.api.service.ConsecutivoDiarioService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.ConsecutivoDiarioMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class ConsecutivoDiarioServiceImpl implements ConsecutivoDiarioService {
+public class ConsecutivoDiarioServiceImpl implements GenericService<ConsecutivoDiarioDTO> {
 
     private final Logger log = LoggerFactory.getLogger(ConsecutivoDiarioServiceImpl.class);
     private final ConsecutivoDiarioRepository entityRepository;

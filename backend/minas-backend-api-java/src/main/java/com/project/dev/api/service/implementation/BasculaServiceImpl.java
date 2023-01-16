@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Bascula;
 import com.project.dev.api.dto.BasculaDTO;
 import com.project.dev.api.repository.BasculaRepository;
-import com.project.dev.api.service.BasculaService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.BasculaMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class BasculaServiceImpl implements BasculaService {
+public class BasculaServiceImpl implements GenericService<BasculaDTO> {
 
     private final Logger log = LoggerFactory.getLogger(BasculaServiceImpl.class);
     private final BasculaRepository entityRepository;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.CierrePartidaDTO;
-import com.project.dev.api.service.CierrePartidaService;
+import com.project.dev.api.service.implementation.CierrePartidaServiceImpl;
 import com.project.dev.api.web.rest.assembler.CierrePartidaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class CierrePartidaRest {
 
     private final Logger log = LoggerFactory.getLogger(CierrePartidaRest.class);
-    private final CierrePartidaService entityService;
+    private final CierrePartidaServiceImpl entityService;
     private final CierrePartidaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class CierrePartidaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public CierrePartidaRest(CierrePartidaService entityService,
+    public CierrePartidaRest(CierrePartidaServiceImpl entityService,
             CierrePartidaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

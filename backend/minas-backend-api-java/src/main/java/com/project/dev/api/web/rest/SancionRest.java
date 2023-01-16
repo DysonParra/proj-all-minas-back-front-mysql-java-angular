@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.SancionDTO;
-import com.project.dev.api.service.SancionService;
+import com.project.dev.api.service.implementation.SancionServiceImpl;
 import com.project.dev.api.web.rest.assembler.SancionRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class SancionRest {
 
     private final Logger log = LoggerFactory.getLogger(SancionRest.class);
-    private final SancionService entityService;
+    private final SancionServiceImpl entityService;
     private final SancionRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class SancionRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public SancionRest(SancionService entityService,
+    public SancionRest(SancionServiceImpl entityService,
             SancionRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

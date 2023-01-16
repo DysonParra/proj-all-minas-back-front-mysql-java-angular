@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.RegistroEntradaSalida;
 import com.project.dev.api.dto.RegistroEntradaSalidaDTO;
 import com.project.dev.api.repository.RegistroEntradaSalidaRepository;
-import com.project.dev.api.service.RegistroEntradaSalidaService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.RegistroEntradaSalidaMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class RegistroEntradaSalidaServiceImpl implements RegistroEntradaSalidaService {
+public class RegistroEntradaSalidaServiceImpl implements GenericService<RegistroEntradaSalidaDTO> {
 
     private final Logger log = LoggerFactory.getLogger(RegistroEntradaSalidaServiceImpl.class);
     private final RegistroEntradaSalidaRepository entityRepository;

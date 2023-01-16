@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ContratoDTO;
-import com.project.dev.api.service.ContratoService;
+import com.project.dev.api.service.implementation.ContratoServiceImpl;
 import com.project.dev.api.web.rest.assembler.ContratoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ContratoRest {
 
     private final Logger log = LoggerFactory.getLogger(ContratoRest.class);
-    private final ContratoService entityService;
+    private final ContratoServiceImpl entityService;
     private final ContratoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ContratoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ContratoRest(ContratoService entityService,
+    public ContratoRest(ContratoServiceImpl entityService,
             ContratoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.FicherosProveedorDTO;
-import com.project.dev.api.service.FicherosProveedorService;
+import com.project.dev.api.service.implementation.FicherosProveedorServiceImpl;
 import com.project.dev.api.web.rest.assembler.FicherosProveedorRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class FicherosProveedorRest {
 
     private final Logger log = LoggerFactory.getLogger(FicherosProveedorRest.class);
-    private final FicherosProveedorService entityService;
+    private final FicherosProveedorServiceImpl entityService;
     private final FicherosProveedorRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class FicherosProveedorRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public FicherosProveedorRest(FicherosProveedorService entityService,
+    public FicherosProveedorRest(FicherosProveedorServiceImpl entityService,
             FicherosProveedorRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

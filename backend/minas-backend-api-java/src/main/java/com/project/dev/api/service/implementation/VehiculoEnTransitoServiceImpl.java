@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.VehiculoEnTransito;
 import com.project.dev.api.dto.VehiculoEnTransitoDTO;
 import com.project.dev.api.repository.VehiculoEnTransitoRepository;
-import com.project.dev.api.service.VehiculoEnTransitoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.VehiculoEnTransitoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class VehiculoEnTransitoServiceImpl implements VehiculoEnTransitoService {
+public class VehiculoEnTransitoServiceImpl implements GenericService<VehiculoEnTransitoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(VehiculoEnTransitoServiceImpl.class);
     private final VehiculoEnTransitoRepository entityRepository;

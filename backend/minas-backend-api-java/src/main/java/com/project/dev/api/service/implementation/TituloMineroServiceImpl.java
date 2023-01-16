@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.TituloMinero;
 import com.project.dev.api.dto.TituloMineroDTO;
 import com.project.dev.api.repository.TituloMineroRepository;
-import com.project.dev.api.service.TituloMineroService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.TituloMineroMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class TituloMineroServiceImpl implements TituloMineroService {
+public class TituloMineroServiceImpl implements GenericService<TituloMineroDTO> {
 
     private final Logger log = LoggerFactory.getLogger(TituloMineroServiceImpl.class);
     private final TituloMineroRepository entityRepository;
