@@ -32,14 +32,6 @@ import org.springframework.data.repository.query.Param;
 public interface TemporalRepository extends JpaRepository<Temporal, Integer> {
 
     /**
-     * Obtiene los registros de la base de datos con un id indicado.
-     *
-     * @param id es el id a buscar en base de datos.
-     * @return los registros obtenidos.
-     */
-    public List<Temporal> findByIntIdTemporal(Integer id);
-
-    /**
      * Busca en base de datos los registros que contengan una cadena específica.
      *
      * @param strSearch la cadena a buscar en base de datos.
