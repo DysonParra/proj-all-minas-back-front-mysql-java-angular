@@ -2,7 +2,7 @@
 This repository is responsible of do specific tasks.
 
 # Binary and library
-The operation is iqual for all java projects in this repository.  
+The operation is equal for all java repositories of this user.
 Use the command: gradlew build  
 It will generate four files where project-name is the name of the repository:
 - project-name.jar  
