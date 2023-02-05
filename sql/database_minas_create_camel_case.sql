@@ -187,7 +187,7 @@ CREATE TABLE IF NOT EXISTS `Indicador`(
     )
 );
 
-CREATE TABLE IF NOT EXISTS `Minas`(
+CREATE TABLE IF NOT EXISTS `Mina`(
     `idMina`                            VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(200)            NULL,
     `localidad`                         VARCHAR(100)            NULL,
@@ -425,9 +425,9 @@ ALTER TABLE `ControlAcceso`
    ADD CONSTRAINT `fkControlAccesoContrato`
         FOREIGN KEY (`idContrato`)
         REFERENCES `Contrato` (`idContrato`),
-    ADD CONSTRAINT `fkControlAccesoMinas`
+    ADD CONSTRAINT `fkControlAccesoMina`
         FOREIGN KEY (`idMina`)
-        REFERENCES `Minas` (`idMina`),
+        REFERENCES `Mina` (`idMina`),
     ADD CONSTRAINT `fkControlAccesoProveedor`
         FOREIGN KEY (`cifProveedor`)
         REFERENCES `Proveedor` (`cif`),
@@ -448,8 +448,8 @@ ALTER TABLE `GeneradorPartida`
         FOREIGN KEY (`rfid`)
         REFERENCES `Vehiculo` (`rfid`);
 
-ALTER TABLE `Minas`
-    ADD CONSTRAINT `fkMinasTituloMinero`
+ALTER TABLE `Mina`
+    ADD CONSTRAINT `fkMinaTituloMinero`
         FOREIGN KEY (`idTituloMinero`)
         REFERENCES `TituloMinero` (`idTitulo`);
 
