@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS minas;
-CREATE DATABASE IF NOT EXISTS minas;
-USE minas;
+DROP DATABASE IF EXISTS `minas`;
+CREATE DATABASE IF NOT EXISTS `minas`;
+USE `minas`;
 
-CREATE TABLE IF NOT EXISTS `bascula`(
+CREATE TABLE IF NOT EXISTS `bascula` (
     `id_proveedor`                      INT                 NOT NULL,
     `rfid`                              VARCHAR(50)         NOT NULL,
     `codigo_partida`                    INT                 NOT NULL,
@@ -14,12 +14,10 @@ CREATE TABLE IF NOT EXISTS `bascula`(
     `tipo_vehiculo`                     VARCHAR(20)         NOT NULL,
     `mss_codigo_partida`                VARCHAR(100)        NOT NULL,
     `mss_fecha_hora_toma_muestra`       DATETIME            NOT NULL,
-    PRIMARY KEY (
-        `id_proveedor` ASC
-    )
+    PRIMARY KEY (`id_proveedor` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `categoria`(
+CREATE TABLE IF NOT EXISTS `categoria` (
     `id_categoria`                      INT                 NOT NULL,
     `tipo_vehiculo`                     VARCHAR(50)             NULL,
     `peso_maximo`                       FLOAT                   NULL,
@@ -29,12 +27,10 @@ CREATE TABLE IF NOT EXISTS `categoria`(
     `eje_tandem`                        FLOAT                   NULL DEFAULT 0,
     `eje_tridem`                        FLOAT                   NULL DEFAULT 0,
     `total_ejes`                        INT                     NULL,
-    PRIMARY KEY (
-        `id_categoria` ASC
-    )
+    PRIMARY KEY (`id_categoria` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `cierre_partida`(
+CREATE TABLE IF NOT EXISTS `cierre_partida` (
     `consecutivo`                       INT                 NOT NULL,
     `codigo_partida`                    INT                     NULL,
     `cif_proveedor`                     VARCHAR(50)             NULL,
@@ -45,20 +41,16 @@ CREATE TABLE IF NOT EXISTS `cierre_partida`(
     `estado`                            VARCHAR(50)             NULL,
     `peso_estimado`                     INT                     NULL,
     `tipo`                              VARCHAR(50)             NULL,
-    PRIMARY KEY (
-        `consecutivo` ASC
-    )
+    PRIMARY KEY (`consecutivo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `codigo_origen`(
+CREATE TABLE IF NOT EXISTS `codigo_origen` (
     `id`                                INT                 NOT NULL AUTO_iNCREMENT,
     `codigo`                            VARCHAR(10)             NULL,
-    PRIMARY KEY (
-        `id` ASC
-    )
+    PRIMARY KEY (`id` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `conductor`(
+CREATE TABLE IF NOT EXISTS `conductor` (
     `identificacion`                    VARCHAR(30)         NOT NULL,
     `nombre_conductor`                  VARCHAR(200)        NOT NULL,
     `fecha_nacimiento`                  DATE                    NULL,
@@ -69,12 +61,10 @@ CREATE TABLE IF NOT EXISTS `conductor`(
     `fecha_inicio_sancion`              DATE                    NULL,
     `fecha_final_sancion`               DATE                    NULL,
     `dias_sancion`                      VARCHAR(20)             NULL,
-    PRIMARY KEY (
-        `identificacion` ASC
-    )
+    PRIMARY KEY (`identificacion` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `configuracion`(
+CREATE TABLE IF NOT EXISTS `configuracion` (
     `id`                                INT                 NOT NULL AUTO_iNCREMENT,
     `tipo`                              NVARCHAR(50)            NULL,
     `indicador`                         NVARCHAR(500)           NULL,
@@ -87,21 +77,17 @@ CREATE TABLE IF NOT EXISTS `configuracion`(
     `usuario`                           NVARCHAR(50)            NULL,
     `contrasena`                        NVARCHAR(50)            NULL,
     `estado`                            BIT                     NULL,
-    PRIMARY KEY (
-        `id` ASC
-    )
+    PRIMARY KEY (`id` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `consecutivo_diario`(
+CREATE TABLE IF NOT EXISTS `consecutivo_diario` (
     `rfid`                              VARCHAR(50)         NOT NULL,
     `nro_tiquete`                       INT                 NOT NULL,
     `consecutivo_dia`                   INT                 NOT NULL,
-    PRIMARY KEY (
-        `rfid` ASC
-    )
+    PRIMARY KEY (`rfid` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `contrato`(
+CREATE TABLE IF NOT EXISTS `contrato` (
     `id_contrato`                       INT                 NOT NULL,
     `id_parque`                         VARCHAR(30)         NOT NULL,
     `centro_produccion`                 VARCHAR(200)        NOT NULL,
@@ -110,12 +96,10 @@ CREATE TABLE IF NOT EXISTS `contrato`(
     `partida_maestra`                   BIT                 NOT NULL,
     `tipo_existencia`                   INT                 NOT NULL,
     `descripcion`                       VARCHAR(200)            NULL,
-    PRIMARY KEY (
-        `id_contrato` ASC
-    )
+    PRIMARY KEY (`id_contrato` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `control_acceso`(
+CREATE TABLE IF NOT EXISTS `control_acceso` (
     `id_control`                        INT                 NOT NULL,
     `id_contrato`                       INT                     NULL,
     `id_mina`                           VARCHAR(50)             NULL,
@@ -130,35 +114,29 @@ CREATE TABLE IF NOT EXISTS `control_acceso`(
     `acumulado`                         INT                     NULL,
     `fecha_validez`                     DATE                    NULL,
     `tipo_tarjeta`                      VARCHAR(100)            NULL,
-    PRIMARY KEY (
-        `id_control` ASC
-    )
+    PRIMARY KEY (`id_control` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `destino`(
+CREATE TABLE IF NOT EXISTS `destino` (
     `id_destino`                        VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(100)            NULL,
     `telefono`                          VARCHAR(20)             NULL,
     `direccion`                         VARCHAR(200)            NULL,
     `observaciones`                     VARCHAR(200)            NULL,
     `seleccionado`                      VARCHAR(50)             NULL,
-    PRIMARY KEY (
-        `id_destino` ASC
-    )
+    PRIMARY KEY (`id_destino` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `ficheros_proveedor`(
+CREATE TABLE IF NOT EXISTS `ficheros_proveedor` (
     `cif`                               VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(200)            NULL,
     `tope_mensual`                      INT                     NULL,
     `fecha_hora_carga`                  DATETIME                NULL,
     `id_usuario`                        VARCHAR(20)             NULL,
-    PRIMARY KEY (
-        `cif` ASC
-    )
+    PRIMARY KEY (`cif` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `generador_partida`(
+CREATE TABLE IF NOT EXISTS `generador_partida` (
     `consecutivo`                       INT                 NOT NULL AUTO_iNCREMENT,
     `codigo_partida`                    INT                     NULL,
     `cif_proveedor`                     VARCHAR(50)             NULL,
@@ -169,12 +147,10 @@ CREATE TABLE IF NOT EXISTS `generador_partida`(
     `estado`                            VARCHAR(50)             NULL,
     `peso_estimado`                     INT                     NULL,
     `tipo`                              VARCHAR(50)             NULL,
-    PRIMARY KEY (
-        `consecutivo` ASC
-    )
+    PRIMARY KEY (`consecutivo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `indicador`(
+CREATE TABLE IF NOT EXISTS `indicador` (
     `codigo`                            NVARCHAR(50)        NOT NULL,
     `nombre`                            VARCHAR(500)            NULL,
     `tamano_trama`                      VARCHAR(10)             NULL,
@@ -182,12 +158,10 @@ CREATE TABLE IF NOT EXISTS `indicador`(
     `total_datos_peso`                  VARCHAR(10)             NULL,
     `caracter_fin_trama`                VARCHAR(10)             NULL,
     `caracter_inicio_trama`             VARCHAR(10)             NULL,
-    PRIMARY KEY (
-        `codigo` ASC
-    )
+    PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `mina`(
+CREATE TABLE IF NOT EXISTS `mina` (
     `id_mina`                           VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(200)            NULL,
     `localidad`                         VARCHAR(100)            NULL,
@@ -196,53 +170,43 @@ CREATE TABLE IF NOT EXISTS `mina`(
     `observaciones`                     VARCHAR(200)            NULL,
     `producto`                          VARCHAR(100)            NULL,
     `ticket`                            VARCHAR(50)             NULL,
-    PRIMARY KEY (
-        `id_mina` ASC
-    )
+    PRIMARY KEY (`id_mina` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `muestra`(
+CREATE TABLE IF NOT EXISTS `muestra` (
     `id_muestra`                        INT                 NOT NULL AUTO_iNCREMENT,
     `rfid`                              VARCHAR(100)            NULL,
     `partida`                           VARCHAR(10)             NULL,
     `camion`                            VARCHAR(10)             NULL,
     `fecha_hora`                        DATETIME                NULL,
     `observaciones`                     VARCHAR(300)            NULL,
-    PRIMARY KEY (
-        `id_muestra` ASC
-    )
+    PRIMARY KEY (`id_muestra` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `origen`(
+CREATE TABLE IF NOT EXISTS `origen` (
     `id_origen`                         VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(100)            NULL,
     `codigo_rfid`                       VARCHAR(20)             NULL,
     `direccion`                         VARCHAR(200)            NULL,
     `observaciones`                     VARCHAR(200)            NULL,
-    PRIMARY KEY (
-        `id_origen` ASC
-    )
+    PRIMARY KEY (`id_origen` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `parque`(
+CREATE TABLE IF NOT EXISTS `parque` (
     `id_parque`                         INT                 NOT NULL,
     `nombre_parque`                     VARCHAR(100)        NOT NULL,
     `observaciones`                     VARCHAR(200)            NULL,
     `ubicacion`                         VARCHAR(200)            NULL,
-    PRIMARY KEY (
-        `id_parque` ASC
-    )
+    PRIMARY KEY (`id_parque` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `producto`(
+CREATE TABLE IF NOT EXISTS `producto` (
     `id_producto`                       INT                 NOT NULL,
     `producto`                          VARCHAR(100)            NULL,
-    PRIMARY KEY (
-        `id_producto` ASC
-    )
+    PRIMARY KEY (`id_producto` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `proveedor`(
+CREATE TABLE IF NOT EXISTS `proveedor` (
     `cif`                               VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(200)        NOT NULL,
     `direccion`                         VARCHAR(200)            NULL,
@@ -258,12 +222,10 @@ CREATE TABLE IF NOT EXISTS `proveedor`(
     `tope_adicional`                    INT                     NULL,
     `tope_spot`                         INT                     NULL,
     `tope_otros`                        INT                     NULL,
-    PRIMARY KEY (
-        `cif` ASC
-    )
+    PRIMARY KEY (`cif` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `registro_entrada_salida`(
+CREATE TABLE IF NOT EXISTS `registro_entrada_salida` (
     `id_entrada`                        INT                 NOT NULL,
     `id_parque`                         INT                     NULL,
     `transporte`                        VARCHAR(10)             NULL,
@@ -298,23 +260,19 @@ CREATE TABLE IF NOT EXISTS `registro_entrada_salida`(
     `id_origen`                         VARCHAR(50)             NULL,
     `estado`                            VARCHAR(50)             NULL,
     `id_por_dia`                        INT                     NULL,
-    PRIMARY KEY (
-        `id_entrada` ASC
-    )
+    PRIMARY KEY (`id_entrada` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `sancion`(
+CREATE TABLE IF NOT EXISTS `sancion` (
     `numero`                            INT                 NOT NULL,
     `item`                              VARCHAR(200)            NULL,
     `sancion_conductor`                 BIT                     NULL,
     `sancion_vehiculo`                  BIT                     NULL,
     `tiempo`                            VARCHAR(200)            NULL,
-    PRIMARY KEY (
-        `numero` ASC
-    )
+    PRIMARY KEY (`numero` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `temporal`(
+CREATE TABLE IF NOT EXISTS `temporal` (
     `id_temporal`                       INT                 NOT NULL,
     `placa`                             VARCHAR(10)             NULL,
     `rfid`                              VARCHAR(50)             NULL,
@@ -324,24 +282,20 @@ CREATE TABLE IF NOT EXISTS `temporal`(
     `fecha_entrada`                     DATETIME                NULL,
     `fecha_salida`                      DATETIME                NULL,
     `estado`                            VARCHAR(500)            NULL,
-    PRIMARY KEY (
-        `id_temporal` ASC
-    )
+    PRIMARY KEY (`id_temporal` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `titulo_minero`(
+CREATE TABLE IF NOT EXISTS `titulo_minero` (
     `id_titulo`                         VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(200)        NOT NULL,
     `localidad`                         VARCHAR(100)            NULL,
     `telefono`                          VARCHAR(50)             NULL,
     `cif_proveedor`                     VARCHAR(50)             NULL,
     `observaciones`                     VARCHAR(200)            NULL,
-    PRIMARY KEY (
-        `id_titulo` ASC
-    )
+    PRIMARY KEY (`id_titulo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `usuario`(
+CREATE TABLE IF NOT EXISTS `usuario` (
     `cedula`                            INT                 NOT NULL,
     `nombre`                            VARCHAR(100)        NOT NULL,
     `apellido`                          VARCHAR(100)        NOT NULL,
@@ -353,12 +307,10 @@ CREATE TABLE IF NOT EXISTS `usuario`(
     `cargo`                             NVARCHAR(50)            NULL,
     `contrasena`                        LONGTEXT                NULL,
     `foto`                              BLOB                    NULL,
-    PRIMARY KEY (
-        `cedula` ASC
-    )
+    PRIMARY KEY (`cedula` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `vehiculo`(
+CREATE TABLE IF NOT EXISTS `vehiculo` (
     `rfid`                              VARCHAR(100)        NOT NULL,
     `placa`                             VARCHAR(10)         NOT NULL,
     `transporte`                        VARCHAR(10)             NULL,
@@ -372,12 +324,10 @@ CREATE TABLE IF NOT EXISTS `vehiculo`(
     `id_mina`                           VARCHAR(50)             NULL,
     `patio`                             VARCHAR(50)             NULL,
     `tope`                              VARCHAR(100)            NULL,
-    PRIMARY KEY (
-        `rfid` ASC
-    )
+    PRIMARY KEY (`rfid` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `vehiculo_en_transito`(
+CREATE TABLE IF NOT EXISTS `vehiculo_en_transito` (
     `id_entrada`                        INT                 NOT NULL,
     `id_parque`                         INT                     NULL,
     `transporte`                        VARCHAR(10)             NULL,
@@ -412,9 +362,7 @@ CREATE TABLE IF NOT EXISTS `vehiculo_en_transito`(
     `id_origen`                         VARCHAR(50)             NULL,
     `estado`                            VARCHAR(50)             NULL,
     `id_por_dia`                        INT                 NOT NULL,
-    PRIMARY KEY (
-        `id_entrada` ASC
-    )
+    PRIMARY KEY (`id_entrada` ASC)
 );
 
 -- ---------------------------- --
