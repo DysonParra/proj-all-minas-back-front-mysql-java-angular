@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEntradaSalidaRestAssembler}
  *
  * @version         2.0
  *

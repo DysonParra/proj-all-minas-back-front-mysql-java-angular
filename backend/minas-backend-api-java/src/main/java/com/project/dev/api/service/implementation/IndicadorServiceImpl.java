@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {IndicadorServiceImpl}
  *
  * @version         2.0
  *

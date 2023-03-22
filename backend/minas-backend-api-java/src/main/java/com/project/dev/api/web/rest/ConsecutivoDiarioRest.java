@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConsecutivoDiarioRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConsecutivoDiarioRest}
  *
  * @version         2.0
  *

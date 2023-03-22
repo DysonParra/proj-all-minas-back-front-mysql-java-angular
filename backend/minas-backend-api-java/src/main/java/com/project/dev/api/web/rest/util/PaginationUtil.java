@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PaginationUtil} se encarga de realizar tareas específicas.
+ * @fileoverview    {PaginationUtil}
  *
  * @version         2.0
  *

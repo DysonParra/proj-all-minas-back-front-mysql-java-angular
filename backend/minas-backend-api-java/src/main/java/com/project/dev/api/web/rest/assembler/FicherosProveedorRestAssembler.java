@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {FicherosProveedorRestAssembler}
  *
  * @version         2.0
  *

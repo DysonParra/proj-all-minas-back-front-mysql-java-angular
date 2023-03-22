@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {VehiculoDTO}
  *
  * @version         2.0
  *

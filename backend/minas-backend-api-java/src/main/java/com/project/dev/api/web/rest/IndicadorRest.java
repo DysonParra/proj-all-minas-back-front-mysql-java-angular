@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {IndicadorRest}
  *
  * @version         2.0
  *

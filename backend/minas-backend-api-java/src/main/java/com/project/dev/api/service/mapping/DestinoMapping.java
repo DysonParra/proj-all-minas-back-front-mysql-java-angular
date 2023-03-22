@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DestinoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {DestinoMapping}
  *
  * @version         2.0
  *

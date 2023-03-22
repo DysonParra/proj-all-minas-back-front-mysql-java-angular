@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {FicherosProveedorMapping}
  *
  * @version         2.0
  *

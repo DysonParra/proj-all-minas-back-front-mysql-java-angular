@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {ParqueDTO}
  *
  * @version         2.0
  *

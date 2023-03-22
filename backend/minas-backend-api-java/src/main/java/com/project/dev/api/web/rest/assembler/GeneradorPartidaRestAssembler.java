@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {GeneradorPartidaRestAssembler}
  *
  * @version         2.0
  *

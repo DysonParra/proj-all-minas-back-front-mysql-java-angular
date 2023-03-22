@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Indicador} se encarga de realizar tareas específicas.
+ * @fileoverview    {Indicador}
  *
  * @version         2.0
  *

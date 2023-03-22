@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProveedorServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProveedorServiceImpl}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoEnTransitoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {VehiculoEnTransitoMapping}
  *
  * @version         2.0
  *

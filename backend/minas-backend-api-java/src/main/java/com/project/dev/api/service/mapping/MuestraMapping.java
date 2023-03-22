@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {MuestraMapping}
  *
  * @version         2.0
  *

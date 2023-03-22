@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {CierrePartidaMapping}
  *
  * @version         2.0
  *

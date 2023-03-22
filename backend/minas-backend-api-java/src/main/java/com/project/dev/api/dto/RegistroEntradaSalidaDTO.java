@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEntradaSalidaDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {IndicadorDTO}
  *
  * @version         2.0
  *

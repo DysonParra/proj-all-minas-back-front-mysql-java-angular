@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {IndicadorMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Conductor} se encarga de realizar tareas específicas.
+ * @fileoverview    {Conductor}
  *
  * @version         2.0
  *

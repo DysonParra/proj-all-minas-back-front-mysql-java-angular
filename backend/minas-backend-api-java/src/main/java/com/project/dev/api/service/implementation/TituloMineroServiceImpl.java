@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {TituloMineroServiceImpl}
  *
  * @version         2.0
  *

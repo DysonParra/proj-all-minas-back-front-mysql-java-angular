@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {GeneradorPartidaServiceImpl}
  *
  * @version         2.0
  *

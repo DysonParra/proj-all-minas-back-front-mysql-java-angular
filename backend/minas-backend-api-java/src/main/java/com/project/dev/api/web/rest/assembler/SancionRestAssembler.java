@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {SancionRestAssembler}
  *
  * @version         2.0
  *

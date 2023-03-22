@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrigenMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrigenMapping}
  *
  * @version         2.0
  *

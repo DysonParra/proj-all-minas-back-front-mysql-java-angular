@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Categoria} se encarga de realizar tareas específicas.
+ * @fileoverview    {Categoria}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {GeneradorPartidaDTO}
  *
  * @version         2.0
  *

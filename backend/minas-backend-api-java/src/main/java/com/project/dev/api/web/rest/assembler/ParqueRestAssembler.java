@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ParqueRestAssembler}
  *
  * @version         2.0
  *

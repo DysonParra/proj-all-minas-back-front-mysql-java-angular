@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {UsuarioRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {UsuarioRestAssembler}
  *
  * @version         2.0
  *

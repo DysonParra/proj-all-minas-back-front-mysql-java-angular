@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConductorMapping}
  *
  * @version         2.0
  *

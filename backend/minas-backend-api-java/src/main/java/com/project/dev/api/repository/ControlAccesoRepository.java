@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoRepository}
  *
  * @version         2.0
  *

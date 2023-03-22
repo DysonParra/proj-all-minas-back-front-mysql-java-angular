@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoOrigenRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {CodigoOrigenRestAssembler}
  *
  * @version         2.0
  *

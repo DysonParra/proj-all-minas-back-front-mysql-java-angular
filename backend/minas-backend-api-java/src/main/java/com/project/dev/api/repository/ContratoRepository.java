@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {ContratoRepository}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ParqueMapping}
  *
  * @version         2.0
  *

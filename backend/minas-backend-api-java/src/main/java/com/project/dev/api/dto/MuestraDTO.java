@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {MuestraDTO}
  *
  * @version         2.0
  *

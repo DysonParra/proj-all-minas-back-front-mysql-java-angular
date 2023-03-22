@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {EntityNotFoundException} se encarga de realizar tareas específicas.
+ * @fileoverview    {EntityNotFoundException}
  *
  * @version         2.0
  *

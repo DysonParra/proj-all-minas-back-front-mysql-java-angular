@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaRest}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaServiceImpl}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {MinaDTO}
  *
  * @version         2.0
  *

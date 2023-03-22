@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {MinaRestAssembler}
  *
  * @version         2.0
  *

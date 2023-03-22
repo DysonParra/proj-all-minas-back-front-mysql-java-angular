@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrigenServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrigenServiceImpl}
  *
  * @version         2.0
  *

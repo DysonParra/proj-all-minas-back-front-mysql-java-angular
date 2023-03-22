@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {GeneradorPartidaRest}
  *
  * @version         2.0
  *

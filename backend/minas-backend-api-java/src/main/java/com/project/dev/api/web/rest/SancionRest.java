@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {SancionRest}
  *
  * @version         2.0
  *

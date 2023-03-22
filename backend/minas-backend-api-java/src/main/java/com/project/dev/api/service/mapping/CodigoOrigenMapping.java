@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoOrigenMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {CodigoOrigenMapping}
  *
  * @version         2.0
  *

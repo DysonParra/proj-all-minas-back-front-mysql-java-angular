@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {CierrePartidaServiceImpl}
  *
  * @version         2.0
  *

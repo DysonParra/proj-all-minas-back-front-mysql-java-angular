@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConfiguracionMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConfiguracionMapping}
  *
  * @version         2.0
  *

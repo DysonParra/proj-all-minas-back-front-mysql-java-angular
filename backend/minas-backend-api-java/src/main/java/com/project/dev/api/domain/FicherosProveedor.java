@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedor} se encarga de realizar tareas específicas.
+ * @fileoverview    {FicherosProveedor}
  *
  * @version         2.0
  *

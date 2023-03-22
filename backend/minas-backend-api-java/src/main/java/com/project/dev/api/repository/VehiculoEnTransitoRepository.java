@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoEnTransitoRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {VehiculoEnTransitoRepository}
  *
  * @version         2.0
  *

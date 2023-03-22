@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoOrigenRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {CodigoOrigenRest}
  *
  * @version         2.0
  *

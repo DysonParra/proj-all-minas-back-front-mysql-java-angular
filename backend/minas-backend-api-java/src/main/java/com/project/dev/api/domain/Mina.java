@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Mina} se encarga de realizar tareas específicas.
+ * @fileoverview    {Mina}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ContratoMapping}
  *
  * @version         2.0
  *

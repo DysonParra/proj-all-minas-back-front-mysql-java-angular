@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoRestAssembler}
  *
  * @version         2.0
  *

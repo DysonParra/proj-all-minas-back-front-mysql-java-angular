@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConsecutivoDiarioMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConsecutivoDiarioMapping}
  *
  * @version         2.0
  *

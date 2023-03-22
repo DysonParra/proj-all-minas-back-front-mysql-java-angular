@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {UsuarioMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {UsuarioMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoMapping}
  *
  * @version         2.0
  *

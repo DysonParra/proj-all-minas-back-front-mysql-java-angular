@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoServiceImpl}
  *
  * @version         2.0
  *

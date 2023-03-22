@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {TituloMineroRepository}
  *
  * @version         2.0
  *

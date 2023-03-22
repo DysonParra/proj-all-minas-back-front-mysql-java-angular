@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaMapping}
  *
  * @version         2.0
  *

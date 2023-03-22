@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {CierrePartidaDTO}
  *
  * @version         2.0
  *

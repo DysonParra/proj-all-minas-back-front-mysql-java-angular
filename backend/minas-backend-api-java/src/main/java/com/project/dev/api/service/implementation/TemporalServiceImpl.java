@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {TemporalServiceImpl}
  *
  * @version         2.0
  *

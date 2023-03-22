@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {MinaServiceImpl}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {MinaRest}
  *
  * @version         2.0
  *

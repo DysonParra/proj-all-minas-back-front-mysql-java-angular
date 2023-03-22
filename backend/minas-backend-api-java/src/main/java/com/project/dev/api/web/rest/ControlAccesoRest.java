@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoRest}
  *
  * @version         2.0
  *

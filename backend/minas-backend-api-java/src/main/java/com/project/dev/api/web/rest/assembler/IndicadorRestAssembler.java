@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {IndicadorRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {TemporalRest}
  *
  * @version         2.0
  *

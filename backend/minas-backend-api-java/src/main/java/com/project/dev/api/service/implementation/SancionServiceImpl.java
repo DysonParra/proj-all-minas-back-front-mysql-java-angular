@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {SancionServiceImpl}
  *
  * @version         2.0
  *

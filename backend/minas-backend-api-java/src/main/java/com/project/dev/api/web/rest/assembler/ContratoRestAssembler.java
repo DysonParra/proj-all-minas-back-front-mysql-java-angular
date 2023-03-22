@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ContratoRestAssembler}
  *
  * @version         2.0
  *

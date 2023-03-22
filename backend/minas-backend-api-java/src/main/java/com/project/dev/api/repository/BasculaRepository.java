@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaRepository}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {ControlAccesoDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProductoRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProductoRestAssembler}
  *
  * @version         2.0
  *

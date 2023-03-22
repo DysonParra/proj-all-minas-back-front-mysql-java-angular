@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ParqueRest}
  *
  * @version         2.0
  *

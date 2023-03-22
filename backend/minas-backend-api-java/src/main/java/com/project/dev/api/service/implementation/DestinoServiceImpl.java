@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DestinoServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {DestinoServiceImpl}
  *
  * @version         2.0
  *

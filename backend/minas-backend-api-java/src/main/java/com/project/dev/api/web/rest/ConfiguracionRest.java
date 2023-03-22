@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConfiguracionRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConfiguracionRest}
  *
  * @version         2.0
  *

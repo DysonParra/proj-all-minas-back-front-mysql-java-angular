@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEntradaSalidaRepository}
  *
  * @version         2.0
  *

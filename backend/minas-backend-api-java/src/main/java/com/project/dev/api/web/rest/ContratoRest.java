@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ContratoRest}
  *
  * @version         2.0
  *

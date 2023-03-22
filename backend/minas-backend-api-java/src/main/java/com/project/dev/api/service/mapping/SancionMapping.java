@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {SancionMapping}
  *
  * @version         2.0
  *

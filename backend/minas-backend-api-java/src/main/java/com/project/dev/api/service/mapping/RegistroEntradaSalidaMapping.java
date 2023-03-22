@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEntradaSalidaMapping}
  *
  * @version         2.0
  *

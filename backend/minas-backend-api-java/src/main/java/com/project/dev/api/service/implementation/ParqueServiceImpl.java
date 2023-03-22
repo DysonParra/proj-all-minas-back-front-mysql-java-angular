@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {ParqueServiceImpl}
  *
  * @version         2.0
  *

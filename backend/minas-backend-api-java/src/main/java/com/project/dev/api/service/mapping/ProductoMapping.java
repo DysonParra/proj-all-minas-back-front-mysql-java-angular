@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProductoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProductoMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConductorRest}
  *
  * @version         2.0
  *

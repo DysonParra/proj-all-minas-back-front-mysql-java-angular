@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {TemporalRestAssembler}
  *
  * @version         2.0
  *

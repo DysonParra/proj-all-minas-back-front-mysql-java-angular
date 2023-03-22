@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {MuestraRest}
  *
  * @version         2.0
  *

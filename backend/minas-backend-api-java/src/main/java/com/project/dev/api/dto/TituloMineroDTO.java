@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {TituloMineroDTO}
  *
  * @version         2.0
  *

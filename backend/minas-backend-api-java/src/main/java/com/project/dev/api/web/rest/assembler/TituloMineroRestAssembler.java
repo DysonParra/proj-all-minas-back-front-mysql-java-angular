@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {TituloMineroRestAssembler}
  *
  * @version         2.0
  *

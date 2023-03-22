@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConductorServiceImpl}
  *
  * @version         2.0
  *

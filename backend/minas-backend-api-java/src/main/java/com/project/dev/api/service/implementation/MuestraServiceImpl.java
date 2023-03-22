@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {MuestraServiceImpl}
  *
  * @version         2.0
  *

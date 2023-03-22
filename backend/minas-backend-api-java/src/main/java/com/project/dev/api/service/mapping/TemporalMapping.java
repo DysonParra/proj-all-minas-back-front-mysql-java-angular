@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {TemporalMapping}
  *
  * @version         2.0
  *

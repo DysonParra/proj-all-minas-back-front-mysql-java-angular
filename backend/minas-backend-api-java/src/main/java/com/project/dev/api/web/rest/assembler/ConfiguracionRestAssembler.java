@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConfiguracionRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConfiguracionRestAssembler}
  *
  * @version         2.0
  *

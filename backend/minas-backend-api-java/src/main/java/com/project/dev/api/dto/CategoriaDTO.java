@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CategoriaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {CategoriaDTO}
  *
  * @version         2.0
  *

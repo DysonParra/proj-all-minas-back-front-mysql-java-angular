@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {GeneradorPartidaMapping}
  *
  * @version         2.0
  *

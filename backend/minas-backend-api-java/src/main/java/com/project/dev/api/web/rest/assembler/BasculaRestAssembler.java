@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {BasculaRestAssembler}
  *
  * @version         2.0
  *

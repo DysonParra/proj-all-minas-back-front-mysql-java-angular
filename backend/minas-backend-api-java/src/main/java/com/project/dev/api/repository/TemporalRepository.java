@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {TemporalRepository}
  *
  * @version         2.0
  *

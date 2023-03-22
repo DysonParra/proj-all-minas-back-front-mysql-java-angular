@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProductoRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProductoRest}
  *
  * @version         2.0
  *

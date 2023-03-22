@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ConductorRestAssembler}
  *
  * @version         2.0
  *

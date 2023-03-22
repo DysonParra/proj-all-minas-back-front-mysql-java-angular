@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {CierrePartidaRepository}
  *
  * @version         2.0
  *

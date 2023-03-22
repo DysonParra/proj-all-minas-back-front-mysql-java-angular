@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProveedorRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProveedorRest}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CategoriaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {CategoriaMapping}
  *
  * @version         2.0
  *

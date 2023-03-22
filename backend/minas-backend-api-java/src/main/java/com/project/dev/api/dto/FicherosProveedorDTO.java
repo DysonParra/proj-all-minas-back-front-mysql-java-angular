@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {FicherosProveedorDTO}
  *
  * @version         2.0
  *
