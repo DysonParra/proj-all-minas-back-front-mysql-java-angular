@@ -30,8 +30,8 @@ def mainClass = "${rootPackage}.Application"
 def mainFile = "${mainClass}".replaceAll("\\.", "/")
 def gitUser = "DysonParra"
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = '11'
+targetCompatibility = '11'
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -227,8 +227,8 @@ dependencies {
     //implementation group: 'io.github.dysonparra', name: 'tray-setter', version: '0.1.0-SNAPSHOT', classifier: 'lib-min'
 
     //implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
-    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.9.1'
-    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.9.1'
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.11.0'
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.11.0'
     //implementation 'io.github.java-native:jssc:2.9.4'
 
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web-services', version:'2.2.1.RELEASE'
