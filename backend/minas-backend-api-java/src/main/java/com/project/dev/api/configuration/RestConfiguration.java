@@ -24,7 +24,7 @@ import org.springframework.web.filter.CorsFilter;
  * TODO: Definición de {@code RestConfiguration}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Configuration
 public class RestConfiguration {

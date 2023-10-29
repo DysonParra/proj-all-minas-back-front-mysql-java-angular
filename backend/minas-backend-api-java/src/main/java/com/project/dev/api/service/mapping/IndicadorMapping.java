@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Definición de {@code IndicadorMapping}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface IndicadorMapping extends GenericMapping<IndicadorDTO, Indicador> {

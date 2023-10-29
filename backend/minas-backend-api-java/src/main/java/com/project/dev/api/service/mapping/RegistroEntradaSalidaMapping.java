@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Definición de {@code RegistroEntradaSalidaMapping}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface RegistroEntradaSalidaMapping extends GenericMapping<RegistroEntradaSalidaDTO, RegistroEntradaSalida> {

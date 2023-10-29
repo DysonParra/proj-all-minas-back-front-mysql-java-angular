@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Definición de {@code VehiculoEnTransitoMapping}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface VehiculoEnTransitoMapping extends GenericMapping<VehiculoEnTransitoDTO, VehiculoEnTransito> {

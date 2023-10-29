@@ -23,7 +23,7 @@ import java.util.List;
  * @param <E> tipo de dato de la entidad.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public interface GenericMapping<D, E> {
 

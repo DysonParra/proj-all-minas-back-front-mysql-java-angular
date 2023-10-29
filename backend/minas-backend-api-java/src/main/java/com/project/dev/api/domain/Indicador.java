@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
  * TODO: Definición de {@code Indicador}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Entity
 @Table(name = "\"Indicador\"")

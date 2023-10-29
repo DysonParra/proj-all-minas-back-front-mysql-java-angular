@@ -24,7 +24,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * TODO: Definición de {@code PaginationUtil}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public final class PaginationUtil {
 

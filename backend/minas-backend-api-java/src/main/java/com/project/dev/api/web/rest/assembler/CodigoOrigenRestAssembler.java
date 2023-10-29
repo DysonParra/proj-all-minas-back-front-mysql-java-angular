@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
  * TODO: Definición de {@code CodigoOrigenRestAssembler}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Component
 public class CodigoOrigenRestAssembler implements RepresentationModelAssembler<CodigoOrigenDTO, EntityModel<CodigoOrigenDTO>> {

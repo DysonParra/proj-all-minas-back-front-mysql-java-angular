@@ -26,7 +26,7 @@ import org.springframework.data.repository.query.Param;
  * TODO: Definición de {@code ProductoRepository}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @org.springframework.stereotype.Repository
 public interface ProductoRepository extends JpaRepository<Producto, Integer> {

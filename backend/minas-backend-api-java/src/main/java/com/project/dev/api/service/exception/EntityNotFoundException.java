@@ -18,7 +18,7 @@ package com.project.dev.api.service.exception;
  * TODO: Definición de {@code EntityNotFoundException}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public class EntityNotFoundException extends RuntimeException {
 

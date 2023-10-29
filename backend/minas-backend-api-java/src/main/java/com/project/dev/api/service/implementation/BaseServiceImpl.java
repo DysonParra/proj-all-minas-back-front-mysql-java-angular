@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
  * @param <T>
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public class BaseServiceImpl<T> implements GenericService<T> {
 

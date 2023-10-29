@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
  * TODO: Definición de {@code RegistroEntradaSalidaRestAssembler}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Component
 public class RegistroEntradaSalidaRestAssembler implements RepresentationModelAssembler<RegistroEntradaSalidaDTO, EntityModel<RegistroEntradaSalidaDTO>> {

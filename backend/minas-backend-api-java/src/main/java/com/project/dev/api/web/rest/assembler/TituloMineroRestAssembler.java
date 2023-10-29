@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
  * TODO: Definición de {@code TituloMineroRestAssembler}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Component
 public class TituloMineroRestAssembler implements RepresentationModelAssembler<TituloMineroDTO, EntityModel<TituloMineroDTO>> {
