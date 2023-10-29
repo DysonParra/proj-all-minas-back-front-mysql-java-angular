@@ -30,6 +30,11 @@ def mainClass = "${rootPackage}.Application"
 def mainFile = "${mainClass}".replaceAll("\\.", "/")
 def gitUser = "DysonParra"
 
+def classifierJar = "bin-min"
+def classifierFatJar = "bin"
+def classifierJarLib = "lib-min"
+def classifierFatJarLib = "lib-fat"
+
 sourceCompatibility = '11'
 targetCompatibility = '11'
 tasks.withType(JavaCompile) {
@@ -41,7 +46,7 @@ application {
 }
 
 jar {
-    classifier = 'bin'
+    classifier = "${classifierJar}"
     manifest {
         attributes(
             'Main-Class': "${mainClass}"
@@ -50,7 +55,7 @@ jar {
 }
 
 task fatJar(type: Jar) {
-    classifier = 'bin'
+    classifier = "${classifierFatJar}"
     manifest.from jar.manifest
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
@@ -64,7 +69,7 @@ task fatJar(type: Jar) {
 }
 
 task jarLib(type: Jar) {
-    classifier = 'lib-min'
+    classifier = "${classifierJarLib}"
     exclude "${mainFile}.class"
     exclude "${rootDir}/tester"
     manifest.from jar.manifest
@@ -72,7 +77,7 @@ task jarLib(type: Jar) {
 }
 
 task fatJarLib(type: Jar) {
-    classifier = 'lib-fat'
+    classifier = "${classifierFatJarLib}"
     exclude "${mainFile}.class"
     exclude "${rootDir}/tester"
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -92,6 +97,12 @@ task sourcesJar(type: Jar) {
     exclude "${mainFile}.class"
     exclude "${rootDir}/tester"
     from sourceSets.main.allSource
+}
+
+build.doLast {
+    String filename = "${project.buildDir}\\libs\\${archivesBaseName}-${version}-${classifierJar}.jar"  
+    boolean successDeleted = new File(filename).delete()  
+    //println "${filename} deleted ${successDeleted}"
 }
 
 artifacts {
@@ -123,7 +134,7 @@ pluginManager.withPlugin('org.springframework.boot') {
 
     bootJar {
         mainClassName = "${mainClass}"
-        archiveFileName = "${archiveBaseName.get()}-${version}-bin.${archiveExtension.get()}"
+        archiveFileName = "${archiveBaseName.get()}-${version}-${classifierFatJar}.${archiveExtension.get()}"
     }
 }
 
