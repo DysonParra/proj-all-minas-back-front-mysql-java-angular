@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code ControlAccesoDTO}.
+ * TODO: Description of {@code ControlAccesoDTO}.
  *
  * @author Dyson Parra
  * @since 11

@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code GeneradorPartidaMapping}.
+ * TODO: Description of {@code GeneradorPartidaMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface GeneradorPartidaMapping extends GenericMapping<GeneradorPartida
     public GeneradorPartidaDTO getDto(GeneradorPartida entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

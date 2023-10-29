@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code GeneradorPartidaDTO}.
+ * TODO: Description of {@code GeneradorPartidaDTO}.
  *
  * @author Dyson Parra
  * @since 11

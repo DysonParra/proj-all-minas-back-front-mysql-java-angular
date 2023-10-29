@@ -25,7 +25,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code FicherosProveedor}.
+ * TODO: Description of {@code FicherosProveedor}.
  *
  * @author Dyson Parra
  * @since 11

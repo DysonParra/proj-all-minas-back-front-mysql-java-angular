@@ -21,7 +21,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.web.util.UriComponentsBuilder;
 
 /**
- * TODO: Definición de {@code PaginationUtil}.
+ * TODO: Description of {@code PaginationUtil}.
  *
  * @author Dyson Parra
  * @since 11

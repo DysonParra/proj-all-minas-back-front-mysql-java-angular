@@ -22,7 +22,7 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Definición de {@code FicherosProveedorRestAssembler}.
+ * TODO: Description of {@code FicherosProveedorRestAssembler}.
  *
  * @author Dyson Parra
  * @since 11

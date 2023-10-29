@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * TODO: Definición de {@code TituloMineroServiceImpl}.
+ * TODO: Description of {@code TituloMineroServiceImpl}.
  *
  * @author Dyson Parra
  * @since 11

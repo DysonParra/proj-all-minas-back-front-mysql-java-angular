@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code TemporalDTO}.
+ * TODO: Description of {@code TemporalDTO}.
  *
  * @author Dyson Parra
  * @since 11

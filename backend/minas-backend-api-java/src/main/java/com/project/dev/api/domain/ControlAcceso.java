@@ -25,7 +25,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code ControlAcceso}.
+ * TODO: Description of {@code ControlAcceso}.
  *
  * @author Dyson Parra
  * @since 11

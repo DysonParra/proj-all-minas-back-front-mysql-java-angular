@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * TODO: Definición de {@code SancionServiceImpl}.
+ * TODO: Description of {@code SancionServiceImpl}.
  *
  * @author Dyson Parra
  * @since 11

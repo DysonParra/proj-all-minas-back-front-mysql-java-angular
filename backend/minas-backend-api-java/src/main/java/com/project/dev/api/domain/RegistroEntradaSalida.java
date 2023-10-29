@@ -25,7 +25,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code RegistroEntradaSalida}.
+ * TODO: Description of {@code RegistroEntradaSalida}.
  *
  * @author Dyson Parra
  * @since 11

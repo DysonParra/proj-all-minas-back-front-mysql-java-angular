@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code TituloMineroMapping}.
+ * TODO: Description of {@code TituloMineroMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface TituloMineroMapping extends GenericMapping<TituloMineroDTO, Tit
     public TituloMineroDTO getDto(TituloMinero entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

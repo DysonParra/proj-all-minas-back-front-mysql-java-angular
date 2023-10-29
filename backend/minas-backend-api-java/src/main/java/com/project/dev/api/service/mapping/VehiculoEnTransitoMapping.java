@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code VehiculoEnTransitoMapping}.
+ * TODO: Description of {@code VehiculoEnTransitoMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface VehiculoEnTransitoMapping extends GenericMapping<VehiculoEnTran
     public VehiculoEnTransitoDTO getDto(VehiculoEnTransito entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code ConductorDTO}.
+ * TODO: Description of {@code ConductorDTO}.
  *
  * @author Dyson Parra
  * @since 11

@@ -24,7 +24,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 /**
- * TODO: Definición de {@code BaseRepository}.
+ * TODO: Description of {@code BaseRepository}.
  *
  * @param <T>
  *

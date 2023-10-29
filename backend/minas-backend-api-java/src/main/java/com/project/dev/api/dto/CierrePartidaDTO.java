@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code CierrePartidaDTO}.
+ * TODO: Description of {@code CierrePartidaDTO}.
  *
  * @author Dyson Parra
  * @since 11

@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code UsuarioMapping}.
+ * TODO: Description of {@code UsuarioMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface UsuarioMapping extends GenericMapping<UsuarioDTO, Usuario> {
     public UsuarioDTO getDto(Usuario entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

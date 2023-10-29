@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Sancion}.
+ * TODO: Description of {@code Sancion}.
  *
  * @author Dyson Parra
  * @since 11

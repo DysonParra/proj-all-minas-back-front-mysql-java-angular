@@ -25,7 +25,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code CierrePartida}.
+ * TODO: Description of {@code CierrePartida}.
  *
  * @author Dyson Parra
  * @since 11

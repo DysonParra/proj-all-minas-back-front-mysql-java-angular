@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code MinaDTO}.
+ * TODO: Description of {@code MinaDTO}.
  *
  * @author Dyson Parra
  * @since 11

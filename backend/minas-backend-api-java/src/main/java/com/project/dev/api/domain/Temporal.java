@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Temporal}.
+ * TODO: Description of {@code Temporal}.
  *
  * @author Dyson Parra
  * @since 11

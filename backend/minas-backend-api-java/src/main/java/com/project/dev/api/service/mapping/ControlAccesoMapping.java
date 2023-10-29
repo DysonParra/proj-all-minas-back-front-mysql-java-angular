@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code ControlAccesoMapping}.
+ * TODO: Description of {@code ControlAccesoMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface ControlAccesoMapping extends GenericMapping<ControlAccesoDTO, C
     public ControlAccesoDTO getDto(ControlAcceso entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

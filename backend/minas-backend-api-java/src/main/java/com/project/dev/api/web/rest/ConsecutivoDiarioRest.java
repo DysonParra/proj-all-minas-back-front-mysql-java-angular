@@ -50,7 +50,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
- * TODO: Definición de {@code ConsecutivoDiarioRest}.
+ * TODO: Description of {@code ConsecutivoDiarioRest}.
  *
  * @author Dyson Parra
  * @since 11

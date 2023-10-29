@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Destino}.
+ * TODO: Description of {@code Destino}.
  *
  * @author Dyson Parra
  * @since 11

@@ -21,7 +21,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 /**
- * TODO: Definición de {@code RestConfiguration}.
+ * TODO: Description of {@code RestConfiguration}.
  *
  * @author Dyson Parra
  * @since 11

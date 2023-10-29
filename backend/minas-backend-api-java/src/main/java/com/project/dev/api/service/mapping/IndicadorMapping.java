@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code IndicadorMapping}.
+ * TODO: Description of {@code IndicadorMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface IndicadorMapping extends GenericMapping<IndicadorDTO, Indicador
     public IndicadorDTO getDto(Indicador entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

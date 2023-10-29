@@ -50,7 +50,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
- * TODO: Definición de {@code CierrePartidaRest}.
+ * TODO: Description of {@code CierrePartidaRest}.
  *
  * @author Dyson Parra
  * @since 11

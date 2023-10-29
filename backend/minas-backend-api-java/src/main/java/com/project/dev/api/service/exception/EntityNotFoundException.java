@@ -15,7 +15,7 @@
 package com.project.dev.api.service.exception;
 
 /**
- * TODO: Definición de {@code EntityNotFoundException}.
+ * TODO: Description of {@code EntityNotFoundException}.
  *
  * @author Dyson Parra
  * @since 11

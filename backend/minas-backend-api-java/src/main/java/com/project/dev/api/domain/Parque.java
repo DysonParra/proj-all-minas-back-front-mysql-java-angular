@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Parque}.
+ * TODO: Description of {@code Parque}.
  *
  * @author Dyson Parra
  * @since 11

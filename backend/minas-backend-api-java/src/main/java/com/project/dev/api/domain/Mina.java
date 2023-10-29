@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Mina}.
+ * TODO: Description of {@code Mina}.
  *
  * @author Dyson Parra
  * @since 11

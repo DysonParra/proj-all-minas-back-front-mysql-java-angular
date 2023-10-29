@@ -22,7 +22,7 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Definición de {@code SancionRestAssembler}.
+ * TODO: Description of {@code SancionRestAssembler}.
  *
  * @author Dyson Parra
  * @since 11

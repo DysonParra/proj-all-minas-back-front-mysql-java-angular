@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Indicador}.
+ * TODO: Description of {@code Indicador}.
  *
  * @author Dyson Parra
  * @since 11

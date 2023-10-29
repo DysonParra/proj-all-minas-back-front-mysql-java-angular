@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * TODO: Definición de {@code ConductorServiceImpl}.
+ * TODO: Description of {@code ConductorServiceImpl}.
  *
  * @author Dyson Parra
  * @since 11

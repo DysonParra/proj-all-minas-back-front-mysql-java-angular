@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code ConfiguracionMapping}.
+ * TODO: Description of {@code ConfiguracionMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface ConfiguracionMapping extends GenericMapping<ConfiguracionDTO, C
     public ConfiguracionDTO getDto(Configuracion entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

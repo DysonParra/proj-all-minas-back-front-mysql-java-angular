@@ -17,7 +17,7 @@ package com.project.dev.api.service.mapping;
 import java.util.List;
 
 /**
- * TODO: Definición de {@code GenericMapping}.
+ * TODO: Description of {@code GenericMapping}.
  *
  * @param <D> tipo de dato del DTO.
  * @param <E> tipo de dato de la entidad.

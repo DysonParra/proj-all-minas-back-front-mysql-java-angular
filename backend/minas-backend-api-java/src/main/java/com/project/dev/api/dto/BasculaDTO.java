@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code BasculaDTO}.
+ * TODO: Description of {@code BasculaDTO}.
  *
  * @author Dyson Parra
  * @since 11

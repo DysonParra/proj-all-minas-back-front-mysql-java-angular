@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * TODO: Definición de {@code ConsecutivoDiarioServiceImpl}.
+ * TODO: Description of {@code ConsecutivoDiarioServiceImpl}.
  *
  * @author Dyson Parra
  * @since 11

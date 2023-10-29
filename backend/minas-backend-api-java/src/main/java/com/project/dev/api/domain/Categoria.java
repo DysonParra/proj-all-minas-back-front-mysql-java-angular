@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Categoria}.
+ * TODO: Description of {@code Categoria}.
  *
  * @author Dyson Parra
  * @since 11

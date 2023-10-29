@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code TituloMinero}.
+ * TODO: Description of {@code TituloMinero}.
  *
  * @author Dyson Parra
  * @since 11

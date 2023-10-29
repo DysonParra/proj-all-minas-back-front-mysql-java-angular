@@ -50,7 +50,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
- * TODO: Definición de {@code ProveedorRest}.
+ * TODO: Description of {@code ProveedorRest}.
  *
  * @author Dyson Parra
  * @since 11

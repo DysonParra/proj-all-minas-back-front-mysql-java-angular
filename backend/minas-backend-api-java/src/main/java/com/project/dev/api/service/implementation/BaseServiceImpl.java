@@ -24,7 +24,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 /**
- * TODO: Definición de {@code BaseServiceImpl}.
+ * TODO: Description of {@code BaseServiceImpl}.
  *
  * @param <T>
  *
@@ -37,7 +37,7 @@ public class BaseServiceImpl<T> implements GenericService<T> {
     private final Logger log = LoggerFactory.getLogger(type);
 
     /**
-     * TODO: Definición de {@code BaseServiceImpl}.
+     * TODO: Description of {@code BaseServiceImpl}.
      *
      */
     public BaseServiceImpl() {

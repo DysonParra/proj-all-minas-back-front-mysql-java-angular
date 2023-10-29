@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Proveedor}.
+ * TODO: Description of {@code Proveedor}.
  *
  * @author Dyson Parra
  * @since 11

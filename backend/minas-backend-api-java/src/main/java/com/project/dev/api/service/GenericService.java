@@ -19,7 +19,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 /**
- * TODO: Definición de {@code GenericService}.
+ * TODO: Description of {@code GenericService}.
  *
  * @param <T>
  *

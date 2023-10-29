@@ -23,7 +23,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 /**
- * TODO: Definición de {@code OrigenRepository}.
+ * TODO: Description of {@code OrigenRepository}.
  *
  * @author Dyson Parra
  * @since 11

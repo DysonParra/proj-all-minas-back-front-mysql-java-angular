@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Contrato}.
+ * TODO: Description of {@code Contrato}.
  *
  * @author Dyson Parra
  * @since 11

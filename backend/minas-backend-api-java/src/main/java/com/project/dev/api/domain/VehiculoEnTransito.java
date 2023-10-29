@@ -25,7 +25,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code VehiculoEnTransito}.
+ * TODO: Description of {@code VehiculoEnTransito}.
  *
  * @author Dyson Parra
  * @since 11
