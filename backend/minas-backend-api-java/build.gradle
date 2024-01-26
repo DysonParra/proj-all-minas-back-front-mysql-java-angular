@@ -17,7 +17,7 @@ plugins {
 
 apply plugin: 'com.google.cloud.tools.appengine'
 apply plugin: "io.spring.dependency-management"
-apply plugin: 'maven'
+//apply plugin: 'maven'
 //apply plugin: 'signing'
 
 group = 'io.github.dysonparra'
@@ -35,8 +35,8 @@ def classifierFatJar = "bin"
 def classifierJarLib = "lib-min"
 def classifierFatJarLib = "lib-fat"
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -225,7 +225,7 @@ uploadArchives {
 */
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
