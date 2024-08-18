@@ -91,8 +91,8 @@ public class ParqueServiceImpl implements GenericService<ParqueDTO> {
         Parque entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ParqueDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ParqueDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

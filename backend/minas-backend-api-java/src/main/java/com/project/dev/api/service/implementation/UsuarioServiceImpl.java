@@ -91,8 +91,8 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
         Usuario entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        UsuarioDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        UsuarioDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

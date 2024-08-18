@@ -91,8 +91,8 @@ public class ProveedorServiceImpl implements GenericService<ProveedorDTO> {
         Proveedor entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ProveedorDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ProveedorDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

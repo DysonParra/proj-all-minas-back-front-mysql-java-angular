@@ -91,8 +91,8 @@ public class CodigoOrigenServiceImpl implements GenericService<CodigoOrigenDTO> 
         CodigoOrigen entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CodigoOrigenDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        CodigoOrigenDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

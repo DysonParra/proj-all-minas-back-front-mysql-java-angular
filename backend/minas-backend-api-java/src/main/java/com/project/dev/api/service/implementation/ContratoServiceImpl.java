@@ -91,8 +91,8 @@ public class ContratoServiceImpl implements GenericService<ContratoDTO> {
         Contrato entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ContratoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ContratoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

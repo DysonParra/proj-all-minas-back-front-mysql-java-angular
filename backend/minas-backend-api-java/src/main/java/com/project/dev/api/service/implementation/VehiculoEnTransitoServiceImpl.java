@@ -91,8 +91,8 @@ public class VehiculoEnTransitoServiceImpl implements GenericService<VehiculoEnT
         VehiculoEnTransito entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        VehiculoEnTransitoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        VehiculoEnTransitoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

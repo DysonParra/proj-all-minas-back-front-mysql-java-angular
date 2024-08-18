@@ -91,8 +91,8 @@ public class GeneradorPartidaServiceImpl implements GenericService<GeneradorPart
         GeneradorPartida entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        GeneradorPartidaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        GeneradorPartidaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

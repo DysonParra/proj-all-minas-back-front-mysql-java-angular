@@ -91,8 +91,8 @@ public class DestinoServiceImpl implements GenericService<DestinoDTO> {
         Destino entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        DestinoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        DestinoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

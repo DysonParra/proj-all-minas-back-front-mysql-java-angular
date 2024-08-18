@@ -91,8 +91,8 @@ public class IndicadorServiceImpl implements GenericService<IndicadorDTO> {
         Indicador entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        IndicadorDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        IndicadorDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

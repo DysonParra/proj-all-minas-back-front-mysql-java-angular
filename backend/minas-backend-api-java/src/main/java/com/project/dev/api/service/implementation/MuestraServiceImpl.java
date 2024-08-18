@@ -91,8 +91,8 @@ public class MuestraServiceImpl implements GenericService<MuestraDTO> {
         Muestra entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MuestraDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        MuestraDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

@@ -91,8 +91,8 @@ public class MinaServiceImpl implements GenericService<MinaDTO> {
         Mina entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MinaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        MinaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

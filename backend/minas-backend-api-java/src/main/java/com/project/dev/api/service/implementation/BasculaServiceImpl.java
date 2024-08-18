@@ -91,8 +91,8 @@ public class BasculaServiceImpl implements GenericService<BasculaDTO> {
         Bascula entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        BasculaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        BasculaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

@@ -91,8 +91,8 @@ public class OrigenServiceImpl implements GenericService<OrigenDTO> {
         Origen entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        OrigenDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        OrigenDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

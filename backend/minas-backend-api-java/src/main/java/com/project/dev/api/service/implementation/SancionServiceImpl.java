@@ -91,8 +91,8 @@ public class SancionServiceImpl implements GenericService<SancionDTO> {
         Sancion entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        SancionDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        SancionDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

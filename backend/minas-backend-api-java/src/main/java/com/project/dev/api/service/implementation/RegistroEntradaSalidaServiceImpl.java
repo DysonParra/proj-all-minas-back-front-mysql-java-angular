@@ -91,8 +91,8 @@ public class RegistroEntradaSalidaServiceImpl implements GenericService<Registro
         RegistroEntradaSalida entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        RegistroEntradaSalidaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        RegistroEntradaSalidaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

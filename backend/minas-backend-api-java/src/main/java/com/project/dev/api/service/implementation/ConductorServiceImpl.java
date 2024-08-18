@@ -91,8 +91,8 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
         Conductor entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ConductorDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ConductorDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

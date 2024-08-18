@@ -91,8 +91,8 @@ public class ConsecutivoDiarioServiceImpl implements GenericService<ConsecutivoD
         ConsecutivoDiario entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ConsecutivoDiarioDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ConsecutivoDiarioDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

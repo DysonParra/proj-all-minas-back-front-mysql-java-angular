@@ -91,8 +91,8 @@ public class TemporalServiceImpl implements GenericService<TemporalDTO> {
         Temporal entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        TemporalDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        TemporalDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

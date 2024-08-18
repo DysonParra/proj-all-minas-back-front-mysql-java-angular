@@ -91,8 +91,8 @@ public class ControlAccesoServiceImpl implements GenericService<ControlAccesoDTO
         ControlAcceso entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ControlAccesoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ControlAccesoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

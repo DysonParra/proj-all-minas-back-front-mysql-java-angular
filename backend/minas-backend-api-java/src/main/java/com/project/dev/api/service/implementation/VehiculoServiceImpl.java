@@ -91,8 +91,8 @@ public class VehiculoServiceImpl implements GenericService<VehiculoDTO> {
         Vehiculo entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        VehiculoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        VehiculoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

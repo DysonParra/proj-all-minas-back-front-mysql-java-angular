@@ -91,8 +91,8 @@ public class ConfiguracionServiceImpl implements GenericService<ConfiguracionDTO
         Configuracion entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ConfiguracionDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ConfiguracionDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

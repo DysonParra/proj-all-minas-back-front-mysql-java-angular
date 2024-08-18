@@ -91,8 +91,8 @@ public class TituloMineroServiceImpl implements GenericService<TituloMineroDTO> 
         TituloMinero entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        TituloMineroDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        TituloMineroDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

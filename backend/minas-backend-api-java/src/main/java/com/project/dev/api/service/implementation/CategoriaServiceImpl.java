@@ -91,8 +91,8 @@ public class CategoriaServiceImpl implements GenericService<CategoriaDTO> {
         Categoria entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CategoriaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        CategoriaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

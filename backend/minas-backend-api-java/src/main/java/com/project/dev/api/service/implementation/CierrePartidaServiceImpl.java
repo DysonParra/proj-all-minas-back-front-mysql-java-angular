@@ -91,8 +91,8 @@ public class CierrePartidaServiceImpl implements GenericService<CierrePartidaDTO
         CierrePartida entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CierrePartidaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        CierrePartidaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

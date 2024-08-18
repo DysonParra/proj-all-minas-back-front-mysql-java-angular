@@ -91,8 +91,8 @@ public class FicherosProveedorServiceImpl implements GenericService<FicherosProv
         FicherosProveedor entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        FicherosProveedorDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        FicherosProveedorDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

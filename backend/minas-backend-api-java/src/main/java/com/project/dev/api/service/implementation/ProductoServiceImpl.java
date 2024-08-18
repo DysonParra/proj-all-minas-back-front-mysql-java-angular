@@ -91,8 +91,8 @@ public class ProductoServiceImpl implements GenericService<ProductoDTO> {
         Producto entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ProductoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ProductoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**
