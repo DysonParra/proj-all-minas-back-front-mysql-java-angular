@@ -21,7 +21,7 @@ apply plugin: "io.spring.dependency-management"
 //apply plugin: 'signing'
 
 group = 'io.github.dysonparra'
-archivesBaseName = "${archivesBaseName}".replaceAll("-java", "")
+archivesBaseName = "${archivesBaseName}".replaceAll("-java\$", "").replaceFirst("^lib-", "").replaceFirst("^app-", "").replaceFirst("^gui-", "")
 version = '1.0-SNAPSHOT'
 
 def rootPackage = 'com.project.dev'
