@@ -245,7 +245,6 @@ dependencies {
     //implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.3'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.27.0'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.27.0'
-    //implementation 'io.github.java-native:jssc:2.9.4'
 
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'org.springframework.boot:spring-boot-starter-web'
