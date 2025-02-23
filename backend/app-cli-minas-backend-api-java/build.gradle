@@ -230,8 +230,8 @@ uploadArchives {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'org.projectlombok:lombok:1.18.24'
-    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -245,6 +245,7 @@ dependencies {
     //implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.3'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.27.0'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.27.0'
+    //implementation group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
 
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'org.springframework.boot:spring-boot-starter-web'
