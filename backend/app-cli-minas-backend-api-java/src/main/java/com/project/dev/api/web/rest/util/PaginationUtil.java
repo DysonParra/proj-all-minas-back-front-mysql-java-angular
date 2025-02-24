@@ -24,7 +24,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * TODO: Description of {@code PaginationUtil}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 public final class PaginationUtil {
 

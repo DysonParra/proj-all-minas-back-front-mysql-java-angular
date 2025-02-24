@@ -32,7 +32,7 @@ import org.springframework.transaction.annotation.Transactional;
  * TODO: Description of {@code ConfiguracionServiceImpl}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 @Transactional
 @org.springframework.stereotype.Service

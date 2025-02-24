@@ -18,7 +18,7 @@ package com.project.dev.api.service.exception;
  * TODO: Description of {@code EntityNotFoundException}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 public class EntityNotFoundException extends RuntimeException {
 

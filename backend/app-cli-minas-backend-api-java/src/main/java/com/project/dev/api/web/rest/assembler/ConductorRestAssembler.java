@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
  * TODO: Description of {@code ConductorRestAssembler}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 @Component
 public class ConductorRestAssembler implements RepresentationModelAssembler<ConductorDTO, EntityModel<ConductorDTO>> {

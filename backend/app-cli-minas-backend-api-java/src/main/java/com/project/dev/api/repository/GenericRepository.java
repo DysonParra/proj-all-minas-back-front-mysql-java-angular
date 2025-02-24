@@ -20,7 +20,7 @@ package com.project.dev.api.repository;
  * @param <T>
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 public interface GenericRepository<T> {
 

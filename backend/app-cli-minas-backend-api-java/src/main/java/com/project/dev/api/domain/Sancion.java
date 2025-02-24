@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
  * TODO: Description of {@code Sancion}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 @Entity
 @Table(name = "\"Sancion\"")

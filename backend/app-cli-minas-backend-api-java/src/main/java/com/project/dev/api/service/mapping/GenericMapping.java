@@ -23,7 +23,7 @@ import java.util.List;
  * @param <E> tipo de dato de la entidad.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 public interface GenericMapping<D, E> {
 
