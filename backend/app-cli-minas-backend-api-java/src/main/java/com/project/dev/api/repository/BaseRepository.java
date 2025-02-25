@@ -49,7 +49,7 @@ public class BaseRepository<T> implements GenericRepository<T> {
     /**
      * Obtiene el manejador de entidad.
      *
-     * @return el manejador de entidad. 
+     * @return el manejador de entidad.
      */
     public EntityManager getEntityManager() {
         return entityManager;
