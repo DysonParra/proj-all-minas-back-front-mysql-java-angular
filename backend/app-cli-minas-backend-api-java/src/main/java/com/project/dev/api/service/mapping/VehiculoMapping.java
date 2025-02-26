@@ -49,7 +49,7 @@ public interface VehiculoMapping extends GenericMapping<VehiculoDTO, Vehiculo> {
     public VehiculoDTO getDto(Vehiculo entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

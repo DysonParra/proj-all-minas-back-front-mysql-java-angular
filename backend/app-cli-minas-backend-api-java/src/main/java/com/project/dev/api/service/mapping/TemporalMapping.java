@@ -49,7 +49,7 @@ public interface TemporalMapping extends GenericMapping<TemporalDTO, Temporal> {
     public TemporalDTO getDto(Temporal entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

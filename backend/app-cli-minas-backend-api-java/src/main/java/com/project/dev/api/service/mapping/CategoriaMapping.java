@@ -49,7 +49,7 @@ public interface CategoriaMapping extends GenericMapping<CategoriaDTO, Categoria
     public CategoriaDTO getDto(Categoria entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

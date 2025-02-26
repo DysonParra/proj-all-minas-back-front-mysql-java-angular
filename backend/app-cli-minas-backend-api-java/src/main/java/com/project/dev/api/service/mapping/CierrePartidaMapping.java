@@ -49,7 +49,7 @@ public interface CierrePartidaMapping extends GenericMapping<CierrePartidaDTO, C
     public CierrePartidaDTO getDto(CierrePartida entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

@@ -37,7 +37,7 @@ public class BaseServiceImpl<T> implements GenericService<T> {
     private final Logger log = LoggerFactory.getLogger(type);
 
     /**
-     * TODO: Description of {@code BaseServiceImpl}.
+     * TODO: Description of method {@code BaseServiceImpl}.
      *
      */
     public BaseServiceImpl() {

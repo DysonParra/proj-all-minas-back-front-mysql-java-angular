@@ -49,7 +49,7 @@ public interface MinaMapping extends GenericMapping<MinaDTO, Mina> {
     public MinaDTO getDto(Mina entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

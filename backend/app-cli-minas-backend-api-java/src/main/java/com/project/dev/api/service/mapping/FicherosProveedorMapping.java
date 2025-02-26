@@ -49,7 +49,7 @@ public interface FicherosProveedorMapping extends GenericMapping<FicherosProveed
     public FicherosProveedorDTO getDto(FicherosProveedor entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

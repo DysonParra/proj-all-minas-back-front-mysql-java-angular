@@ -49,7 +49,7 @@ public interface ContratoMapping extends GenericMapping<ContratoDTO, Contrato> {
     public ContratoDTO getDto(Contrato entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

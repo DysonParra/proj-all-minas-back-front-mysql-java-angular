@@ -49,7 +49,7 @@ public interface UsuarioMapping extends GenericMapping<UsuarioDTO, Usuario> {
     public UsuarioDTO getDto(Usuario entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

@@ -49,7 +49,7 @@ public interface RegistroEntradaSalidaMapping extends GenericMapping<RegistroEnt
     public RegistroEntradaSalidaDTO getDto(RegistroEntradaSalida entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

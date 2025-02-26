@@ -49,7 +49,7 @@ public interface MuestraMapping extends GenericMapping<MuestraDTO, Muestra> {
     public MuestraDTO getDto(Muestra entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

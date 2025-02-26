@@ -49,7 +49,7 @@ public interface GeneradorPartidaMapping extends GenericMapping<GeneradorPartida
     public GeneradorPartidaDTO getDto(GeneradorPartida entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

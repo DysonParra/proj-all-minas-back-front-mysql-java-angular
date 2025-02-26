@@ -49,7 +49,7 @@ public interface SancionMapping extends GenericMapping<SancionDTO, Sancion> {
     public SancionDTO getDto(Sancion entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

@@ -49,7 +49,7 @@ public interface BasculaMapping extends GenericMapping<BasculaDTO, Bascula> {
     public BasculaDTO getDto(Bascula entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

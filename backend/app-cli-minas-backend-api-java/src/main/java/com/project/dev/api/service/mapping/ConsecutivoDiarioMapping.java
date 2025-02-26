@@ -49,7 +49,7 @@ public interface ConsecutivoDiarioMapping extends GenericMapping<ConsecutivoDiar
     public ConsecutivoDiarioDTO getDto(ConsecutivoDiario entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

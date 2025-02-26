@@ -49,7 +49,7 @@ public interface TituloMineroMapping extends GenericMapping<TituloMineroDTO, Tit
     public TituloMineroDTO getDto(TituloMinero entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

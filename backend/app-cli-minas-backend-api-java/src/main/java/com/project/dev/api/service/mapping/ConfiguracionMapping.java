@@ -49,7 +49,7 @@ public interface ConfiguracionMapping extends GenericMapping<ConfiguracionDTO, C
     public ConfiguracionDTO getDto(Configuracion entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return
