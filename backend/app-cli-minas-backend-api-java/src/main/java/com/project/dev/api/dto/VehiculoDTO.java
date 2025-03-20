@@ -38,8 +38,8 @@ public class VehiculoDTO {
     private String strTransporte;
     private Date dtRevisionTecnomecanica;
     private String strSeguro;
-    private int intTara;
-    private int intCapacidad;
+    private Integer intTara;
+    private Integer intCapacidad;
     private String strCategoria;
     private String strIdMina;
     private String strPatio;

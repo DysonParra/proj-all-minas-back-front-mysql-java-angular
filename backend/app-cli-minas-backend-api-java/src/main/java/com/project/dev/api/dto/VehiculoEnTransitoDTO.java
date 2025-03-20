@@ -66,6 +66,6 @@ public class VehiculoEnTransitoDTO {
     private String strIdDestino;
     private String strIdOrigen;
     private String strEstado;
-    private int intIdPorDia;
+    private Integer intIdPorDia;
 
 }

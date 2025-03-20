@@ -47,23 +47,23 @@ public class Bascula implements Serializable {
     private String strRfid;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intCodigoPartida;
+    private Integer intCodigoPartida;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intNumeroMuestra;
+    private Integer intNumeroMuestra;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intEstadoPartida;
+    private Integer intEstadoPartida;
     @Basic(optional = false)
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaHoraEntrada;
     @Basic(optional = false)
     @Column(nullable = false)
-    private float fltPesoBruto;
+    private Float fltPesoBruto;
     @Basic(optional = false)
     @Column(nullable = false)
-    private float fltPesoNeto;
+    private Float fltPesoNeto;
     @Basic(optional = false)
     @Column(nullable = false, length = 20)
     private String strTipoVehiculo;

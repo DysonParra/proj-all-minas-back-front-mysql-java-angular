@@ -54,10 +54,10 @@ public class Contrato implements Serializable {
     private String strTipoAgrupacion;
     @Basic(optional = false)
     @Column(nullable = false)
-    private boolean bitPartidaMaestra;
+    private Boolean bitPartidaMaestra;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intTipoExistencia;
+    private Integer intTipoExistencia;
     @Column(length = 200)
     private String strDescripcion;
 

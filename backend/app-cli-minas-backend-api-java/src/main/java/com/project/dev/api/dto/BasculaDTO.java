@@ -35,12 +35,12 @@ public class BasculaDTO {
 
     private Integer intIdProveedor;
     private String strRfid;
-    private int intCodigoPartida;
-    private int intNumeroMuestra;
-    private int intEstadoPartida;
+    private Integer intCodigoPartida;
+    private Integer intNumeroMuestra;
+    private Integer intEstadoPartida;
     private Date dtFechaHoraEntrada;
-    private float fltPesoBruto;
-    private float fltPesoNeto;
+    private Float fltPesoBruto;
+    private Float fltPesoNeto;
     private String strTipoVehiculo;
     private String strMssCodigoPartida;
     private Date dtMssFechaHoraTomaMuestra;

@@ -103,6 +103,6 @@ public class VehiculoEnTransito implements Serializable {
     private String strEstado;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intIdPorDia;
+    private Integer intIdPorDia;
 
 }

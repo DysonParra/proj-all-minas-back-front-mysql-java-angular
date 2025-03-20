@@ -53,10 +53,10 @@ public class Vehiculo implements Serializable {
     private String strSeguro;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intTara;
+    private Integer intTara;
     @Basic(optional = false)
     @Column(nullable = false)
-    private int intCapacidad;
+    private Integer intCapacidad;
     @Column(length = 300)
     private String strCategoria;
     @Column(length = 50)

@@ -34,7 +34,7 @@ import lombok.NoArgsConstructor;
 public class ConsecutivoDiarioDTO {
 
     private String strRfid;
-    private int intNroTiquete;
-    private int intConsecutivoDia;
+    private Integer intNroTiquete;
+    private Integer intConsecutivoDia;
 
 }

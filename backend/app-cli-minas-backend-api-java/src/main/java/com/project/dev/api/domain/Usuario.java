@@ -64,6 +64,6 @@ public class Usuario implements Serializable {
     private String txtContrasena;
     @Lob
     @Column(columnDefinition = "BLOB")
-    private byte[] btFoto;
+    private Byte[] btFoto;
 
 }

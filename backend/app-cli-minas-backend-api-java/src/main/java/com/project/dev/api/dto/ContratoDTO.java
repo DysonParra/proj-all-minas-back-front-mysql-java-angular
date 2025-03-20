@@ -38,8 +38,8 @@ public class ContratoDTO {
     private String strCentroProduccion;
     private String strCarburante;
     private String strTipoAgrupacion;
-    private boolean bitPartidaMaestra;
-    private int intTipoExistencia;
+    private Boolean bitPartidaMaestra;
+    private Integer intTipoExistencia;
     private String strDescripcion;
 
 }
