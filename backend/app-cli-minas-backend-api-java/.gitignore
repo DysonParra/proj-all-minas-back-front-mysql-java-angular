@@ -1,7 +1,7 @@
 HELP.md
-.gradle
-build/
-dist/
+**/.gradle
+**/build/
+**/dist/
 src/test
 !gradle/wrapper/gradle-wrapper.jar
 !.gitignore
@@ -41,11 +41,11 @@ out/
 !**/src/test/**/out/
 
 ### NetBeans ###
-/nbproject/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+**/nbproject/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
 **/target
 
 # Visual Studio Code
@@ -57,10 +57,10 @@ out/
 .history/*
 
 # Angular
-/.angular
-/node_modules
-npm-debug.log
-yarn-error.log
+**/.angular
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
 /.pnp
 .pnp.js
 
