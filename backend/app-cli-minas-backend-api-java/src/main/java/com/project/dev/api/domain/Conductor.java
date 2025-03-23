@@ -40,26 +40,22 @@ public class Conductor implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false)
     private String strIdentificacion;
     @Basic(optional = false)
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false)
     private String strNombreConductor;
     @Temporal(TemporalType.DATE)
     private Date dtFechaNacimiento;
-    @Column(length = 50)
     private String strLicenciaConduccion;
     @Temporal(TemporalType.DATE)
     private Date dtFechaVencimiento;
-    @Column(length = 200)
     private String strObservaciones;
-    @Column(length = 100)
     private String strTipoSancion;
     @Temporal(TemporalType.DATE)
     private Date dtFechaInicioSancion;
     @Temporal(TemporalType.DATE)
     private Date dtFechaFinalSancion;
-    @Column(length = 20)
     private String strDiasSancion;
 
 }

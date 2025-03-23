@@ -41,18 +41,13 @@ public class Temporal implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdTemporal;
-    @Column(length = 10)
     private String strPlaca;
-    @Column(length = 50)
     private String strRfid;
-    @Column(length = 100)
     private String strProveedor;
-    @Column(length = 20)
     private String strTope;
     private Integer intAcumulado;
     private Date dtFechaEntrada;
     private Date dtFechaSalida;
-    @Column(length = 500)
     private String strEstado;
 
 }

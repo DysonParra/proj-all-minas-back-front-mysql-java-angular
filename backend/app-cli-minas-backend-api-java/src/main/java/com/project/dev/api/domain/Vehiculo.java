@@ -40,16 +40,14 @@ public class Vehiculo implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strRfid;
     @Basic(optional = false)
-    @Column(nullable = false, length = 10)
+    @Column(nullable = false)
     private String strPlaca;
-    @Column(length = 10)
     private String strTransporte;
     @Temporal(TemporalType.DATE)
     private Date dtRevisionTecnomecanica;
-    @Column(length = 50)
     private String strSeguro;
     @Basic(optional = false)
     @Column(nullable = false)
@@ -57,13 +55,9 @@ public class Vehiculo implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intCapacidad;
-    @Column(length = 300)
     private String strCategoria;
-    @Column(length = 50)
     private String strIdMina;
-    @Column(length = 50)
     private String strPatio;
-    @Column(length = 100)
     private String strTope;
     @JoinColumn(name = "strIdConductor", referencedColumnName = "strIdentificacion")
     private String strIdConductor;

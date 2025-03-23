@@ -42,15 +42,14 @@ public class Contrato implements Serializable {
     @Column(nullable = false)
     private Integer intIdContrato;
     @Basic(optional = false)
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false)
     private String strIdParque;
     @Basic(optional = false)
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false)
     private String strCentroProduccion;
     @Basic(optional = false)
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false)
     private String strCarburante;
-    @Column(length = 200)
     private String strTipoAgrupacion;
     @Basic(optional = false)
     @Column(nullable = false)
@@ -58,7 +57,6 @@ public class Contrato implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intTipoExistencia;
-    @Column(length = 200)
     private String strDescripcion;
 
 }

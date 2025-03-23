@@ -39,16 +39,13 @@ public class TituloMinero implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strIdTitulo;
     @Basic(optional = false)
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false)
     private String strNombre;
-    @Column(length = 100)
     private String strLocalidad;
-    @Column(length = 50)
     private String strTelefono;
-    @Column(length = 200)
     private String strObservaciones;
     @JoinColumn(name = "strCifProveedor", referencedColumnName = "strCif", nullable = false)
     private String strCifProveedor;

@@ -39,7 +39,7 @@ public class ConsecutivoDiario implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strRfid;
     @Basic(optional = false)
     @Column(nullable = false)

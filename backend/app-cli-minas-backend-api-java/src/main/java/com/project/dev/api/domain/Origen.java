@@ -39,15 +39,11 @@ public class Origen implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strIdOrigen;
-    @Column(length = 100)
     private String strNombre;
-    @Column(length = 20)
     private String strCodigoRfid;
-    @Column(length = 200)
     private String strDireccion;
-    @Column(length = 200)
     private String strObservaciones;
 
 }

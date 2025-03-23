@@ -42,25 +42,19 @@ public class Usuario implements Serializable {
     @Column(nullable = false)
     private Integer intCedula;
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strNombre;
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strApellido;
-    @Column(length = 100)
     private String strEmail;
-    @Column(length = 50)
     private String strTelefono;
-    @Column(length = 10, columnDefinition = "Character")
+    @Column(columnDefinition = "Character")
     private String crRh;
-    @Column(length = 50)
     private String strSeudonimo;
-    @Column(length = 100)
     private String strTipo;
-    @Column(length = 50)
     private String strCargo;
     @Lob
-    @Column(length = 2147483647)
     private String txtContrasena;
     @Lob
     @Column(columnDefinition = "BLOB")

@@ -41,19 +41,12 @@ public class Categoria implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdCategoria;
-    @Column(length = 50)
     private String strTipoVehiculo;
-    @Column(precision = 12, scale = 0)
     private Float fltPesoMaximo;
-    @Column(precision = 12, scale = 0)
     private Float fltTolerancia;
-    @Column(length = 300)
     private String strDescripcion;
-    @Column(precision = 12, scale = 0)
     private Float fltEjeSencillo;
-    @Column(precision = 12, scale = 0)
     private Float fltEjeTandem;
-    @Column(precision = 12, scale = 0)
     private Float fltEjeTridem;
     private Integer intTotalEjes;
 

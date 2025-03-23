@@ -41,7 +41,6 @@ public class Producto implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdProducto;
-    @Column(length = 100)
     private String strProducto;
 
 }

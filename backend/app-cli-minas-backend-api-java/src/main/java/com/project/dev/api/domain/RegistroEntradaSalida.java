@@ -42,63 +42,41 @@ public class RegistroEntradaSalida implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdEntrada;
-    @Column(length = 10)
     private String strTransporte;
-    @Column(length = 20)
     private String strTicket;
-    @Column(length = 10)
     private String strMatricula;
-    @Column(length = 50)
     private String strVagon;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaEntrada;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaSalida;
-    @Column(length = 50)
     private String strCombustible;
-    @Column(length = 20)
     private String strTipoMovimiento;
-    @Column(length = 200)
     private String strNombre;
-    @Column(length = 50)
     private String strParvaAnterior;
     @Temporal(TemporalType.DATE)
     private Date dtFechaFinParva;
-    @Column(length = 100)
     private String strPatio;
     @Temporal(TemporalType.DATE)
     private Date dtFechaInicioParva;
-    @Column(length = 100)
     private String strMuestras;
-    @Column(length = 50)
     private String strNroBolsa;
-    @Column(length = 10)
     private String strCodigoPartida;
-    @Column(length = 50)
     private String strConsecutivoVehiculo;
     private Integer intPesoEntrada;
     private Integer intPesoSalida;
     private Integer intPesoNeto;
-    @Column(length = 5)
     private String strUnidad;
-    @Column(length = 300)
     private String strDescripcion;
     @Lob
-    @Column(length = 2147483647)
     private String txtRutaFotos;
-    @Column(length = 100)
     private String strRfid;
     private Boolean bitProcesoManual;
-    @Column(length = 100)
     private String strUsuario;
     private Boolean bitVehiculoDevuelto;
-    @Column(length = 50)
     private String strCif;
-    @Column(length = 50)
     private String strIdDestino;
-    @Column(length = 50)
     private String strIdOrigen;
-    @Column(length = 50)
     private String strEstado;
     private Integer intIdPorDia;
     @JoinColumn(name = "intIdParque", referencedColumnName = "intIdParque")

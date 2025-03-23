@@ -48,10 +48,8 @@ public class GeneradorPartida implements Serializable {
     private Integer intPeso;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFecha;
-    @Column(length = 50)
     private String strEstado;
     private Integer intPesoEstimado;
-    @Column(length = 50)
     private String strTipo;
     @JoinColumn(name = "strCifProveedor", referencedColumnName = "strCif")
     private String strCifProveedor;

@@ -42,11 +42,8 @@ public class ControlAcceso implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdControl;
-    @Column(length = 50)
     private String strIdDestino;
-    @Column(length = 10)
     private String strPlaca;
-    @Column(length = 200)
     private String strConductor;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaIngreso;
@@ -56,7 +53,6 @@ public class ControlAcceso implements Serializable {
     private Integer intAcumulado;
     @Temporal(TemporalType.DATE)
     private Date dtFechaValidez;
-    @Column(length = 100)
     private String strTipoTarjeta;
     @JoinColumn(name = "intIdContrato", referencedColumnName = "intIdContrato")
     private Integer intIdContrato;

@@ -40,14 +40,12 @@ public class FicherosProveedor implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strCif;
-    @Column(length = 200)
     private String strNombre;
     private Integer intTopeMensual;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaHoraCarga;
-    @Column(length = 20)
     private String strIdUsuario;
 
 }

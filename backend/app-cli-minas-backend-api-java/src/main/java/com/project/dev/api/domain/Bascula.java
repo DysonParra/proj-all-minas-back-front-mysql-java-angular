@@ -43,7 +43,7 @@ public class Bascula implements Serializable {
     @Column(nullable = false)
     private Integer intIdProveedor;
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strRfid;
     @Basic(optional = false)
     @Column(nullable = false)
@@ -65,10 +65,10 @@ public class Bascula implements Serializable {
     @Column(nullable = false)
     private Float fltPesoNeto;
     @Basic(optional = false)
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false)
     private String strTipoVehiculo;
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strMssCodigoPartida;
     @Basic(optional = false)
     @Column(nullable = false)

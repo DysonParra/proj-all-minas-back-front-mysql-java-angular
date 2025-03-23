@@ -43,18 +43,14 @@ public class CierrePartida implements Serializable {
     @Column(nullable = false)
     private Integer intConsecutivo;
     private Integer intCodigoPartida;
-    @Column(length = 50)
     private String strCifProveedor;
     private Integer intCodigoVehiculo;
-    @Column(length = 100)
     private String strRfid;
     private Integer intPeso;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFecha;
-    @Column(length = 50)
     private String strEstado;
     private Integer intPesoEstimado;
-    @Column(length = 50)
     private String strTipo;
 
 }

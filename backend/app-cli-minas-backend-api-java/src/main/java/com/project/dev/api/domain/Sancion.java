@@ -41,11 +41,9 @@ public class Sancion implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intNumero;
-    @Column(length = 200)
     private String strItem;
     private Boolean bitSancionConductor;
     private Boolean bitSancionVehiculo;
-    @Column(length = 200)
     private String strTiempo;
 
 }

@@ -39,17 +39,12 @@ public class Destino implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strIdDestino;
-    @Column(length = 100)
     private String strNombre;
-    @Column(length = 20)
     private String strTelefono;
-    @Column(length = 200)
     private String strDireccion;
-    @Column(length = 200)
     private String strObservaciones;
-    @Column(length = 50)
     private String strSeleccionado;
 
 }

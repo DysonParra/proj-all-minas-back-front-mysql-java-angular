@@ -42,7 +42,6 @@ public class CodigoOrigen implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intId;
-    @Column(length = 10)
     private String strCodigo;
 
 }

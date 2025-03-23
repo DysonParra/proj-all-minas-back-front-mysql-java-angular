@@ -43,13 +43,10 @@ public class Muestra implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdMuestra;
-    @Column(length = 10)
     private String strPartida;
-    @Column(length = 10)
     private String strCamion;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaHora;
-    @Column(length = 300)
     private String strObservaciones;
     @JoinColumn(name = "strRfid", referencedColumnName = "strRfid")
     private String strRfid;

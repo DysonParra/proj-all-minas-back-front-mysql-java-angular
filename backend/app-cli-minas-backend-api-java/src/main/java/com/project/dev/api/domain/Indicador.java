@@ -39,19 +39,13 @@ public class Indicador implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strCodigo;
-    @Column(length = 500)
     private String strNombre;
-    @Column(length = 10)
     private String strTamanoTrama;
-    @Column(length = 10)
     private String strPosicionInicial;
-    @Column(length = 10)
     private String strTotalDatosPeso;
-    @Column(length = 10)
     private String strCaracterFinTrama;
-    @Column(length = 10)
     private String strCaracterInicioTrama;
 
 }

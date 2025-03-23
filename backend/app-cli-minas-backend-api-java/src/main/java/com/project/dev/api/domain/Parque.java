@@ -42,11 +42,9 @@ public class Parque implements Serializable {
     @Column(nullable = false)
     private Integer intIdParque;
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strNombreParque;
-    @Column(length = 200)
     private String strObservaciones;
-    @Column(length = 200)
     private String strUbicacion;
 
 }
