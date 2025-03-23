@@ -48,7 +48,6 @@ public class Muestra implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaHora;
     private String strObservaciones;
-    @JoinColumn(name = "strRfid", referencedColumnName = "strRfid")
     private String strRfid;
 
 }

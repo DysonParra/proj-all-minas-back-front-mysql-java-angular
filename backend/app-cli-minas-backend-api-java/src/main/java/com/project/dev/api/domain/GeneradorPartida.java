@@ -51,9 +51,7 @@ public class GeneradorPartida implements Serializable {
     private String strEstado;
     private Integer intPesoEstimado;
     private String strTipo;
-    @JoinColumn(name = "strCifProveedor", referencedColumnName = "strCif")
     private String strCifProveedor;
-    @JoinColumn(name = "strRfid", referencedColumnName = "strRfid")
     private String strRfid;
 
 }

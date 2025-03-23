@@ -47,7 +47,6 @@ public class Mina implements Serializable {
     private String strObservaciones;
     private String strProducto;
     private String strTicket;
-    @JoinColumn(name = "strIdTituloMinero", referencedColumnName = "strIdTitulo", nullable = false)
     private String strIdTituloMinero;
 
 }

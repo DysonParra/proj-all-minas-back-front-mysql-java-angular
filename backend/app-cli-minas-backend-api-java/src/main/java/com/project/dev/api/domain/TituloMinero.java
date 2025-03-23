@@ -47,7 +47,6 @@ public class TituloMinero implements Serializable {
     private String strLocalidad;
     private String strTelefono;
     private String strObservaciones;
-    @JoinColumn(name = "strCifProveedor", referencedColumnName = "strCif", nullable = false)
     private String strCifProveedor;
 
 }

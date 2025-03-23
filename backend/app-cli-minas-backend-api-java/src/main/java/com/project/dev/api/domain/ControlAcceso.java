@@ -54,13 +54,9 @@ public class ControlAcceso implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date dtFechaValidez;
     private String strTipoTarjeta;
-    @JoinColumn(name = "intIdContrato", referencedColumnName = "intIdContrato")
     private Integer intIdContrato;
-    @JoinColumn(name = "strIdMina", referencedColumnName = "strIdMina")
     private String strIdMina;
-    @JoinColumn(name = "strCifProveedor", referencedColumnName = "strCif")
     private String strCifProveedor;
-    @JoinColumn(name = "strRfid", referencedColumnName = "strRfid")
     private String strRfid;
 
 }

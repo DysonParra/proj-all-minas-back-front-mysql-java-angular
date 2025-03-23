@@ -79,7 +79,6 @@ public class RegistroEntradaSalida implements Serializable {
     private String strIdOrigen;
     private String strEstado;
     private Integer intIdPorDia;
-    @JoinColumn(name = "intIdParque", referencedColumnName = "intIdParque")
     private Integer intIdParque;
 
 }
