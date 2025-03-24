@@ -31,7 +31,7 @@ import lombok.NoArgsConstructor;
  * @since Java 17 (LTS), Gradle 7.3
  */
 @Entity
-@Table(name = "\"GeneradorPartida\"")
+@Table(name = "\"generador_partida\"")
 @AllArgsConstructor
 @Builder
 @Data

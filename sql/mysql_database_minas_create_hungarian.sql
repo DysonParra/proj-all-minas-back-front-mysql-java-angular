@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS `minas`;
 CREATE DATABASE IF NOT EXISTS `minas`;
 USE `minas`;
 
-CREATE TABLE IF NOT EXISTS `Bascula` (
+CREATE TABLE IF NOT EXISTS `bascula` (
     `intIdProveedor`                    INT                 NOT NULL,
     `strRfid`                           VARCHAR(50)         NOT NULL,
     `intCodigoPartida`                  INT                 NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `Bascula` (
     PRIMARY KEY (`intIdProveedor` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Categoria` (
+CREATE TABLE IF NOT EXISTS `categoria` (
     `intIdCategoria`                    INT                 NOT NULL,
     `strTipoVehiculo`                   VARCHAR(50)             NULL,
     `fltPesoMaximo`                     FLOAT                   NULL,
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `Categoria` (
     PRIMARY KEY (`intIdCategoria` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `CierrePartida` (
+CREATE TABLE IF NOT EXISTS `cierre_partida` (
     `intConsecutivo`                    INT                 NOT NULL,
     `intCodigoPartida`                  INT                     NULL,
     `strCifProveedor`                   VARCHAR(50)             NULL,
@@ -44,13 +44,13 @@ CREATE TABLE IF NOT EXISTS `CierrePartida` (
     PRIMARY KEY (`intConsecutivo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `CodigoOrigen` (
+CREATE TABLE IF NOT EXISTS `codigo_origen` (
     `intId`                             INT                 NOT NULL AUTO_INCREMENT,
     `strCodigo`                         VARCHAR(10)             NULL,
     PRIMARY KEY (`intId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Conductor` (
+CREATE TABLE IF NOT EXISTS `conductor` (
     `strIdentificacion`                 VARCHAR(30)         NOT NULL,
     `strNombreConductor`                VARCHAR(200)        NOT NULL,
     `dtFechaNacimiento`                 DATE                    NULL,
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `Conductor` (
     PRIMARY KEY (`strIdentificacion` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Configuracion` (
+CREATE TABLE IF NOT EXISTS `configuracion` (
     `intId`                             INT                 NOT NULL AUTO_INCREMENT,
     `strTipo`                           NVARCHAR(50)            NULL,
     `strIndicador`                      NVARCHAR(500)           NULL,
@@ -80,14 +80,14 @@ CREATE TABLE IF NOT EXISTS `Configuracion` (
     PRIMARY KEY (`intId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `ConsecutivoDiario` (
+CREATE TABLE IF NOT EXISTS `consecutivo_diario` (
     `strRfid`                           VARCHAR(50)         NOT NULL,
     `intNroTiquete`                     INT                 NOT NULL,
     `intConsecutivoDia`                 INT                 NOT NULL,
     PRIMARY KEY (`strRfid` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Contrato` (
+CREATE TABLE IF NOT EXISTS `contrato` (
     `intIdContrato`                     INT                 NOT NULL,
     `strIdParque`                       VARCHAR(30)         NOT NULL,
     `strCentroProduccion`               VARCHAR(200)        NOT NULL,
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `Contrato` (
     PRIMARY KEY (`intIdContrato` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `ControlAcceso` (
+CREATE TABLE IF NOT EXISTS `control_acceso` (
     `intIdControl`                      INT                 NOT NULL,
     `intIdContrato`                     INT                     NULL,
     `strIdMina`                         VARCHAR(50)             NULL,
@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `ControlAcceso` (
     PRIMARY KEY (`intIdControl` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Destino` (
+CREATE TABLE IF NOT EXISTS `destino` (
     `strIdDestino`                      VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(100)            NULL,
     `strTelefono`                       VARCHAR(20)             NULL,
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `Destino` (
     PRIMARY KEY (`strIdDestino` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `FicherosProveedor` (
+CREATE TABLE IF NOT EXISTS `ficheros_proveedor` (
     `strCif`                            VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(200)            NULL,
     `intTopeMensual`                    INT                     NULL,
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `FicherosProveedor` (
     PRIMARY KEY (`strCif` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `GeneradorPartida` (
+CREATE TABLE IF NOT EXISTS `generador_partida` (
     `intConsecutivo`                    INT                 NOT NULL AUTO_INCREMENT,
     `intCodigoPartida`                  INT                     NULL,
     `strCifProveedor`                   VARCHAR(50)             NULL,
@@ -150,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `GeneradorPartida` (
     PRIMARY KEY (`intConsecutivo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Indicador` (
+CREATE TABLE IF NOT EXISTS `indicador` (
     `strCodigo`                         NVARCHAR(50)        NOT NULL,
     `strNombre`                         VARCHAR(500)            NULL,
     `strTamanoTrama`                    VARCHAR(10)             NULL,
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `Indicador` (
     PRIMARY KEY (`strCodigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Mina` (
+CREATE TABLE IF NOT EXISTS `mina` (
     `strIdMina`                         VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(200)            NULL,
     `strLocalidad`                      VARCHAR(100)            NULL,
@@ -173,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `Mina` (
     PRIMARY KEY (`strIdMina` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Muestra` (
+CREATE TABLE IF NOT EXISTS `muestra` (
     `intIdMuestra`                      INT                 NOT NULL AUTO_INCREMENT,
     `strRfid`                           VARCHAR(100)            NULL,
     `strPartida`                        VARCHAR(10)             NULL,
@@ -183,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `Muestra` (
     PRIMARY KEY (`intIdMuestra` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Origen` (
+CREATE TABLE IF NOT EXISTS `origen` (
     `strIdOrigen`                       VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(100)            NULL,
     `strCodigoRfid`                     VARCHAR(20)             NULL,
@@ -192,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `Origen` (
     PRIMARY KEY (`strIdOrigen` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Parque` (
+CREATE TABLE IF NOT EXISTS `parque` (
     `intIdParque`                       INT                 NOT NULL,
     `strNombreParque`                   VARCHAR(100)        NOT NULL,
     `strObservaciones`                  VARCHAR(200)            NULL,
@@ -200,13 +200,13 @@ CREATE TABLE IF NOT EXISTS `Parque` (
     PRIMARY KEY (`intIdParque` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Producto` (
+CREATE TABLE IF NOT EXISTS `producto` (
     `intIdProducto`                     INT                 NOT NULL,
     `strProducto`                       VARCHAR(100)            NULL,
     PRIMARY KEY (`intIdProducto` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Proveedor` (
+CREATE TABLE IF NOT EXISTS `proveedor` (
     `strCif`                            VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(200)        NOT NULL,
     `strDireccion`                      VARCHAR(200)            NULL,
@@ -225,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `Proveedor` (
     PRIMARY KEY (`strCif` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `RegistroEntradaSalida` (
+CREATE TABLE IF NOT EXISTS `registro_entrada_salida` (
     `intIdEntrada`                      INT                 NOT NULL,
     `intIdParque`                       INT                     NULL,
     `strTransporte`                     VARCHAR(10)             NULL,
@@ -263,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `RegistroEntradaSalida` (
     PRIMARY KEY (`intIdEntrada` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Sancion` (
+CREATE TABLE IF NOT EXISTS `sancion` (
     `intNumero`                         INT                 NOT NULL,
     `strItem`                           VARCHAR(200)            NULL,
     `bitSancionConductor`               BIT                     NULL,
@@ -272,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `Sancion` (
     PRIMARY KEY (`intNumero` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Temporal` (
+CREATE TABLE IF NOT EXISTS `temporal` (
     `intIdTemporal`                     INT                 NOT NULL,
     `strPlaca`                          VARCHAR(10)             NULL,
     `strRfid`                           VARCHAR(50)             NULL,
@@ -285,7 +285,7 @@ CREATE TABLE IF NOT EXISTS `Temporal` (
     PRIMARY KEY (`intIdTemporal` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `TituloMinero` (
+CREATE TABLE IF NOT EXISTS `titulo_minero` (
     `strIdTitulo`                       VARCHAR(50)         NOT NULL,
     `strNombre`                         VARCHAR(200)        NOT NULL,
     `strLocalidad`                      VARCHAR(100)            NULL,
@@ -295,7 +295,7 @@ CREATE TABLE IF NOT EXISTS `TituloMinero` (
     PRIMARY KEY (`strIdTitulo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Usuario` (
+CREATE TABLE IF NOT EXISTS `usuario` (
     `intCedula`                         INT                 NOT NULL,
     `strNombre`                         VARCHAR(100)        NOT NULL,
     `strApellido`                       VARCHAR(100)        NOT NULL,
@@ -310,7 +310,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
     PRIMARY KEY (`intCedula` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Vehiculo` (
+CREATE TABLE IF NOT EXISTS `vehiculo` (
     `strRfid`                           VARCHAR(100)        NOT NULL,
     `strPlaca`                          VARCHAR(10)         NOT NULL,
     `strTransporte`                     VARCHAR(10)             NULL,
@@ -327,7 +327,7 @@ CREATE TABLE IF NOT EXISTS `Vehiculo` (
     PRIMARY KEY (`strRfid` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `VehiculoEnTransito` (
+CREATE TABLE IF NOT EXISTS `vehiculo_en_transito` (
     `intIdEntrada`                      INT                 NOT NULL,
     `intIdParque`                       INT                     NULL,
     `strTransporte`                     VARCHAR(10)             NULL,
