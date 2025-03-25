@@ -14,6 +14,7 @@
  */
 package com.project.dev.api.dto;
 
+import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import lombok.AllArgsConstructor;

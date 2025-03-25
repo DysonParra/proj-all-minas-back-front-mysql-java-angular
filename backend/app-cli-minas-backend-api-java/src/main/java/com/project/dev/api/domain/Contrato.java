@@ -15,6 +15,7 @@
 package com.project.dev.api.domain;
 
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
