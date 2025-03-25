@@ -88,7 +88,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/FicherosProveedor")
+    @GetMapping("/ficheros-proveedor")
     public CollectionModel<EntityModel<FicherosProveedorDTO>> getAllEntities() {
         log.debug("REST request to get all entities type FicherosProveedor");
         List<EntityModel<FicherosProveedorDTO>> entities = null;
@@ -118,14 +118,14 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/FicherosProveedor/pages")
+    @GetMapping("/ficheros-proveedor/pages")
     public ResponseEntity<CollectionModel<EntityModel<FicherosProveedorDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type FicherosProveedor");
         Page<FicherosProveedorDTO> page = null;
         List<EntityModel<FicherosProveedorDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/FicherosProveedor/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ficheros-proveedor/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/FicherosProveedor")
+    @PostMapping("/ficheros-proveedor")
     public ResponseEntity<?> saveEntity(@RequestBody FicherosProveedorDTO entityDTO) {
         log.debug("POST request to save a new entity type FicherosProveedor");
         EntityModel<FicherosProveedorDTO> resource = null;
@@ -180,7 +180,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/FicherosProveedor/{id}")
+    @PutMapping("/ficheros-proveedor/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody FicherosProveedorDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/FicherosProveedor/{id}")
+    @GetMapping("/ficheros-proveedor/{id}")
     public ResponseEntity<EntityModel<FicherosProveedorDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type FicherosProveedor with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/FicherosProveedor/{id}")
+    @DeleteMapping("/ficheros-proveedor/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity FicherosProveedor with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/FicherosProveedor/search/{query}")
+    @GetMapping("/ficheros-proveedor/search/{query}")
     public CollectionModel<EntityModel<FicherosProveedorDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type FicherosProveedor with the search : {} ", query);
         List<EntityModel<FicherosProveedorDTO>> entities = null;
@@ -279,14 +279,14 @@ public class FicherosProveedorRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/FicherosProveedor/search/{query}/pages")
+    @GetMapping("/ficheros-proveedor/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<FicherosProveedorDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type FicherosProveedor with the search : {}", query);
         Page<FicherosProveedorDTO> page = null;
         List<EntityModel<FicherosProveedorDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/FicherosProveedor/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ficheros-proveedor/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

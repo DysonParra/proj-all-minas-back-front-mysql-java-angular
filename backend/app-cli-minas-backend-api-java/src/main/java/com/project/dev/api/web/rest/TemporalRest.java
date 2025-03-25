@@ -88,7 +88,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Temporal")
+    @GetMapping("/temporal")
     public CollectionModel<EntityModel<TemporalDTO>> getAllEntities() {
         log.debug("REST request to get all entities type Temporal");
         List<EntityModel<TemporalDTO>> entities = null;
@@ -118,14 +118,14 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Temporal/pages")
+    @GetMapping("/temporal/pages")
     public ResponseEntity<CollectionModel<EntityModel<TemporalDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type Temporal");
         Page<TemporalDTO> page = null;
         List<EntityModel<TemporalDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Temporal/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/temporal/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/Temporal")
+    @PostMapping("/temporal")
     public ResponseEntity<?> saveEntity(@RequestBody TemporalDTO entityDTO) {
         log.debug("POST request to save a new entity type Temporal");
         EntityModel<TemporalDTO> resource = null;
@@ -180,7 +180,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/Temporal/{id}")
+    @PutMapping("/temporal/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody TemporalDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Temporal/{id}")
+    @GetMapping("/temporal/{id}")
     public ResponseEntity<EntityModel<TemporalDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type Temporal with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/Temporal/{id}")
+    @DeleteMapping("/temporal/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity Temporal with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Temporal/search/{query}")
+    @GetMapping("/temporal/search/{query}")
     public CollectionModel<EntityModel<TemporalDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type Temporal with the search : {} ", query);
         List<EntityModel<TemporalDTO>> entities = null;
@@ -279,14 +279,14 @@ public class TemporalRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Temporal/search/{query}/pages")
+    @GetMapping("/temporal/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<TemporalDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type Temporal with the search : {}", query);
         Page<TemporalDTO> page = null;
         List<EntityModel<TemporalDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Temporal/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/temporal/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

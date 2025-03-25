@@ -88,7 +88,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Mina")
+    @GetMapping("/mina")
     public CollectionModel<EntityModel<MinaDTO>> getAllEntities() {
         log.debug("REST request to get all entities type Mina");
         List<EntityModel<MinaDTO>> entities = null;
@@ -118,14 +118,14 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Mina/pages")
+    @GetMapping("/mina/pages")
     public ResponseEntity<CollectionModel<EntityModel<MinaDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type Mina");
         Page<MinaDTO> page = null;
         List<EntityModel<MinaDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Mina/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/mina/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/Mina")
+    @PostMapping("/mina")
     public ResponseEntity<?> saveEntity(@RequestBody MinaDTO entityDTO) {
         log.debug("POST request to save a new entity type Mina");
         EntityModel<MinaDTO> resource = null;
@@ -180,7 +180,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/Mina/{id}")
+    @PutMapping("/mina/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody MinaDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Mina/{id}")
+    @GetMapping("/mina/{id}")
     public ResponseEntity<EntityModel<MinaDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type Mina with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/Mina/{id}")
+    @DeleteMapping("/mina/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity Mina with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Mina/search/{query}")
+    @GetMapping("/mina/search/{query}")
     public CollectionModel<EntityModel<MinaDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type Mina with the search : {} ", query);
         List<EntityModel<MinaDTO>> entities = null;
@@ -279,14 +279,14 @@ public class MinaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Mina/search/{query}/pages")
+    @GetMapping("/mina/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<MinaDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type Mina with the search : {}", query);
         Page<MinaDTO> page = null;
         List<EntityModel<MinaDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Mina/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/mina/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

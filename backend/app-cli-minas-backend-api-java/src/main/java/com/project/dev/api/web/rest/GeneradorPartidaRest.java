@@ -88,7 +88,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/GeneradorPartida")
+    @GetMapping("/generador-partida")
     public CollectionModel<EntityModel<GeneradorPartidaDTO>> getAllEntities() {
         log.debug("REST request to get all entities type GeneradorPartida");
         List<EntityModel<GeneradorPartidaDTO>> entities = null;
@@ -118,14 +118,14 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/GeneradorPartida/pages")
+    @GetMapping("/generador-partida/pages")
     public ResponseEntity<CollectionModel<EntityModel<GeneradorPartidaDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type GeneradorPartida");
         Page<GeneradorPartidaDTO> page = null;
         List<EntityModel<GeneradorPartidaDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/GeneradorPartida/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/generador-partida/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/GeneradorPartida")
+    @PostMapping("/generador-partida")
     public ResponseEntity<?> saveEntity(@RequestBody GeneradorPartidaDTO entityDTO) {
         log.debug("POST request to save a new entity type GeneradorPartida");
         EntityModel<GeneradorPartidaDTO> resource = null;
@@ -180,7 +180,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/GeneradorPartida/{id}")
+    @PutMapping("/generador-partida/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody GeneradorPartidaDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/GeneradorPartida/{id}")
+    @GetMapping("/generador-partida/{id}")
     public ResponseEntity<EntityModel<GeneradorPartidaDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type GeneradorPartida with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/GeneradorPartida/{id}")
+    @DeleteMapping("/generador-partida/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity GeneradorPartida with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/GeneradorPartida/search/{query}")
+    @GetMapping("/generador-partida/search/{query}")
     public CollectionModel<EntityModel<GeneradorPartidaDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type GeneradorPartida with the search : {} ", query);
         List<EntityModel<GeneradorPartidaDTO>> entities = null;
@@ -279,14 +279,14 @@ public class GeneradorPartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/GeneradorPartida/search/{query}/pages")
+    @GetMapping("/generador-partida/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<GeneradorPartidaDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type GeneradorPartida with the search : {}", query);
         Page<GeneradorPartidaDTO> page = null;
         List<EntityModel<GeneradorPartidaDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/GeneradorPartida/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/generador-partida/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

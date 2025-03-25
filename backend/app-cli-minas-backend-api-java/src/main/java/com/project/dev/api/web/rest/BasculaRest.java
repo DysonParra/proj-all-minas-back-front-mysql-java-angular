@@ -88,7 +88,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula")
+    @GetMapping("/bascula")
     public CollectionModel<EntityModel<BasculaDTO>> getAllEntities() {
         log.debug("REST request to get all entities type Bascula");
         List<EntityModel<BasculaDTO>> entities = null;
@@ -118,14 +118,14 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula/pages")
+    @GetMapping("/bascula/pages")
     public ResponseEntity<CollectionModel<EntityModel<BasculaDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type Bascula");
         Page<BasculaDTO> page = null;
         List<EntityModel<BasculaDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Bascula/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/bascula/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/Bascula")
+    @PostMapping("/bascula")
     public ResponseEntity<?> saveEntity(@RequestBody BasculaDTO entityDTO) {
         log.debug("POST request to save a new entity type Bascula");
         EntityModel<BasculaDTO> resource = null;
@@ -180,7 +180,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/Bascula/{id}")
+    @PutMapping("/bascula/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody BasculaDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula/{id}")
+    @GetMapping("/bascula/{id}")
     public ResponseEntity<EntityModel<BasculaDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type Bascula with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/Bascula/{id}")
+    @DeleteMapping("/bascula/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity Bascula with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula/search/{query}")
+    @GetMapping("/bascula/search/{query}")
     public CollectionModel<EntityModel<BasculaDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type Bascula with the search : {} ", query);
         List<EntityModel<BasculaDTO>> entities = null;
@@ -279,14 +279,14 @@ public class BasculaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Bascula/search/{query}/pages")
+    @GetMapping("/bascula/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<BasculaDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type Bascula with the search : {}", query);
         Page<BasculaDTO> page = null;
         List<EntityModel<BasculaDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Bascula/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/bascula/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

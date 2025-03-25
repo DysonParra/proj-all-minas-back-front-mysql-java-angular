@@ -88,7 +88,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario")
+    @GetMapping("/consecutivo-diario")
     public CollectionModel<EntityModel<ConsecutivoDiarioDTO>> getAllEntities() {
         log.debug("REST request to get all entities type ConsecutivoDiario");
         List<EntityModel<ConsecutivoDiarioDTO>> entities = null;
@@ -118,14 +118,14 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario/pages")
+    @GetMapping("/consecutivo-diario/pages")
     public ResponseEntity<CollectionModel<EntityModel<ConsecutivoDiarioDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type ConsecutivoDiario");
         Page<ConsecutivoDiarioDTO> page = null;
         List<EntityModel<ConsecutivoDiarioDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ConsecutivoDiario/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/consecutivo-diario/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/ConsecutivoDiario")
+    @PostMapping("/consecutivo-diario")
     public ResponseEntity<?> saveEntity(@RequestBody ConsecutivoDiarioDTO entityDTO) {
         log.debug("POST request to save a new entity type ConsecutivoDiario");
         EntityModel<ConsecutivoDiarioDTO> resource = null;
@@ -180,7 +180,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/ConsecutivoDiario/{id}")
+    @PutMapping("/consecutivo-diario/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody ConsecutivoDiarioDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario/{id}")
+    @GetMapping("/consecutivo-diario/{id}")
     public ResponseEntity<EntityModel<ConsecutivoDiarioDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type ConsecutivoDiario with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/ConsecutivoDiario/{id}")
+    @DeleteMapping("/consecutivo-diario/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity ConsecutivoDiario with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario/search/{query}")
+    @GetMapping("/consecutivo-diario/search/{query}")
     public CollectionModel<EntityModel<ConsecutivoDiarioDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type ConsecutivoDiario with the search : {} ", query);
         List<EntityModel<ConsecutivoDiarioDTO>> entities = null;
@@ -279,14 +279,14 @@ public class ConsecutivoDiarioRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/ConsecutivoDiario/search/{query}/pages")
+    @GetMapping("/consecutivo-diario/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<ConsecutivoDiarioDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type ConsecutivoDiario with the search : {}", query);
         Page<ConsecutivoDiarioDTO> page = null;
         List<EntityModel<ConsecutivoDiarioDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/ConsecutivoDiario/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/consecutivo-diario/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

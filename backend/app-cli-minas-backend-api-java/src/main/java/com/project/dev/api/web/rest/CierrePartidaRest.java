@@ -88,7 +88,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida")
+    @GetMapping("/cierre-partida")
     public CollectionModel<EntityModel<CierrePartidaDTO>> getAllEntities() {
         log.debug("REST request to get all entities type CierrePartida");
         List<EntityModel<CierrePartidaDTO>> entities = null;
@@ -118,14 +118,14 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida/pages")
+    @GetMapping("/cierre-partida/pages")
     public ResponseEntity<CollectionModel<EntityModel<CierrePartidaDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type CierrePartida");
         Page<CierrePartidaDTO> page = null;
         List<EntityModel<CierrePartidaDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CierrePartida/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/cierre-partida/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/CierrePartida")
+    @PostMapping("/cierre-partida")
     public ResponseEntity<?> saveEntity(@RequestBody CierrePartidaDTO entityDTO) {
         log.debug("POST request to save a new entity type CierrePartida");
         EntityModel<CierrePartidaDTO> resource = null;
@@ -180,7 +180,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/CierrePartida/{id}")
+    @PutMapping("/cierre-partida/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody CierrePartidaDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida/{id}")
+    @GetMapping("/cierre-partida/{id}")
     public ResponseEntity<EntityModel<CierrePartidaDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type CierrePartida with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/CierrePartida/{id}")
+    @DeleteMapping("/cierre-partida/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity CierrePartida with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida/search/{query}")
+    @GetMapping("/cierre-partida/search/{query}")
     public CollectionModel<EntityModel<CierrePartidaDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type CierrePartida with the search : {} ", query);
         List<EntityModel<CierrePartidaDTO>> entities = null;
@@ -279,14 +279,14 @@ public class CierrePartidaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CierrePartida/search/{query}/pages")
+    @GetMapping("/cierre-partida/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<CierrePartidaDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type CierrePartida with the search : {}", query);
         Page<CierrePartidaDTO> page = null;
         List<EntityModel<CierrePartidaDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CierrePartida/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/cierre-partida/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
