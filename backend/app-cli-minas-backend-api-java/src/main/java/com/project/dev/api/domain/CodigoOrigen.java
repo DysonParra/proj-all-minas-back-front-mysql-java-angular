@@ -39,7 +39,6 @@ import lombok.NoArgsConstructor;
 public class CodigoOrigen implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intId;

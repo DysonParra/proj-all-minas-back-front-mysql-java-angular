@@ -40,7 +40,6 @@ import lombok.NoArgsConstructor;
 public class Muestra implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdMuestra;
