@@ -9,38 +9,38 @@ The database user and password are specified in the 'application.properties' fil
 
 ## Services  
 Each table has eight (8) services for get or modify the information in the database.  
-For example if the table used is a table named 'Agent' the services are:
+For example if the table used is a table named 'AgentType' the services are:
 - Get all entities  
-  GET request that return all entities in the database of the table Agent.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent  
+  GET request that return all entities in the database of the table AgentType.  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType  
   
 - Get all entities paged  
-  GET request that return all entities in the database of the table Agent and match the specified pageable.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/pages?page={{pageNumber}}&size={{pageSize}}  
+  GET request that return all entities in the database of the table AgentType and match the specified pageable.  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/pages?page={{pageNumber}}&size={{pageSize}}  
   
 - Save entity  
-  POST request that save in the database a entity of type Agent with the fields specified in the body as JSON.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent  
+  POST request that save in the database a entity of type AgentType with the fields specified in the body as JSON.  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType  
   
 - Udapte entity  
-  PUT request that update in the database a entity of type Agent with id specified in the url and the fields specified in the body as JSON.   
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/{{id}}  
+  PUT request that update in the database a entity of type AgentType with id specified in the url and the fields specified in the body as JSON.   
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/{{id}}  
   
 - Get entity  
   GET request that return an entity of the database with the specified id.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/{{id}}  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/{{id}}  
   
 - Delete entity  
   DELETE request that delete an entity of the database with the specified id.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/{{id}}    
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/{{id}}    
   
 - Search entities  
   GET request that return all entities taht match the specified query.  
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/search/{{stringToSearch}}  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/search/{{stringToSearch}}  
   
 - Search entities paged  
   GET request that return all entities taht match the specified query and the specified pageable.    
-  The consumer url is http://127.0.0.1:8080/api/v1/Agent/search/{{stringToSearch}}/pages?page={{pageNumber}}&size={{pageSize}}  
+  The consumer url is http://127.0.0.1:8080/api/v1/AgentType/search/{{stringToSearch}}/pages?page={{pageNumber}}&size={{pageSize}}  
 
 # Binary and library
 The operation is equal for all java repositories of this user.  
