@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,11 +42,11 @@ public class Muestra implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdMuestra;
+    private String strRfid;
     private String strPartida;
     private String strCamion;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaHora;
     private String strObservaciones;
-    private String strRfid;
 
 }

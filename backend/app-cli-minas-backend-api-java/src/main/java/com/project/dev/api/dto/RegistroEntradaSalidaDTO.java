@@ -35,6 +35,7 @@ import lombok.NoArgsConstructor;
 public class RegistroEntradaSalidaDTO {
 
     private Integer intIdEntrada;
+    private Integer intIdParque;
     private String strTransporte;
     private String strTicket;
     private String strMatricula;
@@ -67,6 +68,5 @@ public class RegistroEntradaSalidaDTO {
     private String strIdOrigen;
     private String strEstado;
     private Integer intIdPorDia;
-    private Integer intIdParque;
 
 }

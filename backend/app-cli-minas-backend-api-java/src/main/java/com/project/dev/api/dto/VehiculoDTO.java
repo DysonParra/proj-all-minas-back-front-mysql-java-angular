@@ -42,10 +42,10 @@ public class VehiculoDTO {
     private Integer intTara;
     private Integer intCapacidad;
     private String strCategoria;
+    private String strIdConductor;
+    private String strCif;
     private String strIdMina;
     private String strPatio;
     private String strTope;
-    private String strIdConductor;
-    private String strCif;
 
 }

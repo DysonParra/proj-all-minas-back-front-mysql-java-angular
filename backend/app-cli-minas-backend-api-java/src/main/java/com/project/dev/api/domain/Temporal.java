@@ -47,7 +47,9 @@ public class Temporal implements Serializable {
     private String strProveedor;
     private String strTope;
     private Integer intAcumulado;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaEntrada;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaSalida;
     private String strEstado;
 

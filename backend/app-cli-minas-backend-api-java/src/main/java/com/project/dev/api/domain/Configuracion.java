@@ -42,15 +42,25 @@ public class Configuracion implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intId;
+    @Column(columnDefinition = "NVARCHAR")
     private String strTipo;
+    @Column(columnDefinition = "NVARCHAR")
     private String strIndicador;
+    @Column(columnDefinition = "NVARCHAR")
     private String strBaudios;
+    @Column(columnDefinition = "NVARCHAR")
     private String strBitsDatos;
+    @Column(columnDefinition = "NVARCHAR")
     private String strBitsParada;
+    @Column(columnDefinition = "NVARCHAR")
     private String strParidad;
+    @Column(columnDefinition = "NVARCHAR")
     private String strIp;
+    @Column(columnDefinition = "NVARCHAR")
     private String strPuerto;
+    @Column(columnDefinition = "NVARCHAR")
     private String strUsuario;
+    @Column(columnDefinition = "NVARCHAR")
     private String strContrasena;
     private Boolean bitEstado;
 

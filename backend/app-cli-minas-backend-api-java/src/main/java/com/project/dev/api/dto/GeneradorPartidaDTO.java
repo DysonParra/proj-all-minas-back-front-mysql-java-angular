@@ -36,13 +36,13 @@ public class GeneradorPartidaDTO {
 
     private Integer intConsecutivo;
     private Integer intCodigoPartida;
+    private String strCifProveedor;
     private Integer intCodigoVehiculo;
+    private String strRfid;
     private Integer intPeso;
     private Date dtFecha;
     private String strEstado;
     private Integer intPesoEstimado;
     private String strTipo;
-    private String strCifProveedor;
-    private String strRfid;
 
 }

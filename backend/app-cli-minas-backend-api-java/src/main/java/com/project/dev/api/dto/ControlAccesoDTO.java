@@ -35,18 +35,18 @@ import lombok.NoArgsConstructor;
 public class ControlAccesoDTO {
 
     private Integer intIdControl;
+    private Integer intIdContrato;
+    private String strIdMina;
     private String strIdDestino;
+    private String strRfid;
     private String strPlaca;
     private String strConductor;
+    private String strCifProveedor;
     private Date dtFechaIngreso;
     private Date dtFechaSalida;
     private Integer intTopeMensual;
     private Integer intAcumulado;
     private Date dtFechaValidez;
     private String strTipoTarjeta;
-    private Integer intIdContrato;
-    private String strIdMina;
-    private String strCifProveedor;
-    private String strRfid;
 
 }

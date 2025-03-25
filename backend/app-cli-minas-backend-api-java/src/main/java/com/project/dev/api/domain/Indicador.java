@@ -40,7 +40,7 @@ public class Indicador implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false)
+    @Column(columnDefinition = "NVARCHAR", nullable = false)
     private String strCodigo;
     private String strNombre;
     private String strTamanoTrama;

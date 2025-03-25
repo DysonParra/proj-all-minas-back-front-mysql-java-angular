@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -44,14 +43,14 @@ public class GeneradorPartida implements Serializable {
     @Column(nullable = false)
     private Integer intConsecutivo;
     private Integer intCodigoPartida;
+    private String strCifProveedor;
     private Integer intCodigoVehiculo;
+    private String strRfid;
     private Integer intPeso;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFecha;
     private String strEstado;
     private Integer intPesoEstimado;
     private String strTipo;
-    private String strCifProveedor;
-    private String strRfid;
 
 }

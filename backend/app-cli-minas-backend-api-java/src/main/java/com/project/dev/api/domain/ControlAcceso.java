@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,9 +42,13 @@ public class ControlAcceso implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdControl;
+    private Integer intIdContrato;
+    private String strIdMina;
     private String strIdDestino;
+    private String strRfid;
     private String strPlaca;
     private String strConductor;
+    private String strCifProveedor;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtFechaIngreso;
     @Temporal(TemporalType.TIMESTAMP)
@@ -55,9 +58,5 @@ public class ControlAcceso implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date dtFechaValidez;
     private String strTipoTarjeta;
-    private Integer intIdContrato;
-    private String strIdMina;
-    private String strCifProveedor;
-    private String strRfid;
 
 }

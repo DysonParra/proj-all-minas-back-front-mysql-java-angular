@@ -35,10 +35,10 @@ import lombok.NoArgsConstructor;
 public class MuestraDTO {
 
     private Integer intIdMuestra;
+    private String strRfid;
     private String strPartida;
     private String strCamion;
     private Date dtFechaHora;
     private String strObservaciones;
-    private String strRfid;
 
 }

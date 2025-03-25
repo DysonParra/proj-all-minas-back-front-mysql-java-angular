@@ -44,6 +44,6 @@ public class UsuarioDTO {
     private String strTipo;
     private String strCargo;
     private String txtContrasena;
-    private byte[] btFoto;
+    private Byte[] btFoto;
 
 }

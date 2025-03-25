@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -57,10 +56,10 @@ public class Vehiculo implements Serializable {
     @Column(nullable = false)
     private Integer intCapacidad;
     private String strCategoria;
+    private String strIdConductor;
+    private String strCif;
     private String strIdMina;
     private String strPatio;
     private String strTope;
-    private String strIdConductor;
-    private String strCif;
 
 }

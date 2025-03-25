@@ -48,14 +48,18 @@ public class Usuario implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private String strApellido;
+    @Column(columnDefinition = "NVARCHAR")
     private String strEmail;
+    @Column(columnDefinition = "NVARCHAR")
     private String strTelefono;
-    @Column(columnDefinition = "Character")
+    @Column(columnDefinition = "NCHAR")
     private String crRh;
     private String strSeudonimo;
     private String strTipo;
+    @Column(columnDefinition = "NVARCHAR")
     private String strCargo;
     @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String txtContrasena;
     @Lob
     @Column(columnDefinition = "BLOB")

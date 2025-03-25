@@ -45,9 +45,9 @@ public class Mina implements Serializable {
     private String strNombre;
     private String strLocalidad;
     private String strTelefono;
+    private String strIdTituloMinero;
     private String strObservaciones;
     private String strProducto;
     private String strTicket;
-    private String strIdTituloMinero;
 
 }

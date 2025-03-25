@@ -38,7 +38,7 @@ public class TituloMineroDTO {
     private String strNombre;
     private String strLocalidad;
     private String strTelefono;
-    private String strObservaciones;
     private String strCifProveedor;
+    private String strObservaciones;
 
 }

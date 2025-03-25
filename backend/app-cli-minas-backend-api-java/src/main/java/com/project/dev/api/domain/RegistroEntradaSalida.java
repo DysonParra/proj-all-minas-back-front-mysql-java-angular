@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,6 +42,7 @@ public class RegistroEntradaSalida implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intIdEntrada;
+    private Integer intIdParque;
     private String strTransporte;
     private String strTicket;
     private String strMatricula;
@@ -70,6 +70,7 @@ public class RegistroEntradaSalida implements Serializable {
     private String strUnidad;
     private String strDescripcion;
     @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String txtRutaFotos;
     private String strRfid;
     private Boolean bitProcesoManual;
@@ -80,6 +81,5 @@ public class RegistroEntradaSalida implements Serializable {
     private String strIdOrigen;
     private String strEstado;
     private Integer intIdPorDia;
-    private Integer intIdParque;
 
 }

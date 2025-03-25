@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
-import javax.persistence.Temporal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -71,6 +70,7 @@ public class VehiculoEnTransito implements Serializable {
     private String strUnidad;
     private String strDescripcion;
     @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String txtRutaFotos;
     private String strRfid;
     private Boolean bitProcesoManual;
