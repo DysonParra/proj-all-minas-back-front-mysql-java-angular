@@ -1,0 +1,12 @@
+<div>
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div id="form-container" [ngClass]="{content: !isInLogin(), login: isInLogin()}">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<dx-load-panel #loadPanel shadingColor="rgba(0,0,0,0.4)" [(visible)]="loading" [showIndicator]="true" [showPane]="true"
+  [shading]="true" [hideOnOutsideClick]="false">
+</dx-load-panel>

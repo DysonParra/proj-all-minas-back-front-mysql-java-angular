@@ -1,0 +1,160 @@
+dx-menu {
+  outline: none;
+  margin: auto;
+}
+
+::ng-deep .top-menu .dx-context-menu-content-delimiter {
+  background-color: white;
+}
+
+::ng-deep .top-menu .dx-menu-item .dx-menu-item-content,
+::ng-deep .themes-menu .dx-menu-item .dx-menu-item-content {
+  padding: 0;
+}
+
+::ng-deep .top-menu .dx-menu-horizontal {
+  height: 100%;
+}
+
+::ng-deep .top-menu .menu-item {
+  font-weight: 500;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 0 30px;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  margin: auto;
+}
+
+::ng-deep .top-menu.dx-context-menu .dx-submenu .menu-item {
+  width: 100%;
+  height: 27.5px;
+  line-height: 27.5px;
+  margin: auto;
+}
+
+::ng-deep .top-menu .dx-context-menu-container-border {
+  position: relative;
+  color: black;
+}
+
+::ng-deep .top-menu .dx-context-menu-container-border:after {
+  border-bottom: 4px solid black;
+  width: 70%;
+  bottom: 0px;
+}
+
+::ng-deep .menu-item {
+  color: green;
+}
+
+::ng-deep .top-menu.dx-menu .dx-menu-item.dx-menu-item-expanded,
+::ng-deep .top-menu.dx-menu .dx-menu-item.dx-state-hover,
+::ng-deep .top-menu.dx-menu .dx-menu-item-wrapper .dx-menu-item.dx-state-focused
+::ng-deep .top-menu.dx-menu .dx-menu-item-expanded,
+::ng-deep .top-menu.dx-menu .dx-menu-item-expanded.dx-state-focused,
+::ng-deep .top-menu.dx-menu .dx-menu-item-expanded.dx-state-hover,
+::ng-deep .top-menu.dx-menu .dx-menu-item.dx-state-hover,
+::ng-deep .top-menu.dx-menu .dx-menu-item-selected,
+::ng-deep .top-menu.dx-menu .dx-menu-item-selected.dx-state-focused {
+  background-color: transparent;
+}
+
+div, button, nav {
+  border: 0px solid red;
+  border-radius: 0;
+  padding: 0;
+  margin: auto;
+}
+
+.header_container {
+  width: 100%;
+  background-color: transparent;
+  margin: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.header_content {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  display: block;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.header_content nav {
+  height: 100%;
+  float: left;
+}
+
+a {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.routerLinkActive, a:focus, a:active, a:hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+a:active {
+  color: rgba(255, 0, 0, 0.87);
+}
+
+a:hover {
+  color: rgba(255, 0, 0, 0.87);
+}
+/*
+.routerLinkActive:after, a:focus:after, a:active:after, a:hover:after {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid black;
+  width: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  left: 50%;
+  outline: none;
+}
+
+a:active:after {
+  border-bottom: 4px solid rgba(117,117,117,.87);
+}
+
+a:hover:after {
+  border-bottom: 4px solid rgba(90,90,90,1.0);
+}
+*/
+
+.subMenuItem {
+  font-size: 12px;
+  margin: 0;
+}
+
+.subMenuItem:hover {
+  border-bottom: 0;
+  background-color: black;
+  color: white;
+}
+
+.header_container {
+  background-color: #3a8ad4;
+  text-decoration: none;
+  width: 100%;
+  height: 100vh;
+}
+
+::ng-deep .options {
+  padding: 15px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#3a8ad4;
+}
+

@@ -1,0 +1,26 @@
+{
+    "env": {
+        "name": "LOCAL"
+    },
+    "appInsights": {
+        "instrumentationKey": "<your-key-here>"
+    },
+    "logging": {
+        "console": true,
+        "appInsights": false,
+        "traceEnabled": false
+    },
+    "aad": {
+        "requireAuth": false,
+        "tenant": "microsoft.onmicrosoft.com",
+        "clientId": "<your-guid-here>",
+        "endpoints": {
+            "api": "<your-guid-here>"
+        }
+    },
+    "apiServer": {
+        "metadata": "http://181.129.83.66:8088/",
+        "rules": "http://181.129.83.66:8088/",
+        "transaction": "http://181.129.83.66:8088/"
+    }
+}

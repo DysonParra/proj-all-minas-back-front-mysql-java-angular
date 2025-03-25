@@ -1,0 +1,74 @@
+HELP.md
+**/.gradle
+**/build/
+**/dist/
+src/test
+!gradle/wrapper/gradle-wrapper.jar
+!.gitignore
+!Dockerfile
+!*.iml
+!**/src/main/**/build/
+!**/src/test/**/build/
+**/exe/*.exe
+**/object/
+**/*.class
+**/*.tmp
+**/temp/
+**/tmp/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### Python ###
+**/__pycache__/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+**/nbproject/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+**/target
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Angular
+**/.angular
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+/.pnp
+.pnp.js
+
+# .Net
+bin/
+obj/
+.vs
+
+# System files
+.DS_Store
+Thumbs.db

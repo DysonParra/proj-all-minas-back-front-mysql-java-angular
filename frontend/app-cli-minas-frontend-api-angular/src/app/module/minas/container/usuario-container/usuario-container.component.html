@@ -1,0 +1,16 @@
+<app-usuario
+  [loadingVisible]="loadingVisible"
+  [loadingMessage]="loadingMessage"
+  [entityCollection]="entityCollection"
+  (onSearch)="onSearch($event)"
+  (onStartRowInserting)="onStartRowInserting($event)"
+  (onStartRowUpdating)="onStartRowUpdating($event)"
+  (onStartRowRemoving)="onStartRowRemoving($event)"
+  (onRowInserted)="onRowInserted($event)"
+  (onRowUpdated)="onRowUpdated($event)"
+  (onRowRemoved)="onRowRemoved($event)">
+</app-usuario>
+
+<app-pagination [items]="entityCollection" [rowQuantity]="entityQuantity" (onPageChanged)="onPageChanged($event)"
+  [pageSizes]="[5, 10, 20, 50, 100, 200, 500, 1000]">
+</app-pagination>

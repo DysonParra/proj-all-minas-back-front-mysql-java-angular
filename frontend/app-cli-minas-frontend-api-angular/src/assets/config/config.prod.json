@@ -1,0 +1,26 @@
+{
+    "env": {
+        "name": "PROD"
+    },
+    "appInsights": {
+        "instrumentationKey": "<your-key-here>"
+    },
+    "logging": {
+        "console": true,
+        "appInsights": false,
+        "traceEnabled": false
+    },
+    "aad": {
+        "requireAuth": false,
+        "tenant": "microsoft.onmicrosoft.com",
+        "clientId": "<your-guid-here>",
+        "endpoints": {
+            "api": "<your-guid-here>"
+        }
+    },
+    "apiServer": {
+        "metadata": "http://34.202.250.20:7004/api/v1/",
+        "rules": "http://34.202.250.20:7004/api/v1/",
+        "transaction": "http://34.202.250.20:7004/api/v1/"
+    }
+}

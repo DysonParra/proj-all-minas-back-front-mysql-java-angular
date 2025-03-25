@@ -1,0 +1,45 @@
+<div class="dx-datagrid-pager dx-pager">
+    <div class="dx-page-sizes">
+        <a *ngFor="let i of pageSizes let index = index">
+            <div *ngIf="rowQuantity>=i || (index != 0 && rowQuantity>pageSizes[index-1])"
+                [ngClass]="(pageSize===i) ? 'dx-page-size dx-selection' : 'dx-page-size'" role="button"
+                aria-label=" Display {i} items on page" (click)="setPageSize(i)" tabindex="0">{{i}}</div>
+        </a>
+    </div>
+    <div class="dx-pages">
+        <div class="dx-info">Page {{currentPage}} of {{pageQuantity}} ({{rowQuantity}} items)</div>
+        <div *ngIf="pageQuantity>0" class="dx-navigate-button dx-prev-button"
+            [ngClass]="{'dx-button-disable': currentPage<=1}" role="button" aria-label="Previous page" tabindex="0"
+            (click)="setPageNumber(currentPage-1)"></div>
+        <a *ngFor="let i of [].constructor(pageQuantity+2); let index = index">
+            <ng-container
+                [ngSwitch]="index==0 ? 'first': index==1 ? 'separator 1' : index==pageQuantity ? 'separator 2' : index == pageQuantity+1 ? 'last': 'other'">
+                <ng-container *ngSwitchCase="'first'">
+                    <div *ngIf="pageQuantity>0" [ngClass]="(currentPage===index+1)?'dx-page dx-selection':'dx-page'"
+                        role="button" aria-label="Page {index+1}" tabindex="0" (click)="setPageNumber(index+1)">
+                        {{index+1}}</div>
+                </ng-container>
+                <ng-container *ngSwitchCase="'last'">
+                    <div *ngIf="pageQuantity>1" [ngClass]="(currentPage===index-1)?'dx-page dx-selection':'dx-page'"
+                        role="button" aria-label="Page {index-1}" tabindex="0" (click)="setPageNumber(index-1)">
+                        {{index-1}}</div>
+                </ng-container>
+                <ng-container *ngSwitchCase="'separator 1'">
+                    <div *ngIf="currentPage>=5" class="dx-page" role="button" aria-label="separator" tabindex="0">...
+                    </div>
+                </ng-container>
+                <ng-container *ngSwitchCase="'separator 2'">
+                    <div *ngIf="pageQuantity-currentPage>=5" class="dx-page" role="button" aria-label="separator"
+                        tabindex="0">...</div>
+                </ng-container>
+                <ng-container *ngSwitchDefault>
+                    <div *ngIf="!(currentPage+3<=index || currentPage-3>=index)"
+                        [ngClass]="(currentPage===index+0)?'dx-page dx-selection':'dx-page'" role="button"
+                        aria-label="Page {index+0}" tabindex="0" (click)="setPageNumber(index+0)">{{index+0}}</div>
+                </ng-container>
+            </ng-container>
+        </a>
+        <div *ngIf="pageQuantity>0" class="dx-navigate-button dx-next-button" [ngClass]="{'dx-button-disable': currentPage==pageQuantity}"
+            role="button" aria-label="Previous page" tabindex="0" (click)="setPageNumber(currentPage+1)"></div>
+    </div>
+</div>

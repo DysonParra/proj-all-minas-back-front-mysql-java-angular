@@ -1,0 +1,40 @@
+
+  <div class="header_container">
+    <div class="header_content">
+
+      <nav>
+        <div>
+
+          <dx-menu
+            #menu
+            cssClass="top-menu"
+            [dataSource]="topMenu"
+            displayExpr="name"
+            [showFirstSubmenuMode]="showFirstSubmenuModes"
+            orientation="vertical"
+            submenuDirection="auto"
+            [hideSubmenuOnMouseLeave]="true"
+            (onItemClick)="itemClick($event.itemData)"
+            >
+
+            <ng-template #routerLink let-i="i">
+              <div>
+                <a [class.disabled]=true [routerLink]="i.route" routerLinkActive="routerLinkActive" class="menu-item">{{i.name}}</a>
+              </div>
+            </ng-template>
+
+            <ng-template #nonRouterLink let-i="i">
+              <a [class.disabled]=true routerLinkActive="routerLinkActive" class="menu-item">{{i.name}}</a>
+            </ng-template>
+
+            <div *dxTemplate="let i of 'item'">
+              <ng-container [ngTemplateOutlet]="!i.items || i.items.length === 0 ? routerLink : nonRouterLink" [ngTemplateOutletContext]="{i:i}"></ng-container>
+            </div>
+
+          </dx-menu>
+
+        </div>
+      </nav>
+
+    </div>
+  </div>

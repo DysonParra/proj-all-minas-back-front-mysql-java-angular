@@ -1,0 +1,15 @@
+.down_footer {
+  margin-left: -8px;
+  margin-right:-8px;
+  margin-bottom:-8px;
+  padding: 20px;
+  background-color:#3a8ad4;
+}
+
+.footer_text {
+  font-size: xx-large;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-decoration:none;
+}
+
