@@ -1,7 +1,6 @@
 HELP.md
 **/.gradle
 **/build/
-**/dist/
 src/test
 !gradle/wrapper/gradle-wrapper.jar
 !.gitignore
@@ -65,7 +64,6 @@ out/
 .pnp.js
 
 # .Net
-bin/
 obj/
 .vs
 
