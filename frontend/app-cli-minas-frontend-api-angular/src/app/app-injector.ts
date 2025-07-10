@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {AppInjector}
+ * @overview        {AppInjector}
  *
  * @version         2.0
  *

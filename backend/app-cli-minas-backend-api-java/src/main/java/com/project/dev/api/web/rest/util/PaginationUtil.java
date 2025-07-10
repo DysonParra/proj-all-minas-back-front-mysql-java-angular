@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PaginationUtil}
+ * @overview        {PaginationUtil}
  *
  * @version         2.0
  *
@@ -38,7 +38,7 @@ public final class PaginationUtil {
     /**
      * Agrega headers a la página.
      *
-     * @param page    configuración de la páginacion.
+     * @param page    configuración de la paginación.
      * @param baseUrl enlace base.
      * @return los headers de la página.
      */
@@ -84,7 +84,7 @@ public final class PaginationUtil {
      * Agrega parámetros de búsqueda a la página.
      *
      * @param query   enlace suministrado.
-     * @param page    configuración de la páginacion.
+     * @param page    configuración de la paginación.
      * @param baseUrl enlace base.
      * @return los headers de la página.
      */

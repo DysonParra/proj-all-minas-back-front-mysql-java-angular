@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {UsuarioDTO}
+ * @overview        {UsuarioDTO}
  *
  * @version         2.0
  *

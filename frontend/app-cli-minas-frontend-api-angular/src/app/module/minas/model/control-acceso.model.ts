@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoViewModel}
+ * @overview        {ControlAccesoViewModel}
  *
  * @version         2.0
  *

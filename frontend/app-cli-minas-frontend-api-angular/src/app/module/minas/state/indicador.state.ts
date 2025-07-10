@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorState}
+ * @overview        {IndicadorState}
  *
  * @version         2.0
  *

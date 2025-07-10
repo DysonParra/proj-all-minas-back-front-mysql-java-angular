@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConfiguracionRestAssembler}
+ * @overview        {ConfiguracionRestAssembler}
  *
  * @version         2.0
  *

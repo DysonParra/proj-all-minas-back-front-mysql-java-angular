@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProveedorComponent}
+ * @overview        {ProveedorComponent}
  *
  * @version         2.0
  *

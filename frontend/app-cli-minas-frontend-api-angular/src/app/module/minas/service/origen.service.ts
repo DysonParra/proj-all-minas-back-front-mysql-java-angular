@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrigenService}
+ * @overview        {OrigenService}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaRestAssembler}
+ * @overview        {BasculaRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorServiceImpl}
+ * @overview        {ConductorServiceImpl}
  *
  * @version         2.0
  *
@@ -55,7 +55,7 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
      * Obtiene todas las entidades existentes.
      *
      * @return lista de entidades almacenadas en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public List<ConductorDTO> getAllEntities() throws Exception {
@@ -64,15 +64,15 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
     }
 
     /**
-     * Obtiene todas los registros según la paginación suministrada.
+     * Obtiene todos los registros según la paginación suministrada.
      *
      * @param pageable indica la manera en que se paginarán los registros obtenidos.
      * @return entidades almacenadas en base de datos de forma paginada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public Page<ConductorDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
-        log.debug("Solicitud para listar todas las Entidades tipo Conductor con paginacion");
+        log.debug("Solicitud para listar todas las Entidades tipo Conductor con paginación");
         return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
@@ -81,26 +81,26 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
      *
      * @param entityDTO entidad que va a ser almacenada.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public ConductorDTO saveUpdate(ConductorDTO entityDTO) throws Exception {
         log.debug("Solicitud para guardar la entidad tipo Conductor: {}", entityDTO);
 
-        //TODO: agregar validacion especifica del servicio.
+        //TODO: agregar validación específica del servicio.
         Conductor entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ConductorDTO currrentEntity = entityMapping.getDto(entity);
-        return currrentEntity;
+        ConductorDTO dto = entityMapping.getDto(entity);
+        return dto;
     }
 
     /**
-     * Obtiene la entidad según el id suministrado.
+     * Obtiene la entidad usando el ID suministrado.
      *
      * @param id es el identificador de la entidad.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public ConductorDTO getEntity(String id) throws Exception {
@@ -114,7 +114,7 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
      * Elimina los datos de una entidad.
      *
      * @param id identificador de la entidad que va a ser eliminada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public void deleteEntity(String id) throws Exception {
@@ -127,7 +127,7 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
      *
      * @param query indica la búsqueda que se hará en la base de datos.
      * @return entidades almacenadas en base de datos encontradas.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public List<ConductorDTO> searchEntities(String query) throws Exception {
@@ -136,7 +136,7 @@ public class ConductorServiceImpl implements GenericService<ConductorDTO> {
     }
 
     /**
-     * Obtiene registros de la base de datos según la búsqueda y paginación suministradas.
+     * Obtiene registros de la base de datos según la búsqueda y la paginación que se indicaron.
      *
      * @param query    indica la búsqueda que se hará en la base de datos.
      * @param pageable indica la manera en que se paginarán los registros obtenidos.

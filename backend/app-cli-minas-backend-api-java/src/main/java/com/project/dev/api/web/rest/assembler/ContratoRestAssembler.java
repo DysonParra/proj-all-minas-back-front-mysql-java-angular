@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoRestAssembler}
+ * @overview        {ContratoRestAssembler}
  *
  * @version         2.0
  *

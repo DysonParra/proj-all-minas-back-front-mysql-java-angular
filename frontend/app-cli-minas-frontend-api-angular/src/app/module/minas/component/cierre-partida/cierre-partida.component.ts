@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaComponent}
+ * @overview        {CierrePartidaComponent}
  *
  * @version         2.0
  *

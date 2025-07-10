@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GenericState}
+ * @overview        {GenericState}
  *
  * @version         2.0
  *

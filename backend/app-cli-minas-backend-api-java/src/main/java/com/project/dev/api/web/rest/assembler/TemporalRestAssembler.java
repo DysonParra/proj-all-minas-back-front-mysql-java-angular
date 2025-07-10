@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalRestAssembler}
+ * @overview        {TemporalRestAssembler}
  *
  * @version         2.0
  *

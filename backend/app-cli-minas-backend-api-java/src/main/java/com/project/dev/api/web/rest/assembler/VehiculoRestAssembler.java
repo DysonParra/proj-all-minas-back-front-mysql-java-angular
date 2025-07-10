@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoRestAssembler}
+ * @overview        {VehiculoRestAssembler}
  *
  * @version         2.0
  *

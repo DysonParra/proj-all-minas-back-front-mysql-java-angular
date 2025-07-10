@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionFacade}
+ * @overview        {SancionFacade}
  *
  * @version         2.0
  *

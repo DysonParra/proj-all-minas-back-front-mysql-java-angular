@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConfiguracionViewComponent}
+ * @overview        {ConfiguracionViewComponent}
  *
  * @version         2.0
  *

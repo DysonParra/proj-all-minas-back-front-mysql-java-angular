@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaViewComponent}
+ * @overview        {GeneradorPartidaViewComponent}
  *
  * @version         2.0
  *

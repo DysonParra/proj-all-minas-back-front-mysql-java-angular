@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroRestAssembler}
+ * @overview        {TituloMineroRestAssembler}
  *
  * @version         2.0
  *

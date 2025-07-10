@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GenericRepository}
+ * @overview        {GenericRepository}
  *
  * @version         2.0
  *
@@ -42,8 +42,8 @@ public interface GenericRepository<T> {
     /**
      * Obtiene información de la base de datos.
      *
-     * @param t el id de la información a obtener.
-     * @return la información con el id indicado.
+     * @param t el ID de la información a obtener.
+     * @return la información con el ID indicado.
      */
     public T getData(T t);
 

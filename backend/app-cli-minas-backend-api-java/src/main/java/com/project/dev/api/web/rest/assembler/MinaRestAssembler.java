@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaRestAssembler}
+ * @overview        {MinaRestAssembler}
  *
  * @version         2.0
  *

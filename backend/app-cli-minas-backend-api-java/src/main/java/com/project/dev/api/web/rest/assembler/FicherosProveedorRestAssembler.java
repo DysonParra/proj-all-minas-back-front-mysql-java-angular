@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorRestAssembler}
+ * @overview        {FicherosProveedorRestAssembler}
  *
  * @version         2.0
  *

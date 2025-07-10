@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {EssentialModule}
+ * @overview        {EssentialModule}
  *
  * @version         2.0
  *

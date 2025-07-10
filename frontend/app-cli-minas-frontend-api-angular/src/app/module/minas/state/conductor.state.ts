@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorState}
+ * @overview        {ConductorState}
  *
  * @version         2.0
  *

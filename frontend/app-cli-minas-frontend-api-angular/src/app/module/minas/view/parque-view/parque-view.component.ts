@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueViewComponent}
+ * @overview        {ParqueViewComponent}
  *
  * @version         2.0
  *

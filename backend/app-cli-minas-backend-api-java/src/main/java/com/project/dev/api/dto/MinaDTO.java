@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaDTO}
+ * @overview        {MinaDTO}
  *
  * @version         2.0
  *

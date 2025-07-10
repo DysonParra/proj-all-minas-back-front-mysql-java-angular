@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroFacade}
+ * @overview        {TituloMineroFacade}
  *
  * @version         2.0
  *

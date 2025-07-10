@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProductoRestAssembler}
+ * @overview        {ProductoRestAssembler}
  *
  * @version         2.0
  *

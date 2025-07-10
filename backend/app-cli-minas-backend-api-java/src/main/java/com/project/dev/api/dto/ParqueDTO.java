@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueDTO}
+ * @overview        {ParqueDTO}
  *
  * @version         2.0
  *

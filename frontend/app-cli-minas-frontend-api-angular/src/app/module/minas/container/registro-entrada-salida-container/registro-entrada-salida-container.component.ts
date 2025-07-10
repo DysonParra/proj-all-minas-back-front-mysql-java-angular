@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaContainerComponent}
+ * @overview        {RegistroEntradaSalidaContainerComponent}
  *
  * @version         2.0
  *

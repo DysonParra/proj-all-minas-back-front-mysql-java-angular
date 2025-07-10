@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaFacade}
+ * @overview        {BasculaFacade}
  *
  * @version         2.0
  *

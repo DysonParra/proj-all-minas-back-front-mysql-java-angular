@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaViewModel}
+ * @overview        {GeneradorPartidaViewModel}
  *
  * @version         2.0
  *

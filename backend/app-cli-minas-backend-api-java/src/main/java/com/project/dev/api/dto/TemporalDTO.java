@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalDTO}
+ * @overview        {TemporalDTO}
  *
  * @version         2.0
  *

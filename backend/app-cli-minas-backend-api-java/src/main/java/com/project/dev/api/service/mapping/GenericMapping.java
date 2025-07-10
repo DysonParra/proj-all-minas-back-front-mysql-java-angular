@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GenericMapping}
+ * @overview        {GenericMapping}
  *
  * @version         2.0
  *
@@ -28,7 +28,7 @@ import java.util.List;
 public interface GenericMapping<D, E> {
 
     /**
-     * Obtiene una entidad en base a su DTO.
+     * Obtiene una entidad con base en su DTO.
      *
      * @param dto es el DTO a convertir en entidad.
      * @return la entidad equivalente al dto.
@@ -36,15 +36,15 @@ public interface GenericMapping<D, E> {
     public E getEntity(D dto);
 
     /**
-     * Obtiene un DTO en base a su entidad.
+     * Obtiene un DTO con base en su entidad.
      *
      * @param entity es la entidad a convertir en DTO.
-     * @return el dto equivalente a la entidad.
+     * @return el DTO equivalente a la entidad.
      */
     public D getDto(E entity);
 
     /**
-     * Obtiene una lista de entidades en base a un lista de DTO.
+     * Obtiene una lista de entidades con base en una lista de DTO.
      *
      * @param dtoList es la lista de DTO a convertir en una lista de entidades.
      * @return la lista de entidades equivalente a la lista de dto.
@@ -52,7 +52,7 @@ public interface GenericMapping<D, E> {
     public List<E> getEntity(List<D> dtoList);
 
     /**
-     * Obtiene una lista de DTO en base a una lista de entidades.
+     * Obtiene una lista de DTO con base en una lista de entidades.
      *
      * @param entityList es la lista de entidades a convertir en una lista de DTO.
      * @return la lista de dto equivalente a la lista de entidades.

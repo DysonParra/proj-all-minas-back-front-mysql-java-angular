@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorDTO}
+ * @overview        {ConductorDTO}
  *
  * @version         2.0
  *

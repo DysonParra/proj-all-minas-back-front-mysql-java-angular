@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraDTO}
+ * @overview        {MuestraDTO}
  *
  * @version         2.0
  *

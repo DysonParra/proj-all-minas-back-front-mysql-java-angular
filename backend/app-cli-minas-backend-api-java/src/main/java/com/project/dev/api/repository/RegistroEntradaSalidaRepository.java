@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaRepository}
+ * @overview        {RegistroEntradaSalidaRepository}
  *
  * @version         2.0
  *

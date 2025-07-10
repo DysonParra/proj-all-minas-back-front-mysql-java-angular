@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaRepository}
+ * @overview        {CierrePartidaRepository}
  *
  * @version         2.0
  *

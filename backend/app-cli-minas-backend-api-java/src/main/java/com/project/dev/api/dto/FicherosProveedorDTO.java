@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorDTO}
+ * @overview        {FicherosProveedorDTO}
  *
  * @version         2.0
  *

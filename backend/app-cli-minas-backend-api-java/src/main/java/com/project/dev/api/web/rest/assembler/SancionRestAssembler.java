@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionRestAssembler}
+ * @overview        {SancionRestAssembler}
  *
  * @version         2.0
  *

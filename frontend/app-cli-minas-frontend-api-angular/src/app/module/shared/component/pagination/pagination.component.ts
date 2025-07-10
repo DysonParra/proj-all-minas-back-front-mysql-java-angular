@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PaginationComponent}
+ * @overview        {PaginationComponent}
  *
  * @version         2.0
  *

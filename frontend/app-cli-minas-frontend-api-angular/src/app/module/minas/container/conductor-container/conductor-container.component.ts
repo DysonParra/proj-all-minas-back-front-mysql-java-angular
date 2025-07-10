@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorContainerComponent}
+ * @overview        {ConductorContainerComponent}
  *
  * @version         2.0
  *

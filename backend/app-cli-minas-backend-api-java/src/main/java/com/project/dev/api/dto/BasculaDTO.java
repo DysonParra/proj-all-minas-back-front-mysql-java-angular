@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaDTO}
+ * @overview        {BasculaDTO}
  *
  * @version         2.0
  *

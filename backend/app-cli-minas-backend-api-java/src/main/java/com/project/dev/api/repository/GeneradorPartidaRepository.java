@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaRepository}
+ * @overview        {GeneradorPartidaRepository}
  *
  * @version         2.0
  *

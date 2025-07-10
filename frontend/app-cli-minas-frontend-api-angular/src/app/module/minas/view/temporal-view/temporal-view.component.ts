@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalViewComponent}
+ * @overview        {TemporalViewComponent}
  *
  * @version         2.0
  *

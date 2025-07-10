@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoEnTransitoDTO}
+ * @overview        {VehiculoEnTransitoDTO}
  *
  * @version         2.0
  *

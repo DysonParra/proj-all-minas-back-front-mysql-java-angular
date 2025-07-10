@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {HeaderComponent}
+ * @overview        {HeaderComponent}
  *
  * @version         2.0
  *
@@ -44,103 +44,128 @@ export class HeaderComponent implements OnInit {
                 name: 'Bascula',
                 route: 'bascula',
                 items: []
-            },            {
+            },
+            {
                 name: 'Categoria',
                 route: 'categoria',
                 items: []
-            },            {
+            },
+            {
                 name: 'CierrePartida',
                 route: 'cierre-partida',
                 items: []
-            },            {
+            },
+            {
                 name: 'CodigoOrigen',
                 route: 'codigo-origen',
                 items: []
-            },            {
+            },
+            {
                 name: 'Conductor',
                 route: 'conductor',
                 items: []
-            },            {
+            },
+            {
                 name: 'Configuracion',
                 route: 'configuracion',
                 items: []
-            },            {
+            },
+            {
                 name: 'ConsecutivoDiario',
                 route: 'consecutivo-diario',
                 items: []
-            },            {
+            },
+            {
                 name: 'Contrato',
                 route: 'contrato',
                 items: []
-            },            {
+            },
+            {
                 name: 'ControlAcceso',
                 route: 'control-acceso',
                 items: []
-            },            {
+            },
+            {
                 name: 'Destino',
                 route: 'destino',
                 items: []
-            },            {
+            },
+            {
                 name: 'FicherosProveedor',
                 route: 'ficheros-proveedor',
                 items: []
-            },            {
+            },
+            {
                 name: 'GeneradorPartida',
                 route: 'generador-partida',
                 items: []
-            },            {
+            },
+            {
                 name: 'Indicador',
                 route: 'indicador',
                 items: []
-            },            {
+            },
+            {
                 name: 'Mina',
                 route: 'mina',
                 items: []
-            },            {
+            },
+            {
                 name: 'Muestra',
                 route: 'muestra',
                 items: []
-            },            {
+            },
+            {
                 name: 'Origen',
                 route: 'origen',
                 items: []
-            },            {
+            },
+            {
                 name: 'Parque',
                 route: 'parque',
                 items: []
-            },            {
+            },
+            {
                 name: 'Producto',
                 route: 'producto',
                 items: []
-            },            {
+            },
+            {
                 name: 'Proveedor',
                 route: 'proveedor',
                 items: []
-            },            {
+            },
+            {
                 name: 'RegistroEntradaSalida',
                 route: 'registro-entrada-salida',
                 items: []
-            },            {
+            },
+            {
                 name: 'Sancion',
                 route: 'sancion',
                 items: []
-            },            {
+            },
+            {
                 name: 'Temporal',
                 route: 'temporal',
                 items: []
-            },            {
+            },
+            {
                 name: 'TituloMinero',
                 route: 'titulo-minero',
                 items: []
-            },            {
+            },
+            {
                 name: 'Usuario',
                 route: 'usuario',
                 items: []
-            },            {
+            },
+            {
                 name: 'Vehiculo',
                 route: 'vehiculo',
                 items: []
-            },            {
+            },
+            {
                 name: 'VehiculoEnTransito',
                 route: 'vehiculo-en-transito',
                 items: []

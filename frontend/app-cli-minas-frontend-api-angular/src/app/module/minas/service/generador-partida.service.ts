@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaService}
+ * @overview        {GeneradorPartidaService}
  *
  * @version         2.0
  *

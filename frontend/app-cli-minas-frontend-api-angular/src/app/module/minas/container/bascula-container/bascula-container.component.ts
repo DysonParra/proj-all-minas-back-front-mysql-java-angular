@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaContainerComponent}
+ * @overview        {BasculaContainerComponent}
  *
  * @version         2.0
  *

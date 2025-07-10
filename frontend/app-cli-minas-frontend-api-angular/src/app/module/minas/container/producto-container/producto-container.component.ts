@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProductoContainerComponent}
+ * @overview        {ProductoContainerComponent}
  *
  * @version         2.0
  *

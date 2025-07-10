@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaRestAssembler}
+ * @overview        {CierrePartidaRestAssembler}
  *
  * @version         2.0
  *

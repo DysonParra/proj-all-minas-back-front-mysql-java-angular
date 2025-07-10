@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorComponent}
+ * @overview        {IndicadorComponent}
  *
  * @version         2.0
  *

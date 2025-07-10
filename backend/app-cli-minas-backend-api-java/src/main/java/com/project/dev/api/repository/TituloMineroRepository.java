@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroRepository}
+ * @overview        {TituloMineroRepository}
  *
  * @version         2.0
  *

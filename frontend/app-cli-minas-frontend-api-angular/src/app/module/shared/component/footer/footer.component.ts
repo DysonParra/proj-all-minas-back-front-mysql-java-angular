@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FooterComponent}
+ * @overview        {FooterComponent}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorViewComponent}
+ * @overview        {FicherosProveedorViewComponent}
  *
  * @version         2.0
  *

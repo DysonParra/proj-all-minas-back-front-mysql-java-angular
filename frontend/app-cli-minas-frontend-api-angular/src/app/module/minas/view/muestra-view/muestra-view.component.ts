@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraViewComponent}
+ * @overview        {MuestraViewComponent}
  *
  * @version         2.0
  *

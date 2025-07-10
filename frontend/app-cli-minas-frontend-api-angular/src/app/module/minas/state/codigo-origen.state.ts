@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoOrigenState}
+ * @overview        {CodigoOrigenState}
  *
  * @version         2.0
  *

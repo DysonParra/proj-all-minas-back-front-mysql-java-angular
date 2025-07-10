@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaState}
+ * @overview        {GeneradorPartidaState}
  *
  * @version         2.0
  *

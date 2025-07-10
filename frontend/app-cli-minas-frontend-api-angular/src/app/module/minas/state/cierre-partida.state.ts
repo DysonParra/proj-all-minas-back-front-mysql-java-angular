@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaState}
+ * @overview        {CierrePartidaState}
  *
  * @version         2.0
  *

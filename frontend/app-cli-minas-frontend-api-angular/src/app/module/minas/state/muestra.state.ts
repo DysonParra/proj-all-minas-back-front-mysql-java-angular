@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraState}
+ * @overview        {MuestraState}
  *
  * @version         2.0
  *

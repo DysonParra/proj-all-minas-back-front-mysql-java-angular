@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorViewModel}
+ * @overview        {ConductorViewModel}
  *
  * @version         2.0
  *

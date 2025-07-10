@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaState}
+ * @overview        {MinaState}
  *
  * @version         2.0
  *

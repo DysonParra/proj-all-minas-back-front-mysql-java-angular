@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionComponent}
+ * @overview        {SancionComponent}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RestConfiguration}
+ * @overview        {RestConfiguration}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaViewModel}
+ * @overview        {CierrePartidaViewModel}
  *
  * @version         2.0
  *

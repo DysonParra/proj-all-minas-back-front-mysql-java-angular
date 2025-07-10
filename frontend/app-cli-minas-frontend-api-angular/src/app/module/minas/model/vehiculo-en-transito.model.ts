@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoEnTransitoViewModel}
+ * @overview        {VehiculoEnTransitoViewModel}
  *
  * @version         2.0
  *

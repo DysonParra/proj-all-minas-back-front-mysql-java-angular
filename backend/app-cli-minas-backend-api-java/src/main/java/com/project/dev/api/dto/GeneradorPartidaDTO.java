@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaDTO}
+ * @overview        {GeneradorPartidaDTO}
  *
  * @version         2.0
  *

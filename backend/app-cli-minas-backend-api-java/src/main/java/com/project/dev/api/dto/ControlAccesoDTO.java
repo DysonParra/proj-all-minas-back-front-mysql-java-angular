@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoDTO}
+ * @overview        {ControlAccesoDTO}
  *
  * @version         2.0
  *

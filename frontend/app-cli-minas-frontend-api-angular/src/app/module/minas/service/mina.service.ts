@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaService}
+ * @overview        {MinaService}
  *
  * @version         2.0
  *

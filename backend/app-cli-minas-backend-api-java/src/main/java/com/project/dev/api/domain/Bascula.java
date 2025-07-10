@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Bascula}
+ * @overview        {Bascula}
  *
  * @version         2.0
  *

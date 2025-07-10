@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SancionDTO}
+ * @overview        {SancionDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoState}
+ * @overview        {ContratoState}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GenericService}
+ * @overview        {GenericService}
  *
  * @version         2.0
  *
@@ -32,16 +32,16 @@ public interface GenericService<T> {
      * Obtiene todas las entidades existentes.
      *
      * @return lista de entidades almacenadas en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public List<T> getAllEntities() throws Exception;
 
     /**
-     * Obtiene todas los registros según la paginación suministrada.
+     * Obtiene todos los registros según la paginación suministrada.
      *
      * @param pageable indica la manera en que se paginarán los registros obtenidos.
      * @return entidades almacenadas en base de datos de forma paginada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public Page<T> getAllEntitiesPaged(Pageable pageable) throws Exception;
 
@@ -50,16 +50,16 @@ public interface GenericService<T> {
      *
      * @param entityDTO entidad que va a ser almacenada.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public T saveUpdate(T entityDTO) throws Exception;
 
     /**
-     * Obtiene la entidad según el id suministrado.
+     * Obtiene la entidad usando el ID suministrado.
      *
      * @param id es el identificador de la entidad.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public T getEntity(String id) throws Exception;
 
@@ -67,7 +67,7 @@ public interface GenericService<T> {
      * Elimina los datos de una entidad.
      *
      * @param id identificador de la entidad que va a ser eliminada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public void deleteEntity(String id) throws Exception;
 
@@ -76,12 +76,12 @@ public interface GenericService<T> {
      *
      * @param query indica la búsqueda que se hará en la base de datos.
      * @return entidades almacenadas en base de datos encontradas.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     public List<T> searchEntities(String query) throws Exception;
 
     /**
-     * Obtiene registros de la base de datos según la búsqueda y paginación suministradas.
+     * Obtiene registros de la base de datos según la búsqueda y la paginación que se indicaron.
      *
      * @param query    indica la búsqueda que se hará en la base de datos.
      * @param pageable indica la manera en que se paginarán los registros obtenidos.

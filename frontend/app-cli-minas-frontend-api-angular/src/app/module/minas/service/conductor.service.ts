@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorService}
+ * @overview        {ConductorService}
  *
  * @version         2.0
  *

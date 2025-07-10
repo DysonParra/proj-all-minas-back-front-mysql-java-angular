@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SharedModule}
+ * @overview        {SharedModule}
  *
  * @version         2.0
  *

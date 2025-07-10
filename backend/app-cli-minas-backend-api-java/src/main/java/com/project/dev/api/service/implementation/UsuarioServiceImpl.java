@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {UsuarioServiceImpl}
+ * @overview        {UsuarioServiceImpl}
  *
  * @version         2.0
  *
@@ -55,7 +55,7 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
      * Obtiene todas las entidades existentes.
      *
      * @return lista de entidades almacenadas en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public List<UsuarioDTO> getAllEntities() throws Exception {
@@ -64,15 +64,15 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
     }
 
     /**
-     * Obtiene todas los registros según la paginación suministrada.
+     * Obtiene todos los registros según la paginación suministrada.
      *
      * @param pageable indica la manera en que se paginarán los registros obtenidos.
      * @return entidades almacenadas en base de datos de forma paginada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public Page<UsuarioDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
-        log.debug("Solicitud para listar todas las Entidades tipo Usuario con paginacion");
+        log.debug("Solicitud para listar todas las Entidades tipo Usuario con paginación");
         return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
@@ -81,26 +81,26 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
      *
      * @param entityDTO entidad que va a ser almacenada.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public UsuarioDTO saveUpdate(UsuarioDTO entityDTO) throws Exception {
         log.debug("Solicitud para guardar la entidad tipo Usuario: {}", entityDTO);
 
-        //TODO: agregar validacion especifica del servicio.
+        //TODO: agregar validación específica del servicio.
         Usuario entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        UsuarioDTO currrentEntity = entityMapping.getDto(entity);
-        return currrentEntity;
+        UsuarioDTO dto = entityMapping.getDto(entity);
+        return dto;
     }
 
     /**
-     * Obtiene la entidad según el id suministrado.
+     * Obtiene la entidad usando el ID suministrado.
      *
      * @param id es el identificador de la entidad.
      * @return entidad almacenada en la base de datos.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public UsuarioDTO getEntity(String id) throws Exception {
@@ -114,7 +114,7 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
      * Elimina los datos de una entidad.
      *
      * @param id identificador de la entidad que va a ser eliminada.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public void deleteEntity(String id) throws Exception {
@@ -127,7 +127,7 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
      *
      * @param query indica la búsqueda que se hará en la base de datos.
      * @return entidades almacenadas en base de datos encontradas.
-     * @throws Exception si ocurre algún error.
+     * @throws Exception en caso de ocurrir algún error.
      */
     @Override
     public List<UsuarioDTO> searchEntities(String query) throws Exception {
@@ -136,7 +136,7 @@ public class UsuarioServiceImpl implements GenericService<UsuarioDTO> {
     }
 
     /**
-     * Obtiene registros de la base de datos según la búsqueda y paginación suministradas.
+     * Obtiene registros de la base de datos según la búsqueda y la paginación que se indicaron.
      *
      * @param query    indica la búsqueda que se hará en la base de datos.
      * @param pageable indica la manera en que se paginarán los registros obtenidos.

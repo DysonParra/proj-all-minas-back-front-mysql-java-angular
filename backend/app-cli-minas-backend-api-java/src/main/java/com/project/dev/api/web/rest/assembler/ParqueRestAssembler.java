@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ParqueRestAssembler}
+ * @overview        {ParqueRestAssembler}
  *
  * @version         2.0
  *

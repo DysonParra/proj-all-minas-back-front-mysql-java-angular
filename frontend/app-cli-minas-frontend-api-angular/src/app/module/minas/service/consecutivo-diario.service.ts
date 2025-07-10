@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConsecutivoDiarioService}
+ * @overview        {ConsecutivoDiarioService}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaState}
+ * @overview        {BasculaState}
  *
  * @version         2.0
  *

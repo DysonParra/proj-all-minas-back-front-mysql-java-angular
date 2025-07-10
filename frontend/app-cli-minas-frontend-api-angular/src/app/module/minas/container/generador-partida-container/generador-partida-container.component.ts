@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaContainerComponent}
+ * @overview        {GeneradorPartidaContainerComponent}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoRestAssembler}
+ * @overview        {ControlAccesoRestAssembler}
  *
  * @version         2.0
  *

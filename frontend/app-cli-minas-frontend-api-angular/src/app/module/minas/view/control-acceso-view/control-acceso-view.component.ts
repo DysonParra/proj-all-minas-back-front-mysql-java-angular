@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoViewComponent}
+ * @overview        {ControlAccesoViewComponent}
  *
  * @version         2.0
  *

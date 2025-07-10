@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BasculaService}
+ * @overview        {BasculaService}
  *
  * @version         2.0
  *

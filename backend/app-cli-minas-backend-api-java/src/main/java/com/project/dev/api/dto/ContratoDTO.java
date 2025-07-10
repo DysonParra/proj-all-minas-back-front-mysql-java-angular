@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoDTO}
+ * @overview        {ContratoDTO}
  *
  * @version         2.0
  *

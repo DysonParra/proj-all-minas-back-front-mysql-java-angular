@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoRepository}
+ * @overview        {ControlAccesoRepository}
  *
  * @version         2.0
  *

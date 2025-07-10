@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TemporalRepository}
+ * @overview        {TemporalRepository}
  *
  * @version         2.0
  *

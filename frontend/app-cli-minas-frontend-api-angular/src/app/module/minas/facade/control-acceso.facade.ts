@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ControlAccesoFacade}
+ * @overview        {ControlAccesoFacade}
  *
  * @version         2.0
  *

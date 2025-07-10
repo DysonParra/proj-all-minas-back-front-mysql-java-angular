@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ContratoComponent}
+ * @overview        {ContratoComponent}
  *
  * @version         2.0
  *

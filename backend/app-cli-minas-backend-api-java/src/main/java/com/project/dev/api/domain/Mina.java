@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Mina}
+ * @overview        {Mina}
  *
  * @version         2.0
  *

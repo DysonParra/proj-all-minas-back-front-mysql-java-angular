@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {AppRoutingModule}
+ * @overview        {AppRoutingModule}
  *
  * @version         2.0
  *

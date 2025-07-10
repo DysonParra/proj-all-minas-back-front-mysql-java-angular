@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorFacade}
+ * @overview        {ConductorFacade}
  *
  * @version         2.0
  *

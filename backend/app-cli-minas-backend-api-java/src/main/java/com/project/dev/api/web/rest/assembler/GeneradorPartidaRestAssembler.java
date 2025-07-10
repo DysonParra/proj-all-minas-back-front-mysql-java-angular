@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaRestAssembler}
+ * @overview        {GeneradorPartidaRestAssembler}
  *
  * @version         2.0
  *

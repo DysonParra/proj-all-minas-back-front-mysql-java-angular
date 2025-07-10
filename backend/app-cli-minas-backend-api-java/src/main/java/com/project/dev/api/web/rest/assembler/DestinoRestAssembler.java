@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DestinoRestAssembler}
+ * @overview        {DestinoRestAssembler}
  *
  * @version         2.0
  *

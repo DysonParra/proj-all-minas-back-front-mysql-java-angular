@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorRepository}
+ * @overview        {ConductorRepository}
  *
  * @version         2.0
  *

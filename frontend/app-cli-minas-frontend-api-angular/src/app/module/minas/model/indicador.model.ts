@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorViewModel}
+ * @overview        {IndicadorViewModel}
  *
  * @version         2.0
  *

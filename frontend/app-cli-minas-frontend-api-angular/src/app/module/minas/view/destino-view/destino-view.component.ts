@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DestinoViewComponent}
+ * @overview        {DestinoViewComponent}
  *
  * @version         2.0
  *

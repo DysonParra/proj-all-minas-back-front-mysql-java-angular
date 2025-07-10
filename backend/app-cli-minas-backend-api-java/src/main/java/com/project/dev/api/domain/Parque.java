@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Parque}
+ * @overview        {Parque}
  *
  * @version         2.0
  *

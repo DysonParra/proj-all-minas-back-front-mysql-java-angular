@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CierrePartidaDTO}
+ * @overview        {CierrePartidaDTO}
  *
  * @version         2.0
  *

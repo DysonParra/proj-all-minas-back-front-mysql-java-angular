@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GenericViewModel}
+ * @overview        {GenericViewModel}
  *
  * @version         2.0
  *

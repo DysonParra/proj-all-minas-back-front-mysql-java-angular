@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {FicherosProveedorViewModel}
+ * @overview        {FicherosProveedorViewModel}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalidaRestAssembler}
+ * @overview        {RegistroEntradaSalidaRestAssembler}
  *
  * @version         2.0
  *

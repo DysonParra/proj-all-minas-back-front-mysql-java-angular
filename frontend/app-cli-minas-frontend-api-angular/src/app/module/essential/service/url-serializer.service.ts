@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {LowerCaseUrlSerializer}
+ * @overview        {LowerCaseUrlSerializer}
  *
  * @version         2.0
  *

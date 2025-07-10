@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ResponseWrapper}
+ * @overview        {ResponseWrapper}
  *
  * @version         2.0
  *

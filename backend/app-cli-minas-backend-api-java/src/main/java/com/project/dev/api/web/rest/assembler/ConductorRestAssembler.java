@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConductorRestAssembler}
+ * @overview        {ConductorRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {VehiculoState}
+ * @overview        {VehiculoState}
  *
  * @version         2.0
  *

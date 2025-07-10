@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MuestraRestAssembler}
+ * @overview        {MuestraRestAssembler}
  *
  * @version         2.0
  *

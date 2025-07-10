@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ConsecutivoDiarioViewComponent}
+ * @overview        {ConsecutivoDiarioViewComponent}
  *
  * @version         2.0
  *

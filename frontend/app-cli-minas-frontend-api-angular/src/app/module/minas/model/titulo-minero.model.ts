@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TituloMineroViewModel}
+ * @overview        {TituloMineroViewModel}
  *
  * @version         2.0
  *

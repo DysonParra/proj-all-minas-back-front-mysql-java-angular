@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IndicadorRestAssembler}
+ * @overview        {IndicadorRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BaseRepository}
+ * @overview        {BaseRepository}
  *
  * @version         2.0
  *
@@ -90,8 +90,8 @@ public class BaseRepository<T> implements GenericRepository<T> {
     /**
      * Obtiene información de la base de datos.
      *
-     * @param id el id de la información a obtener.
-     * @return la información con el id indicado.
+     * @param id el ID de la información a obtener.
+     * @return la información con el ID indicado.
      */
     @Override
     public T getData(final Object id) {

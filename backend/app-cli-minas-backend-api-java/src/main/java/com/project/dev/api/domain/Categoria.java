@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {Categoria}
+ * @overview        {Categoria}
  *
  * @version         2.0
  *

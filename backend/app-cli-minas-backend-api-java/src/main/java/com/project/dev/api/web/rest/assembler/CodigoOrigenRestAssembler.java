@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoOrigenRestAssembler}
+ * @overview        {CodigoOrigenRestAssembler}
  *
  * @version         2.0
  *

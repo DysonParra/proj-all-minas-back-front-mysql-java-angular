@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {AppModule}
+ * @overview        {AppModule}
  *
  * @version         2.0
  *

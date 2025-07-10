@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MinaViewModel}
+ * @overview        {MinaViewModel}
  *
  * @version         2.0
  *

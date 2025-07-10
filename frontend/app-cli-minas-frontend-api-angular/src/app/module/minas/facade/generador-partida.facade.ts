@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {GeneradorPartidaFacade}
+ * @overview        {GeneradorPartidaFacade}
  *
  * @version         2.0
  *

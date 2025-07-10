@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEntradaSalida}
+ * @overview        {RegistroEntradaSalida}
  *
  * @version         2.0
  *

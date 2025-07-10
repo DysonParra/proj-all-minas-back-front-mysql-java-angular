@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {EntityNotFoundException}
+ * @overview        {EntityNotFoundException}
  *
  * @version         2.0
  *

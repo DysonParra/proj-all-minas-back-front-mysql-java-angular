@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {UsuarioRest}
+ * @overview        {UsuarioRest}
  *
  * @version         2.0
  *
@@ -106,7 +106,7 @@ public class UsuarioRest {
     }
 
     /**
-     * Obtiene todas los registros según la paginación suministrada.
+     * Obtiene todos los registros según la paginación suministrada.
      *
      * @param pageable indica la manera en que se paginarán los registros obtenidos.
      * @return entidades almacenadas en base de datos de forma paginada.
@@ -161,7 +161,7 @@ public class UsuarioRest {
                     .created(new URI(resource.getLink("self").orElse(new Link("self")).getHref()))
                     .body(resource);
         } catch (Exception e) {
-            log.warn("Ocurrio un error en la llamada REST saveEntity", e);
+            log.warn("Ocurrió un error en la llamada REST saveEntity", e);
             return new ResponseEntity<>(HttpStatus.UNPROCESSABLE_ENTITY);
         }
     }
@@ -186,7 +186,7 @@ public class UsuarioRest {
     }
 
     /**
-     * Obtiene la entidad según el id suministrado.
+     * Obtiene la entidad usando el ID suministrado.
      *
      * @param id es el identificador de la entidad.
      * @return entidad almacenada en la base de datos.
@@ -206,7 +206,7 @@ public class UsuarioRest {
                     .map(u -> new ResponseEntity<>(entityRestAssembler.toModel(u), HttpStatus.OK))
                     .orElse(new ResponseEntity<>(HttpStatus.NO_CONTENT));
         } catch (Exception e) {
-            log.error("Ocurrio un error en la llamada REST getEntity", e);
+            log.error("Ocurrió un error en la llamada REST getEntity", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -266,7 +266,7 @@ public class UsuarioRest {
     }
 
     /**
-     * Obtiene registros de la base de datos según la búsqueda y paginación suministradas.
+     * Obtiene registros de la base de datos según la búsqueda y la paginación que se indicaron.
      *
      * @param query    indica la búsqueda que se hará en la base de datos.
      * @param pageable indica la manera en que se paginarán los registros obtenidos.
